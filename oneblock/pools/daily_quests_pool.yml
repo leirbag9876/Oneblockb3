@@ -1,0 +1,503 @@
+easy:
+  easy_oneblock_250:
+    name: "Rozgrzewka na wyspie"
+    description: "Wykop 250 bloków OneBlock."
+    type: BLOCK_BREAK_ONEBLOCK
+    amount: 250
+    rewards:
+      commands:
+        - "shop currency give %player% money 600"
+  easy_sell_64_items:
+    name: "Mała dostawa"
+    description: "Sprzedaj 64 przedmioty w sklepie."
+    type: SELL_ITEMS
+    amount: 64
+    rewards:
+      commands:
+        - "shop currency give %player% money 650"
+  easy_earn_1000_sell:
+    name: "Pierwszy zarobek"
+    description: "Zarób 1000$ ze sprzedaży."
+    type: EARN_FROM_SELL
+    amount: 1000
+    rewards:
+      commands:
+        - "shop currency give %player% money 700"
+  easy_kill_hostile_20:
+    name: "Spokojna noc"
+    description: "Zabij 20 wrogich mobów."
+    type: KILL_HOSTILE_MOBS
+    amount: 20
+    rewards:
+      commands:
+        - "shop currency give %player% money 750"
+  easy_kill_passive_10:
+    name: "Prosty łów"
+    description: "Zabij 10 pasywnych mobów."
+    type: KILL_PASSIVE_MOBS
+    amount: 10
+    rewards:
+      commands:
+        - "shop currency give %player% money 550"
+  easy_collect_96_items:
+    name: "Porządki w ekwipunku"
+    description: "Podnieś 96 przedmiotów."
+    type: COLLECT_ITEMS
+    amount: 96
+    rewards:
+      commands:
+        - "shop currency give %player% money 650"
+  easy_harvest_35_crops:
+    name: "Małe zbiory"
+    description: "Zbierz 35 dojrzałych plonów."
+    type: HARVEST_CROPS
+    amount: 35
+    rewards:
+      commands:
+        - "shop currency give %player% money 700"
+  easy_breed_4_animals:
+    name: "Nowe stado"
+    description: "Rozmnóż 4 zwierzęta."
+    type: BREED_ANIMALS
+    amount: 4
+    rewards:
+      commands:
+        - "shop currency give %player% money 650"
+  easy_smelt_32_items:
+    name: "Ciepły piec"
+    description: "Wyjmij 32 przetopione przedmioty z pieca."
+    type: SMELT_ITEMS
+    amount: 32
+    rewards:
+      commands:
+        - "shop currency give %player% money 700"
+  easy_break_24_logs:
+    name: "Drwal na start"
+    description: "Zetnij 24 kłody."
+    type: BREAK_LOGS
+    amount: 24
+    rewards:
+      commands:
+        - "shop currency give %player% money 650"
+  easy_catch_3_fish:
+    name: "Krótkie wędkowanie"
+    description: "Złów 3 ryby."
+    type: CATCH_FISH
+    amount: 3
+    rewards:
+      commands:
+        - "shop currency give %player% money 750"
+  easy_craft_32_items:
+    name: "Proste receptury"
+    description: "Wytwórz 32 przedmioty."
+    type: CRAFT_ITEMS
+    amount: 32
+    rewards:
+      commands:
+        - "shop currency give %player% money 650"
+  easy_gain_5_levels:
+    name: "Trochę doświadczenia"
+    description: "Zdobądź 5 poziomów doświadczenia."
+    type: GAIN_XP_LEVELS
+    amount: 5
+    rewards:
+      commands:
+        - "shop currency give %player% money 800"
+  easy_eat_6_items:
+    name: "Przerwa na posiłek"
+    description: "Zjedz 6 przedmiotów."
+    type: EAT_ITEMS
+    amount: 6
+    rewards:
+      commands:
+        - "shop currency give %player% money 500"
+  easy_place_64_blocks:
+    name: "Mała rozbudowa"
+    description: "Postaw 64 bloki."
+    type: PLACE_BLOCKS
+    amount: 64
+    rewards:
+      commands:
+        - "shop currency give %player% money 700"
+  easy_oneblock_400:
+    name: "Stały rytm"
+    description: "Wykop 400 bloków OneBlock."
+    type: BLOCK_BREAK_ONEBLOCK
+    amount: 400
+    rewards:
+      commands:
+        - "shop currency give %player% money 900"
+  easy_sell_128_items:
+    name: "Szybka sprzedaż"
+    description: "Sprzedaj 128 przedmiotów w sklepie."
+    type: SELL_ITEMS
+    amount: 128
+    rewards:
+      commands:
+        - "shop currency give %player% money 950"
+  easy_earn_2500_sell:
+    name: "Dzienny handel"
+    description: "Zarób 2500$ ze sprzedaży."
+    type: EARN_FROM_SELL
+    amount: 2500
+    rewards:
+      commands:
+        - "shop currency give %player% money 1000"
+  easy_collect_160_items:
+    name: "Zbieracz"
+    description: "Podnieś 160 przedmiotów."
+    type: COLLECT_ITEMS
+    amount: 160
+    rewards:
+      commands:
+        - "shop currency give %player% money 850"
+  easy_harvest_64_crops:
+    name: "Pełny koszyk"
+    description: "Zbierz 64 dojrzałe plony."
+    type: HARVEST_CROPS
+    amount: 64
+    rewards:
+      commands:
+        - "shop currency give %player% money 950"
+  easy_smelt_48_items:
+    name: "Piec pracuje"
+    description: "Wyjmij 48 przetopionych przedmiotów z pieca."
+    type: SMELT_ITEMS
+    amount: 48
+    rewards:
+      commands:
+        - "shop currency give %player% money 900"
+  easy_break_40_logs:
+    name: "Zapasy drewna"
+    description: "Zetnij 40 kłód."
+    type: BREAK_LOGS
+    amount: 40
+    rewards:
+      commands:
+        - "shop currency give %player% money 850"
+  easy_catch_5_fish:
+    name: "Dobry połów"
+    description: "Złów 5 ryb."
+    type: CATCH_FISH
+    amount: 5
+    rewards:
+      commands:
+        - "shop currency give %player% money 950"
+  easy_craft_64_items:
+    name: "Pracowity stół"
+    description: "Wytwórz 64 przedmioty."
+    type: CRAFT_ITEMS
+    amount: 64
+    rewards:
+      commands:
+        - "shop currency give %player% money 900"
+  easy_place_96_blocks:
+    name: "Nowy kawałek wyspy"
+    description: "Postaw 96 bloków."
+    type: PLACE_BLOCKS
+    amount: 96
+    rewards:
+      commands:
+        - "shop currency give %player% money 950"
+
+medium:
+  medium_oneblock_1200:
+    name: "Dłuższa zmiana"
+    description: "Wykop 1200 bloków OneBlock."
+    type: BLOCK_BREAK_ONEBLOCK
+    amount: 1200
+    rewards:
+      commands:
+        - "shop currency give %player% money 3500"
+        - "shop currency give %player% upgrade_points 1"
+  medium_sell_384_items:
+    name: "Większy handel"
+    description: "Sprzedaj 384 przedmioty w sklepie."
+    type: SELL_ITEMS
+    amount: 384
+    rewards:
+      commands:
+        - "shop currency give %player% money 3600"
+  medium_earn_10000_sell:
+    name: "Stabilny dochód"
+    description: "Zarób 10000$ ze sprzedaży."
+    type: EARN_FROM_SELL
+    amount: 10000
+    rewards:
+      commands:
+        - "shop currency give %player% money 4200"
+  medium_kill_hostile_80:
+    name: "Obrona wyspy"
+    description: "Zabij 80 wrogich mobów."
+    type: KILL_HOSTILE_MOBS
+    amount: 80
+    rewards:
+      commands:
+        - "shop currency give %player% money 4200"
+  medium_kill_passive_40:
+    name: "Rzeźnik wyspy"
+    description: "Zabij 40 pasywnych mobów."
+    type: KILL_PASSIVE_MOBS
+    amount: 40
+    rewards:
+      commands:
+        - "shop currency give %player% money 3200"
+  medium_collect_512_items:
+    name: "Magazynier"
+    description: "Podnieś 512 przedmiotów."
+    type: COLLECT_ITEMS
+    amount: 512
+    rewards:
+      commands:
+        - "shop currency give %player% money 3600"
+  medium_harvest_180_crops:
+    name: "Dzień farmy"
+    description: "Zbierz 180 dojrzałych plonów."
+    type: HARVEST_CROPS
+    amount: 180
+    rewards:
+      commands:
+        - "shop currency give %player% money 3800"
+  medium_breed_16_animals:
+    name: "Rozwój hodowli"
+    description: "Rozmnóż 16 zwierząt."
+    type: BREED_ANIMALS
+    amount: 16
+    rewards:
+      commands:
+        - "shop currency give %player% money 3600"
+  medium_smelt_192_items:
+    name: "Hutnik"
+    description: "Wyjmij 192 przetopione przedmioty z pieca."
+    type: SMELT_ITEMS
+    amount: 192
+    rewards:
+      commands:
+        - "shop currency give %player% money 4000"
+  medium_break_160_logs:
+    name: "Pełna składnica drewna"
+    description: "Zetnij 160 kłód."
+    type: BREAK_LOGS
+    amount: 160
+    rewards:
+      commands:
+        - "shop currency give %player% money 3600"
+  medium_catch_15_fish:
+    name: "Cierpliwy wędkarz"
+    description: "Złów 15 ryb."
+    type: CATCH_FISH
+    amount: 15
+    rewards:
+      commands:
+        - "shop currency give %player% money 4200"
+  medium_craft_256_items:
+    name: "Produkcja seryjna"
+    description: "Wytwórz 256 przedmiotów."
+    type: CRAFT_ITEMS
+    amount: 256
+    rewards:
+      commands:
+        - "shop currency give %player% money 3800"
+  medium_gain_18_levels:
+    name: "Nauka popłaca"
+    description: "Zdobądź 18 poziomów doświadczenia."
+    type: GAIN_XP_LEVELS
+    amount: 18
+    rewards:
+      commands:
+        - "shop currency give %player% money 4500"
+  medium_eat_24_items:
+    name: "Dobra aprowizacja"
+    description: "Zjedz 24 przedmioty."
+    type: EAT_ITEMS
+    amount: 24
+    rewards:
+      commands:
+        - "shop currency give %player% money 2600"
+  medium_place_320_blocks:
+    name: "Rozbudowa platformy"
+    description: "Postaw 320 bloków."
+    type: PLACE_BLOCKS
+    amount: 320
+    rewards:
+      commands:
+        - "shop currency give %player% money 3900"
+  medium_oneblock_1800:
+    name: "Górnik dnia"
+    description: "Wykop 1800 bloków OneBlock."
+    type: BLOCK_BREAK_ONEBLOCK
+    amount: 1800
+    rewards:
+      commands:
+        - "shop currency give %player% money 5200"
+        - "shop currency give %player% upgrade_points 1"
+  medium_sell_640_items:
+    name: "Duża wysyłka"
+    description: "Sprzedaj 640 przedmiotów w sklepie."
+    type: SELL_ITEMS
+    amount: 640
+    rewards:
+      commands:
+        - "shop currency give %player% money 5200"
+  medium_earn_20000_sell:
+    name: "Handlowiec"
+    description: "Zarób 20000$ ze sprzedaży."
+    type: EARN_FROM_SELL
+    amount: 20000
+    rewards:
+      commands:
+        - "shop currency give %player% money 6500"
+        - "shop currency give %player% upgrade_points 1"
+  medium_harvest_260_crops:
+    name: "Pełne pola"
+    description: "Zbierz 260 dojrzałych plonów."
+    type: HARVEST_CROPS
+    amount: 260
+    rewards:
+      commands:
+        - "shop currency give %player% money 5200"
+  medium_craft_420_items:
+    name: "Warsztat wyspy"
+    description: "Wytwórz 420 przedmiotów."
+    type: CRAFT_ITEMS
+    amount: 420
+    rewards:
+      commands:
+        - "shop currency give %player% money 5600"
+
+hard:
+  hard_oneblock_4000:
+    name: "Maraton górnika"
+    description: "Wykop 4000 bloków OneBlock."
+    type: BLOCK_BREAK_ONEBLOCK
+    amount: 4000
+    rewards:
+      commands:
+        - "shop currency give %player% money 18000"
+        - "shop currency give %player% upgrade_points 3"
+  hard_sell_1500_items:
+    name: "Rynek pod kontrolą"
+    description: "Sprzedaj 1500 przedmiotów w sklepie."
+    type: SELL_ITEMS
+    amount: 1500
+    rewards:
+      commands:
+        - "shop currency give %player% money 19000"
+        - "shop currency give %player% upgrade_points 3"
+  hard_earn_75000_sell:
+    name: "Magnat handlu"
+    description: "Zarób 75000$ ze sprzedaży."
+    type: EARN_FROM_SELL
+    amount: 75000
+    rewards:
+      commands:
+        - "shop currency give %player% money 26000"
+        - "shop currency give %player% upgrade_points 4"
+  hard_kill_hostile_240:
+    name: "Pogromca potworów"
+    description: "Zabij 240 wrogich mobów."
+    type: KILL_HOSTILE_MOBS
+    amount: 240
+    rewards:
+      commands:
+        - "shop currency give %player% money 22000"
+        - "shop currency give %player% upgrade_points 3"
+  hard_kill_passive_120:
+    name: "Wielka hodowla"
+    description: "Zabij 120 pasywnych mobów."
+    type: KILL_PASSIVE_MOBS
+    amount: 120
+    rewards:
+      commands:
+        - "shop currency give %player% money 16000"
+        - "shop currency give %player% upgrade_points 2"
+  hard_collect_2000_items:
+    name: "Centrum logistyczne"
+    description: "Podnieś 2000 przedmiotów."
+    type: COLLECT_ITEMS
+    amount: 2000
+    rewards:
+      commands:
+        - "shop currency give %player% money 18000"
+        - "shop currency give %player% upgrade_points 3"
+  hard_harvest_700_crops:
+    name: "Sezon zbiorów"
+    description: "Zbierz 700 dojrzałych plonów."
+    type: HARVEST_CROPS
+    amount: 700
+    rewards:
+      commands:
+        - "shop currency give %player% money 19000"
+        - "shop currency give %player% upgrade_points 3"
+  hard_breed_50_animals:
+    name: "Mistrz hodowli"
+    description: "Rozmnóż 50 zwierząt."
+    type: BREED_ANIMALS
+    amount: 50
+    rewards:
+      commands:
+        - "shop currency give %player% money 17000"
+        - "shop currency give %player% upgrade_points 3"
+  hard_smelt_900_items:
+    name: "Przemysł wyspy"
+    description: "Wyjmij 900 przetopionych przedmiotów z pieca."
+    type: SMELT_ITEMS
+    amount: 900
+    rewards:
+      commands:
+        - "shop currency give %player% money 21000"
+        - "shop currency give %player% upgrade_points 3"
+  hard_break_500_logs:
+    name: "Las w zapasie"
+    description: "Zetnij 500 kłód."
+    type: BREAK_LOGS
+    amount: 500
+    rewards:
+      commands:
+        - "shop currency give %player% money 18000"
+        - "shop currency give %player% upgrade_points 3"
+  hard_catch_45_fish:
+    name: "Mistrz wędki"
+    description: "Złów 45 ryb."
+    type: CATCH_FISH
+    amount: 45
+    rewards:
+      commands:
+        - "shop currency give %player% money 20000"
+        - "shop currency give %player% upgrade_points 3"
+  hard_craft_1200_items:
+    name: "Fabryka przedmiotów"
+    description: "Wytwórz 1200 przedmiotów."
+    type: CRAFT_ITEMS
+    amount: 1200
+    rewards:
+      commands:
+        - "shop currency give %player% money 23000"
+        - "shop currency give %player% upgrade_points 4"
+  hard_gain_45_levels:
+    name: "Ekspert doświadczenia"
+    description: "Zdobądź 45 poziomów doświadczenia."
+    type: GAIN_XP_LEVELS
+    amount: 45
+    rewards:
+      commands:
+        - "shop currency give %player% money 24000"
+        - "shop currency give %player% upgrade_points 4"
+  hard_eat_75_items:
+    name: "Dzień przetrwania"
+    description: "Zjedz 75 przedmiotów."
+    type: EAT_ITEMS
+    amount: 75
+    rewards:
+      commands:
+        - "shop currency give %player% money 14000"
+        - "shop currency give %player% upgrade_points 2"
+  hard_place_1500_blocks:
+    name: "Wielka rozbudowa"
+    description: "Postaw 1500 bloków."
+    type: PLACE_BLOCKS
+    amount: 1500
+    rewards:
+      commands:
+        - "shop currency give %player% money 22000"
+        - "shop currency give %player% upgrade_points 3"

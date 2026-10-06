@@ -1,0 +1,3306 @@
+
+# Placeholdery wymagane od pluginu:
+# %oneblock_mission_m01_completed% -> true/false
+# %oneblock_mission_m01_claimed% -> true/false
+# %oneblock_mission_m01_progress% -> np. 120/250
+# %oneblock_current_island_level% -> liczba
+# Każda misja daje graczowi punkty ulepszeń oraz dodatkową
+# nagrodę pieniężną oraz zwykłe przedmioty Minecrafta.
+
+menu_title: "&6&lMisje rozwojowe wyspy"
+size: 54
+update_interval: 10
+
+items:
+  m01_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 0
+    priority: 1
+    update: true
+    display_name: "&a&lPierwsze kroki"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fWykop 250 bloków OneBlock"
+      - "&7Postęp: &f%oneblock_mission_m01_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m01_claimed%"
+          output: "true"
+
+  m01_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 0
+    priority: 2
+    update: true
+    display_name: "&a&lPierwsze kroki"
+    lore:
+      - ""
+      - "&7Cel: &fWykop 250 bloków OneBlock"
+      - "&7Postęp: &a%oneblock_mission_m01_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$500"
+      - "&8- &f8x Chleb"
+
+      - "&8- &b1 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m01_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m01_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m01"
+      - "[console] shop currency give %player% upgrade_points 1"
+      - "[console] shop currency give %player% money 250"
+      - "[console] give %island_members% bread 8"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m01_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 0
+    priority: 3
+    update: true
+    display_name: "&7&lPierwsze kroki"
+    lore:
+      - ""
+      - "&7Cel: &fWykop 250 bloków OneBlock"
+      - "&7Postęp: &f%oneblock_mission_m01_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e10"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$500"
+      - "&8- &f8x Chleb"
+
+      - "&8- &b1 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "10"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m01_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m01"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m01_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 0
+    priority: 4
+    update: true
+    display_name: "&c&lPierwsze kroki"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e10"
+      - ""
+
+  m02_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 9
+    priority: 1
+    update: true
+    display_name: "&a&lTowar na sprzedaż"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fSprzedaj 500 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m02_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m02_claimed%"
+          output: "true"
+
+  m02_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 9
+    priority: 2
+    update: true
+    display_name: "&a&lTowar na sprzedaż"
+    lore:
+      - ""
+      - "&7Cel: &fSprzedaj 500 przedmiotów"
+      - "&7Postęp: &a%oneblock_mission_m02_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$750"
+      - "&8- &f16x Węgiel"
+
+      - "&8- &b1 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m02_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m02_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m02"
+      - "[console] shop currency give %player% upgrade_points 1"
+      - "[console] shop currency give %player% money 350"
+      - "[console] give %island_members% coal 16"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m02_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 9
+    priority: 3
+    update: true
+    display_name: "&7&lTowar na sprzedaż"
+    lore:
+      - ""
+      - "&7Cel: &fSprzedaj 500 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m02_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e12"
+      - "&7Poprzednia misja: &a Pierwsze kroki"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$750"
+      - "&8- &f16x Węgiel"
+
+      - "&8- &b1 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "12"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m01_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m02_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m02"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m02_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 9
+    priority: 4
+    update: true
+    display_name: "&c&lTowar na sprzedaż"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e12"
+      - "&7Ukończ wcześniej: &fPierwsze kroki"
+      - ""
+
+  m03_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 18
+    priority: 1
+    update: true
+    display_name: "&a&lŁowca potworów"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZabij 75 wrogich mobów"
+      - "&7Postęp: &f%oneblock_mission_m03_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m03_claimed%"
+          output: "true"
+
+  m03_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 18
+    priority: 2
+    update: true
+    display_name: "&a&lŁowca potworów"
+    lore:
+      - ""
+      - "&7Cel: &fZabij 75 wrogich mobów"
+      - "&7Postęp: &a%oneblock_mission_m03_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$1000"
+      - "&8- &f8x Sztabka żelaza"
+
+      - "&8- &b1 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m03_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m03_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m03"
+      - "[console] shop currency give %player% upgrade_points 1"
+      - "[console] shop currency give %player% money 450"
+      - "[console] give %island_members% iron_ingot 8"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m03_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 18
+    priority: 3
+    update: true
+    display_name: "&7&lŁowca potworów"
+    lore:
+      - ""
+      - "&7Cel: &fZabij 75 wrogich mobów"
+      - "&7Postęp: &f%oneblock_mission_m03_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e14"
+      - "&7Poprzednia misja: &a Towar na sprzedaż"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$1000"
+      - "&8- &f8x Sztabka żelaza"
+
+      - "&8- &b1 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "14"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m02_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m03_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m03"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m03_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 18
+    priority: 4
+    update: true
+    display_name: "&c&lŁowca potworów"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e14"
+      - "&7Ukończ wcześniej: &fTowar na sprzedaż"
+      - ""
+
+  m04_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 27
+    priority: 1
+    update: true
+    display_name: "&a&lRozbudowa magazynu"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 1 000 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m04_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m04_claimed%"
+          output: "true"
+
+  m04_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 27
+    priority: 2
+    update: true
+    display_name: "&a&lRozbudowa magazynu"
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 1 000 przedmiotów"
+      - "&7Postęp: &a%oneblock_mission_m04_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$1250"
+      - "&8- &f32x Dębowa kłoda"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m04_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m04_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m04"
+      - "[console] shop currency give %player% upgrade_points 2"
+      - "[console] shop currency give %player% money 600"
+      - "[console] give %island_members% oak_log 32"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m04_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 27
+    priority: 3
+    update: true
+    display_name: "&7&lRozbudowa magazynu"
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 1 000 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m04_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e16"
+      - "&7Poprzednia misja: &a Łowca potworów"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$1250"
+      - "&8- &f32x Dębowa kłoda"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "16"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m03_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m04_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m04"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m04_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 27
+    priority: 4
+    update: true
+    display_name: "&c&lRozbudowa magazynu"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e16"
+      - "&7Ukończ wcześniej: &fŁowca potworów"
+      - ""
+
+  m05_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 36
+    priority: 1
+    update: true
+    display_name: "&a&lGórnicza zmiana"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fWykop 750 bloków OneBlock"
+      - "&7Postęp: &f%oneblock_mission_m05_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m05_claimed%"
+          output: "true"
+
+  m05_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 36
+    priority: 2
+    update: true
+    display_name: "&a&lGórnicza zmiana"
+    lore:
+      - ""
+      - "&7Cel: &fWykop 750 bloków OneBlock"
+      - "&7Postęp: &a%oneblock_mission_m05_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$1500"
+      - "&8- &f12x Sztabka żelaza"
+      - "&8- &f16x Węgiel"
+
+      - "&8- &b1 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m05_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m05_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m05"
+      - "[console] shop currency give %player% upgrade_points 1"
+      - "[console] shop currency give %player% money 700"
+      - "[console] give %island_members% iron_ingot 12"
+      - "[console] give %island_members% coal 16"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m05_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 36
+    priority: 3
+    update: true
+    display_name: "&7&lGórnicza zmiana"
+    lore:
+      - ""
+      - "&7Cel: &fWykop 750 bloków OneBlock"
+      - "&7Postęp: &f%oneblock_mission_m05_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e18"
+      - "&7Poprzednia misja: &a Rozbudowa magazynu"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$1500"
+      - "&8- &f12x Sztabka żelaza"
+      - "&8- &f16x Węgiel"
+
+      - "&8- &b1 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "18"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m04_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m05_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m05"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m05_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 36
+    priority: 4
+    update: true
+    display_name: "&c&lGórnicza zmiana"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e18"
+      - "&7Ukończ wcześniej: &fRozbudowa magazynu"
+      - ""
+
+  m06_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 37
+    priority: 1
+    update: true
+    display_name: "&a&lPierwszy handel"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZarób $5 000 ze sprzedaży"
+      - "&7Postęp: &f%oneblock_mission_m06_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m06_claimed%"
+          output: "true"
+
+  m06_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 37
+    priority: 2
+    update: true
+    display_name: "&a&lPierwszy handel"
+    lore:
+      - ""
+      - "&7Cel: &fZarób $5 000 ze sprzedaży"
+      - "&7Postęp: &a%oneblock_mission_m06_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$1750"
+      - "&8- &f8x Sztabka złota"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m06_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m06_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m06"
+      - "[console] shop currency give %player% upgrade_points 2"
+      - "[console] shop currency give %player% money 850"
+      - "[console] give %island_members% gold_ingot 8"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m06_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 37
+    priority: 3
+    update: true
+    display_name: "&7&lPierwszy handel"
+    lore:
+      - ""
+      - "&7Cel: &fZarób $5 000 ze sprzedaży"
+      - "&7Postęp: &f%oneblock_mission_m06_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e20"
+      - "&7Poprzednia misja: &a Górnicza zmiana"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$1750"
+      - "&8- &f8x Sztabka złota"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "20"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m05_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m06_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m06"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m06_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 37
+    priority: 4
+    update: true
+    display_name: "&c&lPierwszy handel"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e20"
+      - "&7Ukończ wcześniej: &fGórnicza zmiana"
+      - ""
+
+  m07_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 38
+    priority: 1
+    update: true
+    display_name: "&a&lDoświadczenie"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZdobądź 30 poziomów doświadczenia"
+      - "&7Postęp: &f%oneblock_mission_m07_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m07_claimed%"
+          output: "true"
+
+  m07_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 38
+    priority: 2
+    update: true
+    display_name: "&a&lDoświadczenie"
+    lore:
+      - ""
+      - "&7Cel: &fZdobądź 30 poziomów doświadczenia"
+      - "&7Postęp: &a%oneblock_mission_m07_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$2000"
+      - "&8- &f16x Butelka doświadczenia"
+
+      - "&8- &b1 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m07_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m07_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m07"
+      - "[console] shop currency give %player% upgrade_points 1"
+      - "[console] shop currency give %player% money 1000"
+      - "[console] give %island_members% experience_bottle 16"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m07_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 38
+    priority: 3
+    update: true
+    display_name: "&7&lDoświadczenie"
+    lore:
+      - ""
+      - "&7Cel: &fZdobądź 30 poziomów doświadczenia"
+      - "&7Postęp: &f%oneblock_mission_m07_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e22"
+      - "&7Poprzednia misja: &a Pierwszy handel"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$2000"
+      - "&8- &f16x Butelka doświadczenia"
+
+      - "&8- &b1 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "22"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m06_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m07_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m07"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m07_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 38
+    priority: 4
+    update: true
+    display_name: "&c&lDoświadczenie"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e22"
+      - "&7Ukończ wcześniej: &fPierwszy handel"
+      - ""
+
+  m08_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 29
+    priority: 1
+    update: true
+    display_name: "&a&lPełne skrzynie"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 2 500 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m08_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m08_claimed%"
+          output: "true"
+
+  m08_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 29
+    priority: 2
+    update: true
+    display_name: "&a&lPełne skrzynie"
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 2 500 przedmiotów"
+      - "&7Postęp: &a%oneblock_mission_m08_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$2250"
+      - "&8- &f4x Skrzynia"
+      - "&8- &f2x Beczka"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m08_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m08_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m08"
+      - "[console] shop currency give %player% upgrade_points 2"
+      - "[console] shop currency give %player% money 1200"
+      - "[console] give %island_members% chest 4"
+      - "[console] give %island_members% barrel 2"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m08_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 29
+    priority: 3
+    update: true
+    display_name: "&7&lPełne skrzynie"
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 2 500 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m08_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e24"
+      - "&7Poprzednia misja: &a Doświadczenie"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$2250"
+      - "&8- &f4x Skrzynia"
+      - "&8- &f2x Beczka"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "24"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m07_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m08_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m08"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m08_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 29
+    priority: 4
+    update: true
+    display_name: "&c&lPełne skrzynie"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e24"
+      - "&7Ukończ wcześniej: &fDoświadczenie"
+      - ""
+
+  m09_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 20
+    priority: 1
+    update: true
+    display_name: "&a&lPogromca"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZabij 200 wrogich mobów"
+      - "&7Postęp: &f%oneblock_mission_m09_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m09_claimed%"
+          output: "true"
+
+  m09_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 20
+    priority: 2
+    update: true
+    display_name: "&a&lPogromca"
+    lore:
+      - ""
+      - "&7Cel: &fZabij 200 wrogich mobów"
+      - "&7Postęp: &a%oneblock_mission_m09_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$2500"
+      - "&8- &f16x Sztabka żelaza"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m09_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m09_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m09"
+      - "[console] shop currency give %player% upgrade_points 2"
+      - "[console] shop currency give %player% money 1400"
+      - "[console] give %island_members% iron_ingot 16"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m09_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 20
+    priority: 3
+    update: true
+    display_name: "&7&lPogromca"
+    lore:
+      - ""
+      - "&7Cel: &fZabij 200 wrogich mobów"
+      - "&7Postęp: &f%oneblock_mission_m09_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e26"
+      - "&7Poprzednia misja: &a Pełne skrzynie"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$2500"
+      - "&8- &f16x Sztabka żelaza"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "26"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m08_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m09_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m09"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m09_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 20
+    priority: 4
+    update: true
+    display_name: "&c&lPogromca"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e26"
+      - "&7Ukończ wcześniej: &fPełne skrzynie"
+      - ""
+
+  m10_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 11
+    priority: 1
+    update: true
+    display_name: "&a&lMasowa sprzedaż"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fSprzedaj 2 000 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m10_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m10_claimed%"
+          output: "true"
+
+  m10_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 11
+    priority: 2
+    update: true
+    display_name: "&a&lMasowa sprzedaż"
+    lore:
+      - ""
+      - "&7Cel: &fSprzedaj 2 000 przedmiotów"
+      - "&7Postęp: &a%oneblock_mission_m10_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$3000"
+      - "&8- &f12x Sztabka złota"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m10_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m10_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m10"
+      - "[console] shop currency give %player% upgrade_points 2"
+      - "[console] shop currency give %player% money 1650"
+      - "[console] give %island_members% gold_ingot 12"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m10_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 11
+    priority: 3
+    update: true
+    display_name: "&7&lMasowa sprzedaż"
+    lore:
+      - ""
+      - "&7Cel: &fSprzedaj 2 000 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m10_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e28"
+      - "&7Poprzednia misja: &a Pogromca"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$3000"
+      - "&8- &f12x Sztabka złota"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "28"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m09_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m10_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m10"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m10_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 11
+    priority: 4
+    update: true
+    display_name: "&c&lMasowa sprzedaż"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e28"
+      - "&7Ukończ wcześniej: &fPogromca"
+      - ""
+
+  m11_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 2
+    priority: 1
+    update: true
+    display_name: "&a&lKolejny etap"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fWykop 2 000 bloków OneBlock"
+      - "&7Postęp: &f%oneblock_mission_m11_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m11_claimed%"
+          output: "true"
+
+  m11_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 2
+    priority: 2
+    update: true
+    display_name: "&a&lKolejny etap"
+    lore:
+      - ""
+      - "&7Cel: &fWykop 2 000 bloków OneBlock"
+      - "&7Postęp: &a%oneblock_mission_m11_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$3500"
+      - "&8- &f2x Diament"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m11_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m11_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m11"
+      - "[console] shop currency give %player% upgrade_points 2"
+      - "[console] shop currency give %player% money 1900"
+      - "[console] give %island_members% diamond 2"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m11_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 2
+    priority: 3
+    update: true
+    display_name: "&7&lKolejny etap"
+    lore:
+      - ""
+      - "&7Cel: &fWykop 2 000 bloków OneBlock"
+      - "&7Postęp: &f%oneblock_mission_m11_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e30"
+      - "&7Poprzednia misja: &a Masowa sprzedaż"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$3500"
+      - "&8- &f2x Diament"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "30"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m10_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m11_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m11"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m11_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 2
+    priority: 4
+    update: true
+    display_name: "&c&lKolejny etap"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e30"
+      - "&7Ukończ wcześniej: &fMasowa sprzedaż"
+      - ""
+
+  m12_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 3
+    priority: 1
+    update: true
+    display_name: "&a&lHodowca"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fRozmnóż 100 zwierząt"
+      - "&7Postęp: &f%oneblock_mission_m12_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m12_claimed%"
+          output: "true"
+
+  m12_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 3
+    priority: 2
+    update: true
+    display_name: "&a&lHodowca"
+    lore:
+      - ""
+      - "&7Cel: &fRozmnóż 100 zwierząt"
+      - "&7Postęp: &a%oneblock_mission_m12_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$4000"
+      - "&8- &f16x Złota marchewka"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m12_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m12_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m12"
+      - "[console] shop currency give %player% upgrade_points 2"
+      - "[console] shop currency give %player% money 2200"
+      - "[console] give %island_members% golden_carrot 16"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m12_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 3
+    priority: 3
+    update: true
+    display_name: "&7&lHodowca"
+    lore:
+      - ""
+      - "&7Cel: &fRozmnóż 100 zwierząt"
+      - "&7Postęp: &f%oneblock_mission_m12_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e32"
+      - "&7Poprzednia misja: &a Kolejny etap"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$4000"
+      - "&8- &f16x Złota marchewka"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "32"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m11_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m12_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m12"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m12_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 3
+    priority: 4
+    update: true
+    display_name: "&c&lHodowca"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e32"
+      - "&7Ukończ wcześniej: &fKolejny etap"
+      - ""
+
+  m13_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 4
+    priority: 1
+    update: true
+    display_name: "&a&lRolnicza potęga"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 3 000 plonów"
+      - "&7Postęp: &f%oneblock_mission_m13_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m13_claimed%"
+          output: "true"
+
+  m13_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 4
+    priority: 2
+    update: true
+    display_name: "&a&lRolnicza potęga"
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 3 000 plonów"
+      - "&7Postęp: &a%oneblock_mission_m13_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$4500"
+      - "&8- &f32x Mączka kostna"
+      - "&8- &f32x Nasiona pszenicy"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m13_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m13_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m13"
+      - "[console] shop currency give %player% upgrade_points 2"
+      - "[console] shop currency give %player% money 2500"
+      - "[console] give %island_members% bone_meal 32"
+      - "[console] give %island_members% wheat_seeds 32"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m13_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 4
+    priority: 3
+    update: true
+    display_name: "&7&lRolnicza potęga"
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 3 000 plonów"
+      - "&7Postęp: &f%oneblock_mission_m13_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e34"
+      - "&7Poprzednia misja: &a Hodowca"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$4500"
+      - "&8- &f32x Mączka kostna"
+      - "&8- &f32x Nasiona pszenicy"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "34"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m12_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m13_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m13"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m13_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 4
+    priority: 4
+    update: true
+    display_name: "&c&lRolnicza potęga"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e34"
+      - "&7Ukończ wcześniej: &fHodowca"
+      - ""
+
+  m14_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 13
+    priority: 1
+    update: true
+    display_name: "&a&lKupiec wyspy"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZarób $25 000 ze sprzedaży"
+      - "&7Postęp: &f%oneblock_mission_m14_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m14_claimed%"
+          output: "true"
+
+  m14_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 13
+    priority: 2
+    update: true
+    display_name: "&a&lKupiec wyspy"
+    lore:
+      - ""
+      - "&7Cel: &fZarób $25 000 ze sprzedaży"
+      - "&7Postęp: &a%oneblock_mission_m14_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$5000"
+      - "&8- &f8x Szmaragd"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m14_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m14_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m14"
+      - "[console] shop currency give %player% upgrade_points 3"
+      - "[console] shop currency give %player% money 2900"
+      - "[console] give %island_members% emerald 8"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m14_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 13
+    priority: 3
+    update: true
+    display_name: "&7&lKupiec wyspy"
+    lore:
+      - ""
+      - "&7Cel: &fZarób $25 000 ze sprzedaży"
+      - "&7Postęp: &f%oneblock_mission_m14_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e36"
+      - "&7Poprzednia misja: &a Rolnicza potęga"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$5000"
+      - "&8- &f8x Szmaragd"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "36"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m13_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m14_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m14"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m14_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 13
+    priority: 4
+    update: true
+    display_name: "&c&lKupiec wyspy"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e36"
+      - "&7Ukończ wcześniej: &fRolnicza potęga"
+      - ""
+
+  m15_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 22
+    priority: 1
+    update: true
+    display_name: "&a&lDoświadczony górnik"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fWykop 4 000 bloków OneBlock"
+      - "&7Postęp: &f%oneblock_mission_m15_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m15_claimed%"
+          output: "true"
+
+  m15_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 22
+    priority: 2
+    update: true
+    display_name: "&a&lDoświadczony górnik"
+    lore:
+      - ""
+      - "&7Cel: &fWykop 4 000 bloków OneBlock"
+      - "&7Postęp: &a%oneblock_mission_m15_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$5500"
+      - "&8- &f4x Diament"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m15_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m15_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m15"
+      - "[console] shop currency give %player% upgrade_points 2"
+      - "[console] shop currency give %player% money 3300"
+      - "[console] give %island_members% diamond 4"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m15_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 22
+    priority: 3
+    update: true
+    display_name: "&7&lDoświadczony górnik"
+    lore:
+      - ""
+      - "&7Cel: &fWykop 4 000 bloków OneBlock"
+      - "&7Postęp: &f%oneblock_mission_m15_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e38"
+      - "&7Poprzednia misja: &a Kupiec wyspy"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$5500"
+      - "&8- &f4x Diament"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "38"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m14_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m15_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m15"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m15_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 22
+    priority: 4
+    update: true
+    display_name: "&c&lDoświadczony górnik"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e38"
+      - "&7Ukończ wcześniej: &fKupiec wyspy"
+      - ""
+
+  m16_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 31
+    priority: 1
+    update: true
+    display_name: "&a&lNocny łowca"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZabij 500 wrogich mobów"
+      - "&7Postęp: &f%oneblock_mission_m16_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m16_claimed%"
+          output: "true"
+
+  m16_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 31
+    priority: 2
+    update: true
+    display_name: "&a&lNocny łowca"
+    lore:
+      - ""
+      - "&7Cel: &fZabij 500 wrogich mobów"
+      - "&7Postęp: &a%oneblock_mission_m16_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$6500"
+      - "&8- &f2x Złote jabłko"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m16_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m16_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m16"
+      - "[console] shop currency give %player% upgrade_points 3"
+      - "[console] shop currency give %player% money 3800"
+      - "[console] give %island_members% golden_apple 2"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m16_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 31
+    priority: 3
+    update: true
+    display_name: "&7&lNocny łowca"
+    lore:
+      - ""
+      - "&7Cel: &fZabij 500 wrogich mobów"
+      - "&7Postęp: &f%oneblock_mission_m16_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e40"
+      - "&7Poprzednia misja: &a Doświadczony górnik"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$6500"
+      - "&8- &f2x Złote jabłko"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "40"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m15_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m16_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m16"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m16_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 31
+    priority: 4
+    update: true
+    display_name: "&c&lNocny łowca"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e40"
+      - "&7Ukończ wcześniej: &fDoświadczony górnik"
+      - ""
+
+  m17_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 40
+    priority: 1
+    update: true
+    display_name: "&a&lWielki magazyn"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 7 500 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m17_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m17_claimed%"
+          output: "true"
+
+  m17_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 40
+    priority: 2
+    update: true
+    display_name: "&a&lWielki magazyn"
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 7 500 przedmiotów"
+      - "&7Postęp: &a%oneblock_mission_m17_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$7500"
+      - "&8- &f2x Muszla shulkera"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m17_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m17_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m17"
+      - "[console] shop currency give %player% upgrade_points 3"
+      - "[console] shop currency give %player% money 4300"
+      - "[console] give %island_members% shulker_shell 2"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m17_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 40
+    priority: 3
+    update: true
+    display_name: "&7&lWielki magazyn"
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 7 500 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m17_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e42"
+      - "&7Poprzednia misja: &a Nocny łowca"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$7500"
+      - "&8- &f2x Muszla shulkera"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "42"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m16_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m17_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m17"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m17_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 40
+    priority: 4
+    update: true
+    display_name: "&c&lWielki magazyn"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e42"
+      - "&7Ukończ wcześniej: &fNocny łowca"
+      - ""
+
+  m18_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 41
+    priority: 1
+    update: true
+    display_name: "&a&lEksporter"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fSprzedaj 7 500 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m18_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m18_claimed%"
+          output: "true"
+
+  m18_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 41
+    priority: 2
+    update: true
+    display_name: "&a&lEksporter"
+    lore:
+      - ""
+      - "&7Cel: &fSprzedaj 7 500 przedmiotów"
+      - "&7Postęp: &a%oneblock_mission_m18_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$8500"
+      - "&8- &f12x Szmaragd"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m18_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m18_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m18"
+      - "[console] shop currency give %player% upgrade_points 3"
+      - "[console] shop currency give %player% money 4900"
+      - "[console] give %island_members% emerald 12"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m18_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 41
+    priority: 3
+    update: true
+    display_name: "&7&lEksporter"
+    lore:
+      - ""
+      - "&7Cel: &fSprzedaj 7 500 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m18_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e44"
+      - "&7Poprzednia misja: &a Wielki magazyn"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$8500"
+      - "&8- &f12x Szmaragd"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "44"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m17_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m18_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m18"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m18_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 41
+    priority: 4
+    update: true
+    display_name: "&c&lEksporter"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e44"
+      - "&7Ukończ wcześniej: &fWielki magazyn"
+      - ""
+
+  m19_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 42
+    priority: 1
+    update: true
+    display_name: "&a&lMistrz pieca"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fPrzetop 2 000 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m19_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m19_claimed%"
+          output: "true"
+
+  m19_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 42
+    priority: 2
+    update: true
+    display_name: "&a&lMistrz pieca"
+    lore:
+      - ""
+      - "&7Cel: &fPrzetop 2 000 przedmiotów"
+      - "&7Postęp: &a%oneblock_mission_m19_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$9500"
+      - "&8- &f8x Płomienna różdżka"
+      - "&8- &f8x Blok węgla"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m19_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m19_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m19"
+      - "[console] shop currency give %player% upgrade_points 2"
+      - "[console] shop currency give %player% money 5500"
+      - "[console] give %island_members% blaze_rod 8"
+      - "[console] give %island_members% coal_block 8"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m19_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 42
+    priority: 3
+    update: true
+    display_name: "&7&lMistrz pieca"
+    lore:
+      - ""
+      - "&7Cel: &fPrzetop 2 000 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m19_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e46"
+      - "&7Poprzednia misja: &a Eksporter"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$9500"
+      - "&8- &f8x Płomienna różdżka"
+      - "&8- &f8x Blok węgla"
+
+      - "&8- &b2 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "46"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m18_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m19_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m19"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m19_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 42
+    priority: 4
+    update: true
+    display_name: "&c&lMistrz pieca"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e46"
+      - "&7Ukończ wcześniej: &fEksporter"
+      - ""
+
+  m20_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 33
+    priority: 1
+    update: true
+    display_name: "&a&lLeśnik"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZetnij 2 500 kłód"
+      - "&7Postęp: &f%oneblock_mission_m20_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m20_claimed%"
+          output: "true"
+
+  m20_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 33
+    priority: 2
+    update: true
+    display_name: "&a&lLeśnik"
+    lore:
+      - ""
+      - "&7Cel: &fZetnij 2 500 kłód"
+      - "&7Postęp: &a%oneblock_mission_m20_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$11000"
+      - "&8- &f64x Dębowa kłoda"
+      - "&8- &f64x Świerkowa kłoda"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m20_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m20_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m20"
+      - "[console] shop currency give %player% upgrade_points 3"
+      - "[console] shop currency give %player% money 6200"
+      - "[console] give %island_members% oak_log 64"
+      - "[console] give %island_members% spruce_log 64"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m20_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 33
+    priority: 3
+    update: true
+    display_name: "&7&lLeśnik"
+    lore:
+      - ""
+      - "&7Cel: &fZetnij 2 500 kłód"
+      - "&7Postęp: &f%oneblock_mission_m20_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e48"
+      - "&7Poprzednia misja: &a Mistrz pieca"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$11000"
+      - "&8- &f64x Dębowa kłoda"
+      - "&8- &f64x Świerkowa kłoda"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "48"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m19_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m20_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m20"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m20_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 33
+    priority: 4
+    update: true
+    display_name: "&c&lLeśnik"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e48"
+      - "&7Ukończ wcześniej: &fMistrz pieca"
+      - ""
+
+  m21_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 24
+    priority: 1
+    update: true
+    display_name: "&a&lFarmer wyspy"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 10 000 plonów"
+      - "&7Postęp: &f%oneblock_mission_m21_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m21_claimed%"
+          output: "true"
+
+  m21_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 24
+    priority: 2
+    update: true
+    display_name: "&a&lFarmer wyspy"
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 10 000 plonów"
+      - "&7Postęp: &a%oneblock_mission_m21_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$12500"
+      - "&8- &f32x Złota marchewka"
+      - "&8- &f64x Mączka kostna"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m21_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m21_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m21"
+      - "[console] shop currency give %player% upgrade_points 3"
+      - "[console] shop currency give %player% money 7000"
+      - "[console] give %island_members% golden_carrot 32"
+      - "[console] give %island_members% bone_meal 64"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m21_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 24
+    priority: 3
+    update: true
+    display_name: "&7&lFarmer wyspy"
+    lore:
+      - ""
+      - "&7Cel: &fZbierz 10 000 plonów"
+      - "&7Postęp: &f%oneblock_mission_m21_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e50"
+      - "&7Poprzednia misja: &a Leśnik"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$12500"
+      - "&8- &f32x Złota marchewka"
+      - "&8- &f64x Mączka kostna"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "50"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m20_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m21_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m21"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m21_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 24
+    priority: 4
+    update: true
+    display_name: "&c&lFarmer wyspy"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e50"
+      - "&7Ukończ wcześniej: &fLeśnik"
+      - ""
+
+  m22_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 15
+    priority: 1
+    update: true
+    display_name: "&a&lBogaty handel"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZarób $100 000 ze sprzedaży"
+      - "&7Postęp: &f%oneblock_mission_m22_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m22_claimed%"
+          output: "true"
+
+  m22_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 15
+    priority: 2
+    update: true
+    display_name: "&a&lBogaty handel"
+    lore:
+      - ""
+      - "&7Cel: &fZarób $100 000 ze sprzedaży"
+      - "&7Postęp: &a%oneblock_mission_m22_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$15000"
+      - "&8- &f6x Diament"
+      - "&8- &f16x Szmaragd"
+
+      - "&8- &b4 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m22_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m22_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m22"
+      - "[console] shop currency give %player% upgrade_points 4"
+      - "[console] shop currency give %player% money 8000"
+      - "[console] give %island_members% diamond 6"
+      - "[console] give %island_members% emerald 16"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m22_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 15
+    priority: 3
+    update: true
+    display_name: "&7&lBogaty handel"
+    lore:
+      - ""
+      - "&7Cel: &fZarób $100 000 ze sprzedaży"
+      - "&7Postęp: &f%oneblock_mission_m22_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e52"
+      - "&7Poprzednia misja: &a Farmer wyspy"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$15000"
+      - "&8- &f6x Diament"
+      - "&8- &f16x Szmaragd"
+
+      - "&8- &b4 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "52"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m21_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m22_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m22"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m22_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 15
+    priority: 4
+    update: true
+    display_name: "&c&lBogaty handel"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e52"
+      - "&7Ukończ wcześniej: &fFarmer wyspy"
+      - ""
+
+  m23_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 6
+    priority: 1
+    update: true
+    display_name: "&a&lNiekończący się blok"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fWykop 10 000 bloków OneBlock"
+      - "&7Postęp: &f%oneblock_mission_m23_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m23_claimed%"
+          output: "true"
+
+  m23_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 6
+    priority: 2
+    update: true
+    display_name: "&a&lNiekończący się blok"
+    lore:
+      - ""
+      - "&7Cel: &fWykop 10 000 bloków OneBlock"
+      - "&7Postęp: &a%oneblock_mission_m23_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$17500"
+      - "&8- &f2x Pradawne zgliszcza"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m23_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m23_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m23"
+      - "[console] shop currency give %player% upgrade_points 3"
+      - "[console] shop currency give %player% money 9000"
+      - "[console] give %island_members% ancient_debris 2"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m23_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 6
+    priority: 3
+    update: true
+    display_name: "&7&lNiekończący się blok"
+    lore:
+      - ""
+      - "&7Cel: &fWykop 10 000 bloków OneBlock"
+      - "&7Postęp: &f%oneblock_mission_m23_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e54"
+      - "&7Poprzednia misja: &a Bogaty handel"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$17500"
+      - "&8- &f2x Pradawne zgliszcza"
+
+      - "&8- &b3 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "54"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m22_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m23_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m23"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m23_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 6
+    priority: 4
+    update: true
+    display_name: "&c&lNiekończący się blok"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e54"
+      - "&7Ukończ wcześniej: &fBogaty handel"
+      - ""
+
+  m24_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 7
+    priority: 1
+    update: true
+    display_name: "&a&lEliminator"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZabij 1 500 wrogich mobów"
+      - "&7Postęp: &f%oneblock_mission_m24_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m24_claimed%"
+          output: "true"
+
+  m24_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 7
+    priority: 2
+    update: true
+    display_name: "&a&lEliminator"
+    lore:
+      - ""
+      - "&7Cel: &fZabij 1 500 wrogich mobów"
+      - "&7Postęp: &a%oneblock_mission_m24_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$20000"
+      - "&8- &f1x Totem nieśmiertelności"
+      - "&8- &f4x Złote jabłko"
+
+      - "&8- &b4 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m24_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m24_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m24"
+      - "[console] shop currency give %player% upgrade_points 4"
+      - "[console] shop currency give %player% money 10500"
+      - "[console] give %island_members% totem_of_undying 1"
+      - "[console] give %island_members% golden_apple 4"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m24_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 7
+    priority: 3
+    update: true
+    display_name: "&7&lEliminator"
+    lore:
+      - ""
+      - "&7Cel: &fZabij 1 500 wrogich mobów"
+      - "&7Postęp: &f%oneblock_mission_m24_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e56"
+      - "&7Poprzednia misja: &a Niekończący się blok"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$20000"
+      - "&8- &f1x Totem nieśmiertelności"
+      - "&8- &f4x Złote jabłko"
+
+      - "&8- &b4 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "56"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m23_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m24_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m24"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m24_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 7
+    priority: 4
+    update: true
+    display_name: "&c&lEliminator"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e56"
+      - "&7Ukończ wcześniej: &fNiekończący się blok"
+      - ""
+
+  m25_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 8
+    priority: 1
+    update: true
+    display_name: "&a&lPrzemysł wyspy"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fPrzetop 7 500 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m25_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m25_claimed%"
+          output: "true"
+
+  m25_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 8
+    priority: 2
+    update: true
+    display_name: "&a&lPrzemysł wyspy"
+    lore:
+      - ""
+      - "&7Cel: &fPrzetop 7 500 przedmiotów"
+      - "&7Postęp: &a%oneblock_mission_m25_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$22500"
+      - "&8- &f16x Płomienna różdżka"
+      - "&8- &f16x Magmowy krem"
+
+      - "&8- &b4 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m25_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m25_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m25"
+      - "[console] shop currency give %player% upgrade_points 4"
+      - "[console] shop currency give %player% money 12000"
+      - "[console] give %island_members% blaze_rod 16"
+      - "[console] give %island_members% magma_cream 16"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m25_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 8
+    priority: 3
+    update: true
+    display_name: "&7&lPrzemysł wyspy"
+    lore:
+      - ""
+      - "&7Cel: &fPrzetop 7 500 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m25_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e58"
+      - "&7Poprzednia misja: &a Eliminator"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$22500"
+      - "&8- &f16x Płomienna różdżka"
+      - "&8- &f16x Magmowy krem"
+
+      - "&8- &b4 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "58"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m24_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m25_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m25"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m25_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 8
+    priority: 4
+    update: true
+    display_name: "&c&lPrzemysł wyspy"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e58"
+      - "&7Ukończ wcześniej: &fEliminator"
+      - ""
+
+  m26_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 17
+    priority: 1
+    update: true
+    display_name: "&a&lPotęga handlowa"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fSprzedaj 20 000 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m26_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m26_claimed%"
+          output: "true"
+
+  m26_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 17
+    priority: 2
+    update: true
+    display_name: "&a&lPotęga handlowa"
+    lore:
+      - ""
+      - "&7Cel: &fSprzedaj 20 000 przedmiotów"
+      - "&7Postęp: &a%oneblock_mission_m26_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$27500"
+      - "&8- &f8x Diament"
+      - "&8- &f24x Szmaragd"
+
+      - "&8- &b4 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m26_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m26_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m26"
+      - "[console] shop currency give %player% upgrade_points 4"
+      - "[console] shop currency give %player% money 14000"
+      - "[console] give %island_members% diamond 8"
+      - "[console] give %island_members% emerald 24"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m26_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 17
+    priority: 3
+    update: true
+    display_name: "&7&lPotęga handlowa"
+    lore:
+      - ""
+      - "&7Cel: &fSprzedaj 20 000 przedmiotów"
+      - "&7Postęp: &f%oneblock_mission_m26_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e60"
+      - "&7Poprzednia misja: &a Przemysł wyspy"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$27500"
+      - "&8- &f8x Diament"
+      - "&8- &f24x Szmaragd"
+
+      - "&8- &b4 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "60"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m25_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m26_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m26"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m26_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 17
+    priority: 4
+    update: true
+    display_name: "&c&lPotęga handlowa"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e60"
+      - "&7Ukończ wcześniej: &fPrzemysł wyspy"
+      - ""
+
+  m27_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 26
+    priority: 1
+    update: true
+    display_name: "&a&lLegenda OneBlocka"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fWykop 25 000 bloków OneBlock"
+      - "&7Postęp: &f%oneblock_mission_m27_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m27_claimed%"
+          output: "true"
+
+  m27_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 26
+    priority: 2
+    update: true
+    display_name: "&a&lLegenda OneBlocka"
+    lore:
+      - ""
+      - "&7Cel: &fWykop 25 000 bloków OneBlock"
+      - "&7Postęp: &a%oneblock_mission_m27_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$35000"
+      - "&8- &f2x Odłamek netherytu"
+      - "&8- &f1x Totem nieśmiertelności"
+      - "&8- &f8x Złote jabłko"
+
+      - "&8- &b5 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m27_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m27_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m27"
+      - "[console] shop currency give %player% upgrade_points 5"
+      - "[console] shop currency give %player% money 17500"
+      - "[console] give %island_members% netherite_scrap 2"
+      - "[console] give %island_members% totem_of_undying 1"
+      - "[console] give %island_members% golden_apple 8"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m27_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 26
+    priority: 3
+    update: true
+    display_name: "&7&lLegenda OneBlocka"
+    lore:
+      - ""
+      - "&7Cel: &fWykop 25 000 bloków OneBlock"
+      - "&7Postęp: &f%oneblock_mission_m27_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e65"
+      - "&7Poprzednia misja: &a Potęga handlowa"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$35000"
+      - "&8- &f2x Odłamek netherytu"
+      - "&8- &f1x Totem nieśmiertelności"
+      - "&8- &f8x Złote jabłko"
+
+      - "&8- &b5 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "65"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m26_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m27_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m27"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m27_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 26
+    priority: 4
+    update: true
+    display_name: "&c&lLegenda OneBlocka"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e65"
+      - "&7Ukończ wcześniej: &fPotęga handlowa"
+      - ""
+
+  m28_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 35
+    priority: 1
+    update: true
+    display_name: "&a&lBudowniczy wyspy"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fPostaw 5 000 bloków"
+      - "&7Postęp: &f%oneblock_mission_m28_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m28_claimed%"
+          output: "true"
+
+  m28_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 35
+    priority: 2
+    update: true
+    display_name: "&a&lBudowniczy wyspy"
+    lore:
+      - ""
+      - "&7Cel: &fPostaw 5 000 bloków"
+      - "&7Postęp: &a%oneblock_mission_m28_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$42500"
+      - "&8- &f64x Kamienne cegły"
+      - "&8- &f32x Rusztowanie"
+      - "&8- &b5 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m28_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m28_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m28"
+      - "[console] shop currency give %player% upgrade_points 5"
+      - "[console] shop currency give %player% money 21250"
+      - "[console] give %island_members% stone_bricks 64"
+      - "[console] give %island_members% scaffolding 32"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m28_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 35
+    priority: 3
+    update: true
+    display_name: "&7&lBudowniczy wyspy"
+    lore:
+      - ""
+      - "&7Cel: &fPostaw 5 000 bloków"
+      - "&7Postęp: &f%oneblock_mission_m28_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e70"
+      - "&7Poprzednia misja: &a Legenda OneBlocka"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$42500"
+      - "&8- &f64x Kamienne cegły"
+      - "&8- &f32x Rusztowanie"
+      - "&8- &b5 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "70"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m27_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m28_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m28"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m28_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 35
+    priority: 4
+    update: true
+    display_name: "&c&lBudowniczy wyspy"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e70"
+      - "&7Ukończ wcześniej: &fLegenda OneBlocka"
+      - ""
+
+  m29_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 44
+    priority: 1
+    update: true
+    display_name: "&a&lŁowca zagrody"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&7Cel: &fZabij 500 pasywnych mobów"
+      - "&7Postęp: &f%oneblock_mission_m29_progress%"
+      - ""
+      - "&a Misja ukończona"
+      - "&a Nagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_mission_m29_claimed%"
+          output: "true"
+
+  m29_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 44
+    priority: 2
+    update: true
+    display_name: "&a&lŁowca zagrody"
+    lore:
+      - ""
+      - "&7Cel: &fZabij 500 pasywnych mobów"
+      - "&7Postęp: &a%oneblock_mission_m29_progress%"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$50000"
+      - "&8- &f32x Pieczona wołowina"
+      - "&8- &f32x Szmaragd"
+      - "&8- &b5 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby odebrać!"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_mission_m29_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_mission_m29_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje claim m29"
+      - "[console] shop currency give %player% upgrade_points 5"
+      - "[console] shop currency give %player% money 25000"
+      - "[console] give %island_members% cooked_beef 32"
+      - "[console] give %island_members% emerald 32"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  m29_ready:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 44
+    priority: 3
+    update: true
+    display_name: "&7&lŁowca zagrody"
+    lore:
+      - ""
+      - "&7Cel: &fZabij 500 pasywnych mobów"
+      - "&7Postęp: &f%oneblock_mission_m29_progress%"
+      - ""
+      - "&7Wymagany poziom wyspy: &e75"
+      - "&7Poprzednia misja: &a Budowniczy wyspy"
+      - ""
+      - "&fNagrody:"
+      - "&8- &f$50000"
+      - "&8- &f32x Pieczona wołowina"
+      - "&8- &f32x Szmaragd"
+      - "&8- &b5 pkt ulepszeń wyspy"
+      - ""
+      - "&eKliknij, aby rozpocząć!"
+    view_requirement:
+      requirements:
+        level:
+          type: ">="
+          input: "%oneblock_current_island_level%"
+          output: "75"
+        previous:
+          type: string equals
+          input: "%oneblock_mission_m28_completed%"
+          output: "true"
+        not_completed:
+          type: string equals
+          input: "%oneblock_mission_m29_completed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock misje take m29"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  m29_locked:
+    material: RED_STAINED_GLASS_PANE
+    slot: 44
+    priority: 4
+    update: true
+    display_name: "&c&lŁowca zagrody"
+    lore:
+      - ""
+      - "&c Misja zablokowana"
+      - "&7Wymagany poziom wyspy: &e75"
+      - "&7Ukończ wcześniej: &fBudowniczy wyspy"
+      - ""
+
+  back:
+    material: BARRIER
+    slot: 45
+    display_name: "&c&lWróć"
+    actions:
+      commands:
+      - ob menu
+
+  info:
+    material: hdb-23222
+    slot: 53
+    display_name: "&9&lInformacje o misjach"

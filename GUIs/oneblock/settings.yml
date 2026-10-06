@@ -1,0 +1,168 @@
+menu:
+  title: "&8Ustawienia wyspy"
+  size: 54
+
+filler:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "
+  slots:
+    - "all"
+
+layout:
+  divider: "&8&m------------------------"
+  role-header: "&7Minimalna ranga:"
+
+roles:
+  selected-format: "&e-> %role_display%"
+  unselected-format: "&7   %role_display%"
+  display-names:
+    OWNER: "Właściciel"
+    ADMIN: "Administrator"
+    HELPER: "Helper"
+    MEMBER: "Członek"
+    VISITOR: "Gość"
+
+controls:
+  - "&eLPM &7- podnieś wymaganą rangę"
+  - "&ePPM &7- obniż wymaganą rangę"
+
+sounds:
+  change:
+    enabled: true
+    name: UI_BUTTON_CLICK
+    volume: 0.8
+    pitch: 1.25
+  denied:
+    enabled: true
+    name: ENTITY_VILLAGER_NO
+    volume: 0.8
+    pitch: 1.0
+
+messages:
+  no-island: "&cNajpierw musisz utworzyć wyspę."
+  owner-only: "&cTylko właściciel wyspy może zarządzać ustawieniami wyspy!"
+  island-removed: "&cTa wyspa już nie istnieje."
+  save-failed: "&cNie udało się zapisać ustawienia wyspy."
+  no-permission-action: "&cNie masz wymaganej rangi, aby wykonać tę czynność na tej wyspie."
+
+settings:
+  BREAK_BLOCKS:
+    slot: 10
+    material: DIAMOND_PICKAXE
+    name: "&cNiszczenie bloków"
+    description:
+      - "&7Określa, kto może niszczyć"
+      - "&7bloki na wyspie."
+    default-role: MEMBER
+  PLACE_BLOCKS:
+    slot: 11
+    material: GRASS_BLOCK
+    name: "&aStawianie bloków"
+    description:
+      - "&7Określa, kto może stawiać"
+      - "&7bloki na wyspie."
+    default-role: MEMBER
+  OPEN_CONTAINERS:
+    slot: 12
+    material: CHEST
+    name: "&6Otwieranie pojemników"
+    description:
+      - "&7Skrzynie, beczki, shulkery"
+      - "&7i inne pojemniki."
+    default-role: MEMBER
+  USE_DOORS:
+    slot: 13
+    material: OAK_DOOR
+    name: "&eDrzwi i przejścia"
+    description:
+      - "&7Drzwi, furtki i trapdoory"
+      - "&7na terenie wyspy."
+    default-role: MEMBER
+  INTERACT_REDSTONE:
+    slot: 14
+    material: REDSTONE
+    name: "&cRedstone"
+    description:
+      - "&7Przyciski, dźwignie,"
+      - "&7płytki naciskowe i układy."
+    default-role: HELPER
+  INTERACT_ENTITIES:
+    slot: 15
+    material: LEAD
+    name: "&bInterakcja z mobami"
+    description:
+      - "&7Określa, kto może klikać"
+      - "&7moby na wyspie."
+    default-role: MEMBER
+  KILL_PASSIVE_MOBS:
+    slot: 16
+    material: IRON_SWORD
+    name: "&cZabijanie zwierząt"
+    description:
+      - "&7Określa, kto może zabijać"
+      - "&7pokojowe moby na wyspie."
+    default-role: MEMBER
+  USE_VILLAGERS:
+    slot: 19
+    material: EMERALD
+    name: "&aHandel z villagerami"
+    description:
+      - "&7Określa dostęp do handlu"
+      - "&7z villagerami."
+    default-role: MEMBER
+  USE_ONEBLOCK:
+    slot: 20
+    material: BEACON
+    name: "&dOneBlock"
+    description:
+      - "&7Określa, kto może niszczyć"
+      - "&7główny blok OneBlock."
+    default-role: MEMBER
+  MANAGE_GENERATORS:
+    slot: 21
+    material: NETHER_STAR
+    name: "&9Generatory"
+    description:
+      - "&7Określa, kto może obsługiwać"
+      - "&7główny generator wyspy."
+    default-role: HELPER
+  USE_FURNACES:
+    slot: 22
+    material: FURNACE
+    name: "&6Piece"
+    description:
+      - "&7Piece, wędzarki"
+      - "&7i blast furnace."
+    default-role: MEMBER
+  USE_ANVILS:
+    slot: 23
+    material: ANVIL
+    name: "&7Kowadła"
+    description:
+      - "&7Określa, kto może używać"
+      - "&7kowadeł na wyspie."
+    default-role: MEMBER
+  USE_ENCHANTING:
+    slot: 24
+    material: ENCHANTING_TABLE
+    name: "&5Enchanting"
+    description:
+      - "&7Określa, kto może używać"
+      - "&7stołów do zaklinania."
+    default-role: MEMBER
+  PICKUP_ITEMS:
+    slot: 25
+    material: HOPPER
+    name: "&aPodnoszenie itemów"
+    description:
+      - "&7Określa, kto może podnosić"
+      - "&7przedmioty z ziemi."
+    default-role: MEMBER
+  DROP_ITEMS:
+    slot: 28
+    material: DROPPER
+    name: "&eWyrzucanie itemów"
+    description:
+      - "&7Określa, kto może wyrzucać"
+      - "&7przedmioty na wyspie."
+    default-role: MEMBER

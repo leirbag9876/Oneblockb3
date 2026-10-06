@@ -1,0 +1,43 @@
+# Plik konfiguracyjny komend pluginu.
+# Porada: użyj sprawdzacza składni YAML, aby mieć pewność, że format pliku jest poprawny.
+# Sekcja konfiguracji związana z komendami oneblocka.
+oneblock:
+  # Opis subkomendy dla głównej komendy oneblocka, czyli w tym przypadku /ob info.
+  info:
+    # Określa, czy komenda ma być włączona, czy nie.
+    enabled: true
+    # Możesz tu wpisać aliasy tej samej komendy.
+    aliases: []
+  tp:
+    enabled: true
+    aliases: []
+  create:
+    enabled: true
+    aliases: []
+  remove:
+    enabled: true
+    aliases: []
+  kraje:
+    enabled: true
+    aliases: []
+  olek:
+    enabled: true
+    aliases: []
+  statystyki:
+    enabled: true
+    aliases: []
+  warpy:
+    enabled: true
+    aliases: []
+  admin:
+    enabled: true
+    aliases: []
+  reload:
+    enabled: true
+    aliases: []
+  cleanup:
+    enabled: true
+    aliases: []
+  team:
+    enabled: true
+    aliases: []

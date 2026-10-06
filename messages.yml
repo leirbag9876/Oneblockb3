@@ -1,0 +1,1005 @@
+# Teksty i dźwięki używane przez wiadomości oraz interakcje pluginu.
+# Każda wiadomość może mieć:
+# text: pojedynczy tekst albo lista tekstów
+# use-prefix: czy dodać prefix pluginu
+# sound: dźwięk odtwarzany graczowi przy tej wiadomości
+#
+# Dźwięki wpisuj jako pełne klucze Minecrafta, np. minecraft:block.note_block.pling.
+# Ustaw enabled: false, jeżeli wiadomość ma nie odtwarzać dźwięku.
+prefix: '&b[OneBlock] &7'
+
+oneblock:
+  only-player:
+    text: 'Tę komendę może wykonać tylko gracz.'
+    sound:
+      enabled: false
+      name: 'minecraft:entity.villager.no'
+      volume: 1.0
+      pitch: 1.0
+  usage:
+    text: 'Użycie: &f/%label% create <nazwa> | /%label% tp | /%label% remove <nazwa> | /%label% team <help|list|invite|accept|reject|leave|kick|rank> | /%label% cleanup holograms'
+    sound:
+      enabled: true
+      name: 'minecraft:block.note_block.bass'
+      volume: 0.8
+      pitch: 0.8
+  create:
+    disabled:
+      text: 'Ta subkomenda jest wyłączona.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    prompt:
+      text: 'Wpisz tutaj nazwę wyspy.'
+      sound:
+        enabled: true
+        name: 'minecraft:block.note_block.pling'
+        volume: 0.8
+        pitch: 1.2
+    invalid-name:
+      text: 'Nazwa wyspy musi mieć 3-12 znaków. Użyj liter, cyfr, _ albo -.' 
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.7
+    name-taken:
+      text: 'Wyspa o nazwie &f%island_name% &7już istnieje.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    missing-world:
+      text: 'Nie znaleziono świata z config.yml: &foneblock.general.creation-worlds&7.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.7
+    missing-level:
+      text: 'Nie znaleziono levelu albo listy bloków w levels.yml.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.7
+    location-failed:
+      text: 'Nie udało się znaleźć wolnej lokalizacji dla wyspy.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.7
+    success:
+      text:
+        - 'Utworzono wyspę &f%island_name%&7.'
+        - 'Generator znajduje się w świecie &f%world% &7na &f%x%, %y%, %z%&7.'
+      sound:
+        enabled: true
+        name: 'minecraft:ui.toast.challenge_complete'
+        volume: 1.0
+        pitch: 1.0
+    already-has:
+      text: 'Masz już utworzoną wyspę! Możesz mieć tylko jedną wyspę.'   
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+  tp:
+    disabled:
+      text: 'Ta subkomenda jest wyłączona.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    no-island:
+      text: 'Nie masz jeszcze utworzonej wyspy!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.7
+    success:
+      text: 'Teleportowano na wyspę!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.enderman.teleport'
+        volume: 1.0
+        pitch: 1.0
+    fall:
+      text: 'Nie spadaj! Teleportowano z powrotem na wyspę!'
+      sound:
+        enabled: true
+        name: 'minecraft:block.note_block.pling'
+        volume: 0.8
+        pitch: 1.0
+  remove:
+    disabled:
+      text: 'Ta subkomenda jest wyłączona.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    usage:
+      text: 'Użycie: &f/oneblock remove <nazwa>'
+      sound:
+        enabled: true
+        name: 'minecraft:block.note_block.bass'
+        volume: 0.8
+        pitch: 0.8
+    not-found:
+      text: 'Wyspa &f%island_name%&7 nie istnieje.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    not-owner:
+      text: 'Nie jesteś właścicielem tej wyspy.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.7
+    failed:
+      text: 'Nie udało się usunąć wyspy.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.7
+    success:
+      text: 'Usunięto wyspę &f%island_name%&7.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.player.levelup'
+        volume: 1.0
+        pitch: 1.0
+  reload:
+    no-permission:
+      text: 'Nie masz permisji do tej komendy!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.7
+    usage:
+      text: 'Użycie: &f/oneblock reload oneblock'
+      sound:
+        enabled: true
+        name: 'minecraft:block.note_block.bass'
+        volume: 0.8
+        pitch: 0.8
+    invalid-target:
+      text: 'Nieprawidłowy cel: &f%target%&7. Użyj: &foneblock&7.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    success:
+      text: 'Konfiguracja pluginu OneBlock została pomyślnie przeładowana!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.player.levelup'
+        volume: 1.0
+        pitch: 1.0
+  cleanup:
+    started:
+      text: 'Rozpoczynam czyszczenie starych hologramów...'
+      sound:
+        enabled: false
+    done:
+      text: 'Czyszczenie hologramów zakończone.'
+      sound:
+        enabled: false
+    usage:
+      text: 'Użycie: /oneblock cleanup holograms'
+      sound:
+        enabled: false
+    no-permission:
+      text: 'Nie masz permisji do użycia tej komendy.'
+      sound:
+        enabled: false
+  team:
+    usage:
+      text:
+        - 'Użycie: /oneblock team <help|list|leave|invite|accept|reject|kick|rank>'
+        - 'Użyj /oneblock team help, aby zobaczyć dostępne polecenia.'
+      sound:
+        enabled: false
+    help:
+      text:
+        - '&eTeam commands:'
+        - '&f/oneblock team invite <nick> &7- zaproś gracza do swojej wyspy'
+        - '&f/oneblock team accept <nick|%island_name%> &7- zaakceptuj zaproszenie'
+        - '&f/oneblock team reject <nick|%island_name%> &7- odrzuć zaproszenie'
+        - '&f/oneblock team list &7- pokaż członków wyspy'
+        - '&f/oneblock team leave &7- opuść wyspę'
+        - '&f/oneblock team kick <nick> &7- wyrzuć członka (owner only)'
+        - '&f/oneblock team rank set <admin|helper|member> <nick> &7- ustaw rangę członka'
+      sound:
+        enabled: false
+    no-team:
+      text: 'Nie jesteś obecnie częścią żadnej wyspy.'
+      sound:
+        enabled: false
+    list:
+      header:
+        text: 'Wyspa: &f%island_name%'
+        sound:
+          enabled: false
+      owner:
+        text: 'Właściciel: &f%owner_name%'
+        sound:
+          enabled: false
+      member:
+        text: '&7- &f%member_name% &8(&e%role%&8)'
+        sound:
+          enabled: false
+    leave:
+      removed-owner:
+        text: 'Opuściłeś wyspę &f%island_name%&7. Wyspa została usunięta, ponieważ nie było innych członków.'
+        sound:
+          enabled: false
+      owner:
+        text: 'Przekazałeś własność wyspy &f%island_name%&7 i opuściłeś zespół.'
+        sound:
+          enabled: false
+      new-owner:
+        text: 'Zostałeś właścicielem wyspy &f%island_name%&7 po odejściu poprzedniego właściciela.'
+        sound:
+          enabled: false
+      success:
+        text: 'Opuściłeś wyspę &f%island_name%&7.'
+        sound:
+          enabled: false
+      failed:
+        text: 'Nie udało się opuścić wyspy.'
+        sound:
+          enabled: false
+      confirmation:
+        text: '&cCzy na pewno chcesz opuścić wyspę &f%island_name%&c?'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      confirmation-instruction:
+        text: '&7Potwierdź wpisując &f/oneblock team leave confirm&7.'
+        sound:
+          enabled: false
+      teleported-spawn:
+        text: '&aZostałeś teleportowany na spawn.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.enderman.teleport'
+          volume: 0.8
+          pitch: 1.0
+    invite:
+      usage:
+        text: 'Użycie: /oneblock team invite <nick>'
+        sound:
+          enabled: false
+      no-permission:
+        text: 'Tylko owner i admin mogą zapraszać graczy do wyspy.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      offline:
+        text: 'Gracz &f%player% &7nie jest online.'
+        sound:
+          enabled: false
+      sent:
+        text: 'Wysłano zaproszenie do &f%player%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.player.levelup'
+          volume: 0.8
+          pitch: 1.2
+      received:
+        text:
+          - '&eOtrzymałeś zaproszenie na wyspę &f%island_name%&7 od &f%player%&7.'
+          - '&eUżyj &f/oneblock team accept %island_name% &elub &f/oneblock team reject %island_name%&e.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.experience_orb.pickup'
+          volume: 0.8
+          pitch: 1.0
+      failed:
+        text: 'Nie udało się wysłać zaproszenia do &f%player%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+    accept:
+      usage:
+        text: 'Użycie: /oneblock team accept <nick>'
+        sound:
+          enabled: false
+      available-invites:
+        text: 'Otrzymałeś zaproszenia od: &f%pending_players%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.experience_orb.pickup'
+          volume: 0.8
+          pitch: 1.0
+      not-found:
+        text: 'Nie znaleziono zaproszenia od &f%target%&7.'
+        sound:
+          enabled: false
+      already-in-team:
+        text: 'Już należysz do wyspy i nie możesz zaakceptować nowego zaproszenia.'
+        sound:
+          enabled: false
+      success:
+        text: 'Dołączyłeś do wyspy &f%island_name%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.player.levelup'
+          volume: 0.8
+          pitch: 1.2
+      failed:
+        text: 'Nie udało się dołączyć do wyspy &f%island_name%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+    reject:
+      usage:
+        text: 'Użycie: /oneblock team reject <nick|%island_name%>'
+        sound:
+          enabled: false
+      not-found:
+        text: 'Nie znaleziono zaproszenia od &f%target%&7.'
+        sound:
+          enabled: false
+      success:
+        text: 'Odrzuciłeś zaproszenie na wyspę &f%island_name%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:block.note_block.pling'
+          volume: 0.8
+          pitch: 1.0
+      failed:
+        text: 'Nie udało się odrzucić zaproszenia do &f%island_name%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      notify:
+        text: '&f%player% &7odrzucił zaproszenie na twoją wyspę &f%island_name%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 0.8
+          pitch: 0.8
+    kick:
+      usage:
+        text: 'Użycie: /oneblock team kick <nick>'
+        sound:
+          enabled: false
+      no-permission:
+        text: 'Tylko właściciel wyspy może wyrzucać członków.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      not-found:
+        text: 'Nie znaleziono gracza &f%player% &7na wyspie.'
+        sound:
+          enabled: false
+      failed:
+        text: 'Nie udało się wyrzucić gracza &f%player%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      owner:
+        text: 'Nie możesz wyrzucić właściciela wyspy.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      success:
+        text: 'Wyrzucono gracza &f%player%&7 z wyspy.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.player.levelup'
+          volume: 0.8
+          pitch: 1.2
+      notify:
+        text: '&f%player% &7wyrzucił cię z wyspy &f%island_name%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.enderman.teleport'
+          volume: 0.8
+          pitch: 1.0
+    rank:
+      usage:
+        text: 'Użycie: /oneblock team rank set <admin|helper|member> <nick>'
+        sound:
+          enabled: false
+      not-found:
+        text: 'Nie znaleziono gracza &f%player% &7na wyspie.'
+        sound:
+          enabled: false
+      cannot-change-owner:
+        text: 'Nie możesz zmienić rangi właściciela wyspy.'
+        sound:
+          enabled: false
+      no-permission:
+        text: 'Nie masz permisji do zmiany rangi tego gracza.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      cannot-demote-self:
+        text: 'Nie możesz odebrać sobie rangi admina.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      failed:
+        text: 'Nie udało się zmienić rangi gracza &f%player%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      set:
+        text: 'Ustawiono rangę &f%role% &7dla gracza &f%player%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.player.levelup'
+          volume: 0.8
+          pitch: 1.2
+      changed:
+        text: 'Twoja ranga na wyspie &f%island_name% &7została zmieniona na &f%role%&7.'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.player.levelup'
+          volume: 0.8
+          pitch: 1.2
+  boss:
+    spawn-broadcast:
+      use-prefix: false
+      text:
+        - ''
+        - '&d&l✦ &5Olina &f pojawiła się na arenie! &d&l✦'
+        - '&7Zdrowie: &c%boss_hearts%❤ &7| Czas do zniknięcia: &e%boss_lifetime_remaining%'
+        - ''
+      sound:
+        enabled: true
+        name: 'minecraft:entity.wither.spawn'
+        volume: 0.6
+        pitch: 0.8
+    despawn-broadcast:
+      use-prefix: false
+      text: '&7Olina zniknęła z areny. Następny spawn za: &b%boss_respawn_remaining_time%'
+      sound:
+        enabled: false
+    countdown:
+      use-prefix: false
+      text: '&5Olina &f wzniesie się za &d%minutes% minut&7!'
+      sound:
+        enabled: true
+        name: 'minecraft:block.note_block.pling'
+        volume: 0.8
+        pitch: 1.0
+    form-change:
+      use-prefix: false
+      text: '%message%'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.evoker.prepare_attack'
+        volume: 0.7
+        pitch: 0.9
+    skill-knockback:
+      use-prefix: false
+      text: '&dOlina &7odrzuca pobliskich graczy!'
+      sound:
+        enabled: false
+    skill-lightning:
+      use-prefix: false
+      text: '&dOlina &7przywołuje błyskawice!'
+      sound:
+        enabled: false
+    skill-heal:
+      use-prefix: false
+      text: '&dOlina &7leczy swoje rany!'
+      sound:
+        enabled: false
+    skill-minions:
+      use-prefix: false
+      text: '&dOlina &7przywołuje pomocników!'
+      sound:
+        enabled: false
+    skill-homing:
+      use-prefix: false
+      text: '&dOlina &7wypuszcza magiczne pociski!'
+      sound:
+        enabled: false
+    skill-extreme:
+      use-prefix: false
+      text: '&5&lOlina uwalnia ostateczną moc!'
+      sound:
+        enabled: false
+    defeat-personal:
+      use-prefix: false
+      text: '&aOtrzymałeś nagrodę za udział w walce z Oliną: &f%reward_name%'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.player.levelup'
+        volume: 0.8
+        pitch: 1.2
+    defeat-no-reward:
+      use-prefix: false
+      text: '&7Zadałeś zbyt mało obrażeń (&c%damage_percent%%&7), aby otrzymać nagrodę. Wymagane minimum: &e%minimum_damage_percent%%&7.'
+      sound:
+        enabled: false
+    random-quote:
+      use-prefix: false
+      text: '%message%'
+      sound:
+        enabled: false
+  warps:
+    admin-no-permission:
+      text: 'Ta komenda jest dostępna tylko dla operatorów!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    warp-added:
+      text: 'Warp &f%warp_name% &7został dodany na twojej pozycji!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.player.levelup'
+        volume: 0.8
+        pitch: 1.2
+    warp-already-exists:
+      text: 'Warp o nazwie &f%warp_name% &7już istnieje!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    warp-removed:
+      text: 'Warp &f%warp_name% &7został usunięty!'
+      sound:
+        enabled: true
+        name: 'minecraft:block.note_block.pling'
+        volume: 0.8
+        pitch: 1.0
+    warp-not-found:
+      text: 'Warp o nazwie &f%warp_name% &7nie istnieje!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    warp-teleported:
+      text: 'Zostałeś teleportowany do warpa &f%warp_name%&7!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.enderman.teleport'
+        volume: 0.8
+        pitch: 1.0
+    teleport-warmup:
+      use-prefix: false
+      text: '&eTeleportacja za &c%seconds% &esekund...'
+      sound:
+        enabled: true
+    teleport-cooldown:
+      use-prefix: false
+      text: 'Musisz poczekać &c%seconds% &7sekund przed kolejną teleportacją!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    teleport-cancelled:
+      text: '&cTeleportacja anulowana — poruszyłeś się!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    warp-list-empty:
+      text: 'Brak dostępnych warpów!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    warp-list-header:
+      use-prefix: false
+      text: '&6&l--- Lista Warpów ---'
+      sound:
+        enabled: false
+    warp-list-item:
+      use-prefix: false
+      text: '&e%warp_name% &7- %world%, %x%, %y%, %z%'
+      sound:
+        enabled: false
+pay:
+  only-player:
+    text: 'Tę komendę może wykonać tylko gracz.'
+    sound:
+      enabled: false
+  no-permission:
+    text: 'Nie masz permisji do użycia tej komendy.'
+    sound:
+      enabled: true
+      name: 'minecraft:entity.villager.no'
+      volume: 1.0
+      pitch: 0.8
+  usage:
+    text: 'Użycie: &f/%label% <gracz> <kwota>'
+    sound:
+      enabled: true
+      name: 'minecraft:block.note_block.bass'
+      volume: 0.8
+      pitch: 0.8
+  currency-missing:
+    text: 'Waluta money nie jest dostępna.'
+    sound:
+      enabled: true
+      name: 'minecraft:entity.villager.no'
+      volume: 1.0
+      pitch: 0.8
+  player-not-found:
+    text: 'Gracz &f%player% &7musi byc online.'
+    sound:
+      enabled: true
+      name: 'minecraft:entity.villager.no'
+      volume: 1.0
+      pitch: 0.8
+  self:
+    text: 'Nie możesz przelać pieniędzy samemu sobie.'
+    sound:
+      enabled: true
+      name: 'minecraft:entity.villager.no'
+      volume: 1.0
+      pitch: 0.8
+  invalid-amount:
+    text: 'Kwota musi być liczbą dodatnią, minimum &f0.01&7.'
+    sound:
+      enabled: true
+      name: 'minecraft:entity.villager.no'
+      volume: 1.0
+      pitch: 0.8
+  not-enough-money:
+    text: 'Nie masz tylu pieniędzy. Chcesz przelać &f$%amount%&7, a masz &f$%balance%&7.'
+    sound:
+      enabled: true
+      name: 'minecraft:entity.villager.no'
+      volume: 1.0
+      pitch: 0.8
+  success:
+    text: 'Przelano &f$%amount% &7do &f%player%&7.'
+    sound:
+      enabled: true
+      name: 'minecraft:block.note_block.pling'
+      volume: 0.8
+      pitch: 1.2
+  received-actionbar:
+    text: '&aOtrzymałeś &f$%amount% &aod &e%sender%&a.'
+    use-prefix: false
+    sound:
+      enabled: false
+
+shop:
+  search:
+    prompt:
+      text: '&bWpisz na czacie nazwę albo początek nazwy przedmiotu.'
+      sound:
+        enabled: false
+    empty:
+      text: '&cNie znaleziono przedmiotów zaczynających się od &f%query%&c.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+  usage:
+    text: 'Użycie: /sklep [search|currency|booster|reload]'
+    sound:
+      enabled: false
+  buy:
+    success:
+      text: 'Pomyślnie kupiono przedmiot!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.player.levelup'
+        volume: 0.8
+        pitch: 1.2
+    failed:
+      text: 'Nie udało się kupić przedmiotu.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    no-item:
+      text: 'Nie wybrano przedmiotu do kupna.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    currency-not-found:
+      text: 'Waluta nie została znaleziona.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    insufficient-funds:
+      text: 'Nie masz wystarczającej ilości pieniędzy! Potrzebujesz: &c%needed%$&7, masz: &e%have%$&7.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    no-inventory-space:
+      text: 'Nie masz miejsca w ekwipunku!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+  sell:
+    success:
+      text: '&aPomyślnie sprzedano przedmiot za &7(x%booster_multiplier%) &f$%amount_money%&a!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.player.levelup'
+        volume: 0.8
+        pitch: 1.2
+    failed:
+      text: 'Nie udało się sprzedać przedmiotu.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    no-item:
+      text: 'Nie masz tego przedmiotu w ekwipunku.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+  sellall:
+    success:
+      use-prefix: false
+      text: '&7Sprzedano przedmioty za &7(x%booster_multiplier%) &a$%amount_money%&7!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.player.levelup'
+        volume: 0.8
+        pitch: 1.2
+    some-unsold:
+      use-prefix: false
+      text: '&e%item_count%&7 przedmiotów nie mogło zostać sprzedanych i zostało zwrócone do ekwipunku.'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+  currency:
+    usage:
+      text: 'Użycie: /sklep currency <add|remove|list|give|set>'
+      sound:
+        enabled: false
+    no-permission:
+      text: '&cNie masz uprawnień do tej komendy!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    add:
+      usage:
+        text: 'Użycie: /sklep currency add <nazwa> <display_name> [symbol] [starting_balance]'
+        sound:
+          enabled: false
+      success:
+        text: '&aWaluta &f%currency% &azostała dodana!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.player.levelup'
+          volume: 0.8
+          pitch: 1.2
+      exists:
+        text: '&cWaluta &f%currency% &cjuż istnieje!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+    remove:
+      usage:
+        text: 'Użycie: /sklep currency remove <nazwa>'
+        sound:
+          enabled: false
+      success:
+        text: '&aWaluta &f%currency% &azostała usunięta!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.player.levelup'
+          volume: 0.8
+          pitch: 1.2
+      not-found:
+        text: '&cWaluta &f%currency% &cnie istnieje!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+    list:
+      header:
+        text: '&6&l--- Lista Walut ---'
+        sound:
+          enabled: false
+    give:
+      usage:
+        text: 'Użycie: /sklep currency give <gracz> <waluta> <ilość>'
+        sound:
+          enabled: false
+      success:
+        text: '&aDałeś &f%amount% %currency% &adla gracza &f%player%&a!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.player.levelup'
+          volume: 0.8
+          pitch: 1.2
+      player-not-found:
+        text: '&cGracz &f%player% &cnie został znaleziony!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      currency-not-found:
+        text: '&cWaluta &f%currency% &cnie istnieje!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      invalid-amount:
+        text: '&cNieprawidłowa ilość!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+    set:
+      usage:
+        text: 'Użycie: /sklep currency set <gracz> <waluta> <ilość>'
+        sound:
+          enabled: false
+      success:
+        text: '&aUstawiono &f%amount% %currency% &adla gracza &f%player%&a!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.player.levelup'
+          volume: 0.8
+          pitch: 1.2
+  reload:
+    no-permission:
+      text: '&cNie masz uprawnień do przeładowania sklepu!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.villager.no'
+        volume: 1.0
+        pitch: 0.8
+    success:
+      text: '&aKonfiguracja sklepu została przeładowana!'
+      sound:
+        enabled: true
+        name: 'minecraft:entity.player.levelup'
+        volume: 0.8
+        pitch: 1.2
+currency:
+  usage:
+    text: 'Użycie: /shop booster <give|use> <gracz> <typ> <mnożnik> <czas>'
+    sound:
+      enabled: false
+  booster:
+    usage:
+      text: 'Użycie: /shop booster <give|use> <gracz> <typ> <mnożnik> <czas>'
+      sound:
+        enabled: false
+    give:
+      usage:
+        text: 'Użycie: /shop booster give <gracz> <typ> <mnożnik> <czas>'
+        sound:
+          enabled: false
+      no-permission:
+        text: '&cNie masz uprawnień do dawania boosterów!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      player-offline:
+        text: '&cGracz &f%player% &cjest offline!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      invalid-number:
+        text: '&cNieprawidłowa liczba!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      success:
+        text: '&aDałeś booster &f%type% &ax%multiplier% &fna &f%time% &fsekund dla gracza &f%player%&a!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.player.levelup'
+          volume: 0.8
+          pitch: 1.2
+      received:
+        text: '&aOtrzymałeś booster &f%type% &ax%multiplier% &fna &f%time% &fsekund!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.player.levelup'
+          volume: 0.8
+          pitch: 1.2
+    use:
+      usage:
+        text: 'Użycie: /shop booster use <gracz> <typ> <mnożnik> <czas>'
+        sound:
+          enabled: false
+      player-only:
+        text: '&cTa komenda jest tylko dla graczy!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      no-permission:
+        text: '&cNie masz uprawnień do używania boosterów!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      invalid-number:
+        text: '&cNieprawidłowa liczba!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.villager.no'
+          volume: 1.0
+          pitch: 0.8
+      success:
+        text: '&aAktywowano booster &f%type% &ax%multiplier% &fna &f%time% &fsekund!'
+        sound:
+          enabled: true
+          name: 'minecraft:entity.player.levelup'
+          volume: 0.8
+          pitch: 1.2

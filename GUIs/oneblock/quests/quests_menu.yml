@@ -1,0 +1,47 @@
+menu-title: "&6&lMenu misji"
+size: 27
+update-interval: 10
+
+items:
+  daily_quests:
+    slot: 11
+    material: CLOCK
+    name: "&a&lDzienne misje"
+    lore:
+      - "&7Kliknij aby otworzyć dzienne misje"
+    file: "GUIs/oneblock/quests/daily_quests.yml"
+    open-requirement:
+      requirement-placeholder: '%oneblock_current_island_level%'
+      requirement-operator: '>='
+      min-island-level: 5
+
+  playtime_quests:
+    slot: 13
+    material: WRITABLE_BOOK
+    name: "&b&lQuesty playtime"
+    lore:
+      - "&7Kliknij aby otworzyć questy playtime"
+    file: "GUIs/oneblock/quests/playtime_quests.yml"
+    open-requirement:
+      requirement-placeholder: '%oneblock_current_island_level%'
+      requirement-operator: '>='
+      min-island-level: 10
+
+  island_development_quests:
+    slot: 15
+    material: NETHER_STAR
+    name: "&6&lMisje rozwoju wyspy"
+    lore:
+      - "&7Kliknij aby otworzyć misje rozwoju wyspy"
+    file: "GUIs/oneblock/quests/island_development_quests.yml"
+    open-requirement:
+      requirement-placeholder: '%oneblock_current_island_level%'
+      requirement-operator: '>='
+      min-island-level: 10
+
+  close:
+    slot: 22
+    material: BARRIER
+    name: "&c&lWróć"
+    lore:
+      - "&7Kliknij aby wrócić do głównego menu"

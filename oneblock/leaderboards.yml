@@ -1,0 +1,37 @@
+menu-title: "&6&lRanking wysp"
+size: 54
+update-interval: 20
+
+# Kolejnosc sortowania wysp w menu. Kazdy wpis sortuje malejaco.
+sort-order:
+  - money
+  - activity_points
+  - blocks_mined
+
+items:
+  border:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+    slots: "0-9,17-18,26-27,35-36,44-53"
+
+  back:
+    material: BARRIER
+    slot: 45
+    name: "&c&lWróć"
+
+  info:
+    material: PAPER
+    slot: 49
+    name: "&e&lInformacje"
+    lore: []
+
+  islands:
+    material: "%owner_head%"
+    slots: "10-16,19-25,28-34,37-43"
+    name: "&e&l#%rank% &6%island_name%"
+    lore:
+      - ""
+      - "&7Właściciel: &f%owner%"
+      - "&7Łączna kasa wyspy: &a$%island_money%"
+      - "&7Punkty wkładu: &5%island_activity_points%"
+      - "&7Wykopane bloki: &e%island_blocks_mined%"

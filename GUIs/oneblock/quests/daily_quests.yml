@@ -1,0 +1,825 @@
+menu_title: "&a&lMisje dzienne"
+size: 54
+update_interval: 10
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - "0-8"
+      - "9,17,18,26,27,35"
+      - "36-39"
+      - "41-44"
+      - "46,47,49,51-53"
+    priority: 90
+    name: ""
+
+  quests_menu:
+    material: BARRIER
+    slot: 45
+    priority: 1
+    name: "&c&lWróć"
+    lore:
+      - "&7Kliknij, aby wrócić do menu misji."
+    file: "GUIs/oneblock/quests/quests_menu.yml"
+
+  easy_header:
+    material: LIME_DYE
+    slot: 2
+    priority: 1
+    name: "&a&lEASY"
+
+  medium_header:
+    material: ORANGE_DYE
+    slot: 4
+    priority: 1
+    name: "&6&lMEDIUM"
+
+  hard_header:
+    material: RED_DYE
+    slot: 6
+    priority: 1
+    name: "&c&lHARD"
+
+  easy_1_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 11
+    priority: 1
+    name: "&a&l%oneblock_daily_easy_1_name%"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - "&7%oneblock_daily_easy_1_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_easy_1_progress%"
+      - "&7Wymagane: &f%oneblock_daily_easy_1_required%"
+      - ""
+      - "&aNagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_daily_easy_1_claimed%"
+          output: "true"
+
+  easy_1_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 11
+    priority: 2
+    name: "&a&l%oneblock_daily_easy_1_name%"
+    lore:
+      - "&7%oneblock_daily_easy_1_description%"
+      - ""
+      - "&7Postęp: &a%oneblock_daily_easy_1_progress%"
+      - "&7Wymagane: &f%oneblock_daily_easy_1_required%"
+      - ""
+      - "&eLPM: odbierz nagrodę"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_daily_easy_1_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_easy_1_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock daily claim %oneblock_daily_easy_1_id%"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  easy_1_ready:
+    material: hdb-923
+    slot: 11
+    priority: 3
+    name: "&f&l%oneblock_daily_easy_1_name%"
+    lore:
+      - "&7%oneblock_daily_easy_1_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_easy_1_progress%"
+      - "&7Wymagane: &f%oneblock_daily_easy_1_required%"
+      - ""
+      - "&ePPM: przelosuj te misje"
+    view_requirement:
+      requirements:
+        not_completed:
+          type: string equals
+          input: "%oneblock_daily_easy_1_completed%"
+          output: "false"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_easy_1_claimed%"
+          output: "false"
+    right_click_commands:
+      - "[player] oneblock daily reroll %oneblock_daily_easy_1_id%"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  easy_2_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 20
+    priority: 1
+    name: "&a&l%oneblock_daily_easy_2_name%"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - "&7%oneblock_daily_easy_2_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_easy_2_progress%"
+      - "&7Wymagane: &f%oneblock_daily_easy_2_required%"
+      - ""
+      - "&aNagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_daily_easy_2_claimed%"
+          output: "true"
+
+  easy_2_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 20
+    priority: 2
+    name: "&a&l%oneblock_daily_easy_2_name%"
+    lore:
+      - "&7%oneblock_daily_easy_2_description%"
+      - ""
+      - "&7Postęp: &a%oneblock_daily_easy_2_progress%"
+      - "&7Wymagane: &f%oneblock_daily_easy_2_required%"
+      - ""
+      - "&eLPM: odbierz nagrodę"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_daily_easy_2_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_easy_2_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock daily claim %oneblock_daily_easy_2_id%"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  easy_2_ready:
+    material: hdb-923
+    slot: 20
+    priority: 3
+    name: "&f&l%oneblock_daily_easy_2_name%"
+    lore:
+      - "&7%oneblock_daily_easy_2_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_easy_2_progress%"
+      - "&7Wymagane: &f%oneblock_daily_easy_2_required%"
+      - ""
+      - "&ePPM: przelosuj te misje"
+    view_requirement:
+      requirements:
+        not_completed:
+          type: string equals
+          input: "%oneblock_daily_easy_2_completed%"
+          output: "false"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_easy_2_claimed%"
+          output: "false"
+    right_click_commands:
+      - "[player] oneblock daily reroll %oneblock_daily_easy_2_id%"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  easy_3_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 29
+    priority: 1
+    name: "&a&l%oneblock_daily_easy_3_name%"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - "&7%oneblock_daily_easy_3_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_easy_3_progress%"
+      - "&7Wymagane: &f%oneblock_daily_easy_3_required%"
+      - ""
+      - "&aNagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_daily_easy_3_claimed%"
+          output: "true"
+
+  easy_3_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 29
+    priority: 2
+    name: "&a&l%oneblock_daily_easy_3_name%"
+    lore:
+      - "&7%oneblock_daily_easy_3_description%"
+      - ""
+      - "&7Postęp: &a%oneblock_daily_easy_3_progress%"
+      - "&7Wymagane: &f%oneblock_daily_easy_3_required%"
+      - ""
+      - "&eLPM: odbierz nagrodę"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_daily_easy_3_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_easy_3_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock daily claim %oneblock_daily_easy_3_id%"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  easy_3_ready:
+    material: hdb-923
+    slot: 29
+    priority: 3
+    name: "&f&l%oneblock_daily_easy_3_name%"
+    lore:
+      - "&7%oneblock_daily_easy_3_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_easy_3_progress%"
+      - "&7Wymagane: &f%oneblock_daily_easy_3_required%"
+      - ""
+      - "&ePPM: przelosuj te misje"
+    view_requirement:
+      requirements:
+        not_completed:
+          type: string equals
+          input: "%oneblock_daily_easy_3_completed%"
+          output: "false"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_easy_3_claimed%"
+          output: "false"
+    right_click_commands:
+      - "[player] oneblock daily reroll %oneblock_daily_easy_3_id%"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  medium_1_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 13
+    priority: 1
+    name: "&a&l%oneblock_daily_medium_1_name%"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - "&7%oneblock_daily_medium_1_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_medium_1_progress%"
+      - "&7Wymagane: &f%oneblock_daily_medium_1_required%"
+      - ""
+      - "&aNagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_daily_medium_1_claimed%"
+          output: "true"
+
+  medium_1_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 13
+    priority: 2
+    name: "&a&l%oneblock_daily_medium_1_name%"
+    lore:
+      - "&7%oneblock_daily_medium_1_description%"
+      - ""
+      - "&7Postęp: &a%oneblock_daily_medium_1_progress%"
+      - "&7Wymagane: &f%oneblock_daily_medium_1_required%"
+      - ""
+      - "&eLPM: odbierz nagrodę"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_daily_medium_1_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_medium_1_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock daily claim %oneblock_daily_medium_1_id%"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  medium_1_ready:
+    material: hdb-924
+    slot: 13
+    priority: 3
+    name: "&f&l%oneblock_daily_medium_1_name%"
+    lore:
+      - "&7%oneblock_daily_medium_1_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_medium_1_progress%"
+      - "&7Wymagane: &f%oneblock_daily_medium_1_required%"
+      - ""
+      - "&ePPM: przelosuj te misje"
+    view_requirement:
+      requirements:
+        not_completed:
+          type: string equals
+          input: "%oneblock_daily_medium_1_completed%"
+          output: "false"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_medium_1_claimed%"
+          output: "false"
+    right_click_commands:
+      - "[player] oneblock daily reroll %oneblock_daily_medium_1_id%"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  medium_2_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 22
+    priority: 1
+    name: "&a&l%oneblock_daily_medium_2_name%"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - "&7%oneblock_daily_medium_2_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_medium_2_progress%"
+      - "&7Wymagane: &f%oneblock_daily_medium_2_required%"
+      - ""
+      - "&aNagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_daily_medium_2_claimed%"
+          output: "true"
+
+  medium_2_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 22
+    priority: 2
+    name: "&a&l%oneblock_daily_medium_2_name%"
+    lore:
+      - "&7%oneblock_daily_medium_2_description%"
+      - ""
+      - "&7Postęp: &a%oneblock_daily_medium_2_progress%"
+      - "&7Wymagane: &f%oneblock_daily_medium_2_required%"
+      - ""
+      - "&eLPM: odbierz nagrodę"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_daily_medium_2_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_medium_2_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock daily claim %oneblock_daily_medium_2_id%"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  medium_2_ready:
+    material: hdb-924
+    slot: 22
+    priority: 3
+    name: "&f&l%oneblock_daily_medium_2_name%"
+    lore:
+      - "&7%oneblock_daily_medium_2_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_medium_2_progress%"
+      - "&7Wymagane: &f%oneblock_daily_medium_2_required%"
+      - ""
+      - "&ePPM: przelosuj te misje"
+    view_requirement:
+      requirements:
+        not_completed:
+          type: string equals
+          input: "%oneblock_daily_medium_2_completed%"
+          output: "false"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_medium_2_claimed%"
+          output: "false"
+    right_click_commands:
+      - "[player] oneblock daily reroll %oneblock_daily_medium_2_id%"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  medium_3_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 31
+    priority: 1
+    name: "&a&l%oneblock_daily_medium_3_name%"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - "&7%oneblock_daily_medium_3_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_medium_3_progress%"
+      - "&7Wymagane: &f%oneblock_daily_medium_3_required%"
+      - ""
+      - "&aNagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_daily_medium_3_claimed%"
+          output: "true"
+
+  medium_3_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 31
+    priority: 2
+    name: "&a&l%oneblock_daily_medium_3_name%"
+    lore:
+      - "&7%oneblock_daily_medium_3_description%"
+      - ""
+      - "&7Postęp: &a%oneblock_daily_medium_3_progress%"
+      - "&7Wymagane: &f%oneblock_daily_medium_3_required%"
+      - ""
+      - "&eLPM: odbierz nagrodę"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_daily_medium_3_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_medium_3_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock daily claim %oneblock_daily_medium_3_id%"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  medium_3_ready:
+    material: hdb-924
+    slot: 31
+    priority: 3
+    name: "&f&l%oneblock_daily_medium_3_name%"
+    lore:
+      - "&7%oneblock_daily_medium_3_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_medium_3_progress%"
+      - "&7Wymagane: &f%oneblock_daily_medium_3_required%"
+      - ""
+      - "&ePPM: przelosuj te misje"
+    view_requirement:
+      requirements:
+        not_completed:
+          type: string equals
+          input: "%oneblock_daily_medium_3_completed%"
+          output: "false"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_medium_3_claimed%"
+          output: "false"
+    right_click_commands:
+      - "[player] oneblock daily reroll %oneblock_daily_medium_3_id%"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  hard_1_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 15
+    priority: 1
+    name: "&a&l%oneblock_daily_hard_1_name%"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - "&7%oneblock_daily_hard_1_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_hard_1_progress%"
+      - "&7Wymagane: &f%oneblock_daily_hard_1_required%"
+      - ""
+      - "&aNagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_daily_hard_1_claimed%"
+          output: "true"
+
+  hard_1_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 15
+    priority: 2
+    name: "&a&l%oneblock_daily_hard_1_name%"
+    lore:
+      - "&7%oneblock_daily_hard_1_description%"
+      - ""
+      - "&7Postęp: &a%oneblock_daily_hard_1_progress%"
+      - "&7Wymagane: &f%oneblock_daily_hard_1_required%"
+      - ""
+      - "&eLPM: odbierz nagrodę"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_daily_hard_1_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_hard_1_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock daily claim %oneblock_daily_hard_1_id%"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  hard_1_ready:
+    material: hdb-7556
+    slot: 15
+    priority: 3
+    name: "&f&l%oneblock_daily_hard_1_name%"
+    lore:
+      - "&7%oneblock_daily_hard_1_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_hard_1_progress%"
+      - "&7Wymagane: &f%oneblock_daily_hard_1_required%"
+      - ""
+      - "&ePPM: przelosuj te misje"
+    view_requirement:
+      requirements:
+        not_completed:
+          type: string equals
+          input: "%oneblock_daily_hard_1_completed%"
+          output: "false"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_hard_1_claimed%"
+          output: "false"
+    right_click_commands:
+      - "[player] oneblock daily reroll %oneblock_daily_hard_1_id%"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  hard_2_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 24
+    priority: 1
+    name: "&a&l%oneblock_daily_hard_2_name%"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - "&7%oneblock_daily_hard_2_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_hard_2_progress%"
+      - "&7Wymagane: &f%oneblock_daily_hard_2_required%"
+      - ""
+      - "&aNagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_daily_hard_2_claimed%"
+          output: "true"
+
+  hard_2_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 24
+    priority: 2
+    name: "&a&l%oneblock_daily_hard_2_name%"
+    lore:
+      - "&7%oneblock_daily_hard_2_description%"
+      - ""
+      - "&7Postęp: &a%oneblock_daily_hard_2_progress%"
+      - "&7Wymagane: &f%oneblock_daily_hard_2_required%"
+      - ""
+      - "&eLPM: odbierz nagrodę"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_daily_hard_2_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_hard_2_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock daily claim %oneblock_daily_hard_2_id%"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  hard_2_ready:
+    material: hdb-7556
+    slot: 24
+    priority: 3
+    name: "&f&l%oneblock_daily_hard_2_name%"
+    lore:
+      - "&7%oneblock_daily_hard_2_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_hard_2_progress%"
+      - "&7Wymagane: &f%oneblock_daily_hard_2_required%"
+      - ""
+      - "&ePPM: przelosuj te misje"
+    view_requirement:
+      requirements:
+        not_completed:
+          type: string equals
+          input: "%oneblock_daily_hard_2_completed%"
+          output: "false"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_hard_2_claimed%"
+          output: "false"
+    right_click_commands:
+      - "[player] oneblock daily reroll %oneblock_daily_hard_2_id%"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  hard_3_claimed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 33
+    priority: 1
+    name: "&a&l%oneblock_daily_hard_3_name%"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - "&7%oneblock_daily_hard_3_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_hard_3_progress%"
+      - "&7Wymagane: &f%oneblock_daily_hard_3_required%"
+      - ""
+      - "&aNagroda odebrana"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_daily_hard_3_claimed%"
+          output: "true"
+
+  hard_3_completed:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 33
+    priority: 2
+    name: "&a&l%oneblock_daily_hard_3_name%"
+    lore:
+      - "&7%oneblock_daily_hard_3_description%"
+      - ""
+      - "&7Postęp: &a%oneblock_daily_hard_3_progress%"
+      - "&7Wymagane: &f%oneblock_daily_hard_3_required%"
+      - ""
+      - "&eLPM: odbierz nagrodę"
+    view_requirement:
+      requirements:
+        completed:
+          type: string equals
+          input: "%oneblock_daily_hard_3_completed%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_hard_3_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock daily claim %oneblock_daily_hard_3_id%"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  hard_3_ready:
+    material: hdb-7556
+    slot: 33
+    priority: 3
+    name: "&f&l%oneblock_daily_hard_3_name%"
+    lore:
+      - "&7%oneblock_daily_hard_3_description%"
+      - ""
+      - "&7Postęp: &f%oneblock_daily_hard_3_progress%"
+      - "&7Wymagane: &f%oneblock_daily_hard_3_required%"
+      - ""
+      - "&ePPM: przelosuj te misje"
+    view_requirement:
+      requirements:
+        not_completed:
+          type: string equals
+          input: "%oneblock_daily_hard_3_completed%"
+          output: "false"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_hard_3_claimed%"
+          output: "false"
+    right_click_commands:
+      - "[player] oneblock daily reroll %oneblock_daily_hard_3_id%"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[refresh]"
+
+  bonus_claimed:
+    material: NETHER_STAR
+    slot: 40
+    priority: 1
+    name: "&a&lPostęp dzienny"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - "&7Ukończone zadania: &f%oneblock_daily_progress%"
+      - ""
+      - "&aBonus odebrany"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string equals
+          input: "%oneblock_daily_bonus_claimed%"
+          output: "true"
+
+  bonus_ready:
+    material: NETHER_STAR
+    slot: 40
+    priority: 2
+    name: "&a&lPostęp dzienny"
+    enchantments:
+      - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+      - "&7Ukończone zadania: &f%oneblock_daily_progress%"
+      - ""
+      - "&eKliknij, aby odebrać bonus"
+    view_requirement:
+      requirements:
+        available:
+          type: string equals
+          input: "%oneblock_daily_bonus_available%"
+          output: "true"
+        not_claimed:
+          type: string equals
+          input: "%oneblock_daily_bonus_claimed%"
+          output: "false"
+    left_click_commands:
+      - "[player] oneblock daily bonus"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[refresh]"
+
+  bonus_locked:
+    material: NETHER_STAR
+    slot: 40
+    priority: 3
+    name: "&f&lPostęp dzienny"
+    lore:
+      - "&7Ukończone zadania: &f%oneblock_daily_progress%"
+      - ""
+      - "&7Ukończ wszystkie zadania,"
+      - "&7aby odebrać dodatkową nagrodę."
+
+  reroll_available:
+    material: ENDER_PEARL
+    slot: 48
+    priority: 1
+    name: "&b&lDarmowy reroll"
+    lore:
+      - "&7Status: &aDostępny"
+      - ""
+      - "&7Kliknij &fPPM &7na wybranej"
+      - "&7nieukończonej misji."
+    view_requirement:
+      requirements:
+        available:
+          type: string equals
+          input: "%oneblock_daily_reroll_available%"
+          output: "true"
+
+  reroll_used:
+    material: ENDER_EYE
+    slot: 48
+    priority: 2
+    name: "&7&lDarmowy reroll"
+    lore:
+      - "&7Status: &cWykorzystany"
+      - ""
+      - "&7Kolejny będzie po resecie."
+    view_requirement:
+      requirements:
+        unavailable:
+          type: string equals
+          input: "%oneblock_daily_reroll_available%"
+          output: "false"
+
+  reset_time:
+    material: CLOCK
+    slot: 50
+    priority: 1
+    update: true
+    name: "&e&lCodzienny reset"
+    lore:
+      - "&7Następne misje za: &b%oneblock_daily_reset_time%"

@@ -1,0 +1,31 @@
+enabled: true
+timezone: "Europe/Warsaw"
+
+reset:
+  enabled: false
+  day: MONDAY
+  hour: 0
+  minute: 0
+
+quests:
+  easy: 10
+  medium: 10
+  hard: 8
+
+reroll:
+  enabled: false
+  free-per-week: 0
+
+completion-bonuses:
+  10:
+    rewards:
+      commands:
+        - ""
+  20:
+    rewards:
+      commands:
+        - ""
+  28:
+    rewards:
+      commands:
+        - ""

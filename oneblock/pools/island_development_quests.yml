@@ -1,0 +1,527 @@
+# 75 propozycji misji do wykorzystania przez plugin OneBlock.
+# Możesz zmieniać kolejność/target bez ruszania logiki DeluxeMenus.
+mission-pool:
+  break_oneblock_1:
+    name: "Wykop bloki OneBlock 1"
+    type: BLOCK_BREAK_ONEBLOCK
+    target: 250
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_break_oneblock_1_progress%"
+
+  break_oneblock_2:
+    name: "Wykop bloki OneBlock 2"
+    type: BLOCK_BREAK_ONEBLOCK
+    target: 500
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_break_oneblock_2_progress%"
+
+  break_oneblock_3:
+    name: "Wykop bloki OneBlock 3"
+    type: BLOCK_BREAK_ONEBLOCK
+    target: 1000
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_break_oneblock_3_progress%"
+
+  break_oneblock_4:
+    name: "Wykop bloki OneBlock 4"
+    type: BLOCK_BREAK_ONEBLOCK
+    target: 2500
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_break_oneblock_4_progress%"
+
+  break_oneblock_5:
+    name: "Wykop bloki OneBlock 5"
+    type: BLOCK_BREAK_ONEBLOCK
+    target: 5000
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_break_oneblock_5_progress%"
+
+  sell_items_1:
+    name: "Sprzedaj przedmioty 1"
+    type: SELL_ITEMS
+    target: 250
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_sell_items_1_progress%"
+
+  sell_items_2:
+    name: "Sprzedaj przedmioty 2"
+    type: SELL_ITEMS
+    target: 500
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_sell_items_2_progress%"
+
+  sell_items_3:
+    name: "Sprzedaj przedmioty 3"
+    type: SELL_ITEMS
+    target: 1000
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_sell_items_3_progress%"
+
+  sell_items_4:
+    name: "Sprzedaj przedmioty 4"
+    type: SELL_ITEMS
+    target: 2500
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_sell_items_4_progress%"
+
+  sell_items_5:
+    name: "Sprzedaj przedmioty 5"
+    type: SELL_ITEMS
+    target: 5000
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_sell_items_5_progress%"
+
+  earn_sales_1:
+    name: "Zarób ze sprzedaży 1"
+    type: EARN_FROM_SELL
+    target: 2500
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_earn_sales_1_progress%"
+
+  earn_sales_2:
+    name: "Zarób ze sprzedaży 2"
+    type: EARN_FROM_SELL
+    target: 5000
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_earn_sales_2_progress%"
+
+  earn_sales_3:
+    name: "Zarób ze sprzedaży 3"
+    type: EARN_FROM_SELL
+    target: 10000
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_earn_sales_3_progress%"
+
+  earn_sales_4:
+    name: "Zarób ze sprzedaży 4"
+    type: EARN_FROM_SELL
+    target: 25000
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_earn_sales_4_progress%"
+
+  earn_sales_5:
+    name: "Zarób ze sprzedaży 5"
+    type: EARN_FROM_SELL
+    target: 50000
+    suggested-upgrade-points: 1
+    progress-placeholder: "%oneblock_mission_earn_sales_5_progress%"
+
+  kill_hostile_1:
+    name: "Zabij wrogie moby 1"
+    type: KILL_HOSTILE_MOBS
+    target: 50
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_kill_hostile_1_progress%"
+
+  kill_hostile_2:
+    name: "Zabij wrogie moby 2"
+    type: KILL_HOSTILE_MOBS
+    target: 100
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_kill_hostile_2_progress%"
+
+  kill_hostile_3:
+    name: "Zabij wrogie moby 3"
+    type: KILL_HOSTILE_MOBS
+    target: 200
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_kill_hostile_3_progress%"
+
+  kill_hostile_4:
+    name: "Zabij wrogie moby 4"
+    type: KILL_HOSTILE_MOBS
+    target: 500
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_kill_hostile_4_progress%"
+
+  kill_hostile_5:
+    name: "Zabij wrogie moby 5"
+    type: KILL_HOSTILE_MOBS
+    target: 1000
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_kill_hostile_5_progress%"
+
+  collect_items_1:
+    name: "Zbierz przedmioty 1"
+    type: COLLECT_ITEMS
+    target: 500
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_collect_items_1_progress%"
+
+  collect_items_2:
+    name: "Zbierz przedmioty 2"
+    type: COLLECT_ITEMS
+    target: 1000
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_collect_items_2_progress%"
+
+  collect_items_3:
+    name: "Zbierz przedmioty 3"
+    type: COLLECT_ITEMS
+    target: 2500
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_collect_items_3_progress%"
+
+  collect_items_4:
+    name: "Zbierz przedmioty 4"
+    type: COLLECT_ITEMS
+    target: 5000
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_collect_items_4_progress%"
+
+  collect_items_5:
+    name: "Zbierz przedmioty 5"
+    type: COLLECT_ITEMS
+    target: 10000
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_collect_items_5_progress%"
+
+  harvest_crops_1:
+    name: "Zbierz plony 1"
+    type: HARVEST_CROPS
+    target: 250
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_harvest_crops_1_progress%"
+
+  harvest_crops_2:
+    name: "Zbierz plony 2"
+    type: HARVEST_CROPS
+    target: 750
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_harvest_crops_2_progress%"
+
+  harvest_crops_3:
+    name: "Zbierz plony 3"
+    type: HARVEST_CROPS
+    target: 1500
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_harvest_crops_3_progress%"
+
+  harvest_crops_4:
+    name: "Zbierz plony 4"
+    type: HARVEST_CROPS
+    target: 3000
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_harvest_crops_4_progress%"
+
+  harvest_crops_5:
+    name: "Zbierz plony 5"
+    type: HARVEST_CROPS
+    target: 7500
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_harvest_crops_5_progress%"
+
+  breed_animals_1:
+    name: "Rozmnóż zwierzęta 1"
+    type: BREED_ANIMALS
+    target: 25
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_breed_animals_1_progress%"
+
+  breed_animals_2:
+    name: "Rozmnóż zwierzęta 2"
+    type: BREED_ANIMALS
+    target: 50
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_breed_animals_2_progress%"
+
+  breed_animals_3:
+    name: "Rozmnóż zwierzęta 3"
+    type: BREED_ANIMALS
+    target: 100
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_breed_animals_3_progress%"
+
+  breed_animals_4:
+    name: "Rozmnóż zwierzęta 4"
+    type: BREED_ANIMALS
+    target: 200
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_breed_animals_4_progress%"
+
+  breed_animals_5:
+    name: "Rozmnóż zwierzęta 5"
+    type: BREED_ANIMALS
+    target: 400
+    suggested-upgrade-points: 2
+    progress-placeholder: "%oneblock_mission_breed_animals_5_progress%"
+
+  smelt_items_1:
+    name: "Przetop przedmioty 1"
+    type: SMELT_ITEMS
+    target: 250
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_smelt_items_1_progress%"
+
+  smelt_items_2:
+    name: "Przetop przedmioty 2"
+    type: SMELT_ITEMS
+    target: 500
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_smelt_items_2_progress%"
+
+  smelt_items_3:
+    name: "Przetop przedmioty 3"
+    type: SMELT_ITEMS
+    target: 1000
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_smelt_items_3_progress%"
+
+  smelt_items_4:
+    name: "Przetop przedmioty 4"
+    type: SMELT_ITEMS
+    target: 2500
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_smelt_items_4_progress%"
+
+  smelt_items_5:
+    name: "Przetop przedmioty 5"
+    type: SMELT_ITEMS
+    target: 5000
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_smelt_items_5_progress%"
+
+  break_logs_1:
+    name: "Zetnij kłody 1"
+    type: BREAK_LOGS
+    target: 250
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_break_logs_1_progress%"
+
+  break_logs_2:
+    name: "Zetnij kłody 2"
+    type: BREAK_LOGS
+    target: 500
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_break_logs_2_progress%"
+
+  break_logs_3:
+    name: "Zetnij kłody 3"
+    type: BREAK_LOGS
+    target: 1000
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_break_logs_3_progress%"
+
+  break_logs_4:
+    name: "Zetnij kłody 4"
+    type: BREAK_LOGS
+    target: 2500
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_break_logs_4_progress%"
+
+  break_logs_5:
+    name: "Zetnij kłody 5"
+    type: BREAK_LOGS
+    target: 5000
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_break_logs_5_progress%"
+
+  fish_1:
+    name: "Złów ryby 1"
+    type: CATCH_FISH
+    target: 25
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_fish_1_progress%"
+
+  fish_2:
+    name: "Złów ryby 2"
+    type: CATCH_FISH
+    target: 50
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_fish_2_progress%"
+
+  fish_3:
+    name: "Złów ryby 3"
+    type: CATCH_FISH
+    target: 100
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_fish_3_progress%"
+
+  fish_4:
+    name: "Złów ryby 4"
+    type: CATCH_FISH
+    target: 200
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_fish_4_progress%"
+
+  fish_5:
+    name: "Złów ryby 5"
+    type: CATCH_FISH
+    target: 350
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_fish_5_progress%"
+
+  craft_items_1:
+    name: "Wytwórz przedmioty 1"
+    type: CRAFT_ITEMS
+    target: 250
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_craft_items_1_progress%"
+
+  craft_items_2:
+    name: "Wytwórz przedmioty 2"
+    type: CRAFT_ITEMS
+    target: 500
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_craft_items_2_progress%"
+
+  craft_items_3:
+    name: "Wytwórz przedmioty 3"
+    type: CRAFT_ITEMS
+    target: 1000
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_craft_items_3_progress%"
+
+  craft_items_4:
+    name: "Wytwórz przedmioty 4"
+    type: CRAFT_ITEMS
+    target: 2500
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_craft_items_4_progress%"
+
+  craft_items_5:
+    name: "Wytwórz przedmioty 5"
+    type: CRAFT_ITEMS
+    target: 5000
+    suggested-upgrade-points: 3
+    progress-placeholder: "%oneblock_mission_craft_items_5_progress%"
+
+  gain_xp_1:
+    name: "Zdobądź poziomy XP 1"
+    type: GAIN_XP_LEVELS
+    target: 10
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_gain_xp_1_progress%"
+
+  gain_xp_2:
+    name: "Zdobądź poziomy XP 2"
+    type: GAIN_XP_LEVELS
+    target: 25
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_gain_xp_2_progress%"
+
+  gain_xp_3:
+    name: "Zdobądź poziomy XP 3"
+    type: GAIN_XP_LEVELS
+    target: 50
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_gain_xp_3_progress%"
+
+  gain_xp_4:
+    name: "Zdobądź poziomy XP 4"
+    type: GAIN_XP_LEVELS
+    target: 100
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_gain_xp_4_progress%"
+
+  gain_xp_5:
+    name: "Zdobądź poziomy XP 5"
+    type: GAIN_XP_LEVELS
+    target: 200
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_gain_xp_5_progress%"
+
+  eat_items_1:
+    name: "Zjedz jedzenie 1"
+    type: EAT_ITEMS
+    target: 50
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_eat_items_1_progress%"
+
+  eat_items_2:
+    name: "Zjedz jedzenie 2"
+    type: EAT_ITEMS
+    target: 100
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_eat_items_2_progress%"
+
+  eat_items_3:
+    name: "Zjedz jedzenie 3"
+    type: EAT_ITEMS
+    target: 250
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_eat_items_3_progress%"
+
+  eat_items_4:
+    name: "Zjedz jedzenie 4"
+    type: EAT_ITEMS
+    target: 500
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_eat_items_4_progress%"
+
+  eat_items_5:
+    name: "Zjedz jedzenie 5"
+    type: EAT_ITEMS
+    target: 1000
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_eat_items_5_progress%"
+
+  place_blocks_1:
+    name: "Postaw bloki 1"
+    type: PLACE_BLOCKS
+    target: 250
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_place_blocks_1_progress%"
+
+  place_blocks_2:
+    name: "Postaw bloki 2"
+    type: PLACE_BLOCKS
+    target: 500
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_place_blocks_2_progress%"
+
+  place_blocks_3:
+    name: "Postaw bloki 3"
+    type: PLACE_BLOCKS
+    target: 1000
+    suggested-upgrade-points: 4
+    progress-placeholder: "%oneblock_mission_place_blocks_3_progress%"
+
+  place_blocks_4:
+    name: "Postaw bloki 4"
+    type: PLACE_BLOCKS
+    target: 2500
+    suggested-upgrade-points: 5
+    progress-placeholder: "%oneblock_mission_place_blocks_4_progress%"
+
+  place_blocks_5:
+    name: "Postaw bloki 5"
+    type: PLACE_BLOCKS
+    target: 5000
+    suggested-upgrade-points: 5
+    progress-placeholder: "%oneblock_mission_place_blocks_5_progress%"
+
+  kill_passive_1:
+    name: "Zabij pasywne moby 1"
+    type: KILL_PASSIVE_MOBS
+    target: 25
+    suggested-upgrade-points: 5
+    progress-placeholder: "%oneblock_mission_kill_passive_1_progress%"
+
+  kill_passive_2:
+    name: "Zabij pasywne moby 2"
+    type: KILL_PASSIVE_MOBS
+    target: 50
+    suggested-upgrade-points: 5
+    progress-placeholder: "%oneblock_mission_kill_passive_2_progress%"
+
+  kill_passive_3:
+    name: "Zabij pasywne moby 3"
+    type: KILL_PASSIVE_MOBS
+    target: 100
+    suggested-upgrade-points: 5
+    progress-placeholder: "%oneblock_mission_kill_passive_3_progress%"
+
+  kill_passive_4:
+    name: "Zabij pasywne moby 4"
+    type: KILL_PASSIVE_MOBS
+    target: 250
+    suggested-upgrade-points: 5
+    progress-placeholder: "%oneblock_mission_kill_passive_4_progress%"
+
+  kill_passive_5:
+    name: "Zabij pasywne moby 5"
+    type: KILL_PASSIVE_MOBS
+    target: 500
+    suggested-upgrade-points: 5
+    progress-placeholder: "%oneblock_mission_kill_passive_5_progress%"

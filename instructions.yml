@@ -1,0 +1,487 @@
+  Okej, chcę teraz, abyś zaimplementował system ustawień wyspy i wykorzystał istniejący plik `settings.yml`.
+
+  NAJPIERW przeanalizuj aktualny projekt:
+    - system wysp,
+    - klasy wyspy i członków,
+    - istniejące rangi/role wyspy,
+    - istniejące GUI,
+    - system ładowania plików YAML,
+    - komendy,
+    - listenery InventoryClickEvent,
+    - sposób zapisywania danych wyspy.
+    
+    Nie twórz drugiego, konkurencyjnego systemu rang ani wysp. Wykorzystaj istniejące klasy i dane projektu.
+    
+    ==================================================
+    1. MENU USTAWIEŃ WYSPY
+    ==================================================
+    
+    Stwórz/uzupełnij `settings.yml`, który będzie odpowiadał za GUI ustawień wyspy.
+
+  Menu:
+    - size: 54
+    - ustawienia dotyczą CAŁEJ wyspy, a nie konkretnego gracza,
+    - wartości ustawień muszą być zapisywane osobno dla każdej wyspy,
+    - ustawienia muszą przetrwać restart serwera.
+
+    Menu ustawień może otworzyć TYLKO właściciel wyspy (OWNER).
+
+  Jeżeli jakikolwiek inny członek wyspy spróbuje otworzyć menu:
+    1. GUI nie może się otworzyć albo jeżeli zostało już otwarte, ma zostać natychmiast zamknięte,
+  2. gracz ma otrzymać wiadomość, np.:
+    "&cTylko właściciel wyspy może zarządzać ustawieniami wyspy!"
+
+  UWAGA:
+    Na tym etapie OWNER jest jedyną osobą mogącą EDYTOWAĆ ustawienia.
+    Rangi wyświetlane wewnątrz poszczególnych ustawień określają natomiast, kto może wykonywać daną czynność na wyspie.
+    
+    ==================================================
+    2. SYSTEM RANG W USTAWIENIACH
+    ==================================================
+    
+    Najważniejszą częścią systemu ma być wybór minimalnej rangi wyspy wymaganej do wykonania określonej czynności.
+    
+    Nie chcę zwykłych ustawień ON/OFF.
+    
+    Każde ustawienie ma posiadać wartość będącą rangą/rolą wyspy.
+    
+    Najpierw sprawdź, jakie dokładnie rangi istnieją już w projekcie i użyj ich nazw oraz hierarchii.
+
+  Jeżeli aktualny system posiada przykładowo:
+
+    OWNER
+    ADMIN
+    MODERATOR
+    MEMBER
+    VISITOR
+    
+    to NIE twórz nowych odpowiedników tych rang.
+    
+    System musi znać ich kolejność od najwyższej do najniższej.
+
+  Przykładowa hierarchia:
+
+    OWNER
+    ADMIN
+    MODERATOR
+    MEMBER
+    VISITOR
+    
+    W dalszej części polecenia używam tych nazw tylko jako przykładu. Dopasuj je do faktycznych rang istniejących w projekcie.
+    
+    ==================================================
+    3. WYŚWIETLANIE WYBRANEJ RANGI W LORE
+    ==================================================
+
+  Po najechaniu kursorem na dane ustawienie gracz ma widzieć:
+
+    - nazwę ustawienia,
+    - opis ustawienia,
+    - pustą linię,
+    - nagłówek np. "&7Minimalna ranga:",
+    - WSZYSTKIE dostępne rangi wyspy ułożone pionowo zgodnie z hierarchią,
+    - aktualnie wybraną rangę wyraźnie zaznaczoną.
+
+  Przykład dla ustawienia "Niszczenie bloków", gdy wybrany jest MODERATOR:
+
+    &6&lNiszczenie bloków
+    
+    &7Określa minimalną rangę,
+    &7która może niszczyć bloki
+    &7na wyspie.
+
+  &8Minimalna ranga:
+    &7  Właściciel
+    &7  Administrator
+    &e➜ Moderator
+    &7  Członek
+    &7  Gość
+
+    &8LPM &7- wyższa ranga
+    &8PPM &7- niższa ranga
+
+  Aktualnie wybrana pozycja MUSI wyróżniać się od pozostałych, np.:
+    &e➜ Moderator
+    
+    Pozostałe mogą być szare.
+    
+    Chcę uzyskać efekt podobny do edytorów GUI w pluginach, gdzie kliknięciami przewija się kolejne dostępne wartości.
+    
+    ==================================================
+    4. OBSŁUGA LEWEGO I PRAWEGO KLIKNIĘCIA
+    ==================================================
+    
+    Kliknięcie w ikonę ustawienia NIE może otwierać kolejnego GUI.
+    
+    Ma bezpośrednio zmieniać wybraną rangę.
+
+  LEFT CLICK / LPM:
+    przesuwa zaznaczenie o JEDNĄ pozycję W GÓRĘ hierarchii.
+
+  RIGHT CLICK / PPM:
+    przesuwa zaznaczenie o JEDNĄ pozycję W DÓŁ hierarchii.
+
+  Przykład:
+
+  Hierarchia:
+    OWNER
+    ADMIN
+    MODERATOR
+    MEMBER
+    VISITOR
+
+  Aktualna wartość:
+    MODERATOR
+
+  LPM:
+    MODERATOR -> ADMIN
+
+  kolejny LPM:
+    ADMIN -> OWNER
+
+  PPM:
+    OWNER -> ADMIN
+
+  kolejny PPM:
+    ADMIN -> MODERATOR
+    
+    itd.
+    
+    Każde kliknięcie zmienia wartość TYLKO O JEDNĄ pozycję.
+    
+    ==================================================
+    5. ZACHOWANIE NA KOŃCACH LISTY
+    ==================================================
+    
+    System nie może wyjść poza listę rang.
+
+  Jeżeli zaznaczony jest OWNER i gracz kliknie LPM:
+    - wartość pozostaje OWNER,
+    - można odtworzyć krótki dźwięk odmowy.
+
+  Jeżeli zaznaczona jest najniższa ranga i gracz kliknie PPM:
+    - wartość pozostaje na najniższej randze,
+    - można odtworzyć dźwięk odmowy.
+
+  NIE rób zapętlenia:
+    OWNER nie może po kolejnym LPM przeskoczyć na najniższą rangę.
+    
+    ==================================================
+    6. NATYCHMIASTOWE ODŚWIEŻANIE GUI
+    ==================================================
+
+  Po zmianie wartości:
+
+    1. zapisz nową wartość dla wyspy,
+    2. odśwież ikonę ustawienia,
+    3. zaktualizuj lore,
+    4. pokaż nowe położenie znacznika,
+    5. GUI ma pozostać otwarte.
+
+  Przykład:
+
+  PRZED:
+    &7  Właściciel
+    &e➜ Administrator
+    &7  Moderator
+    &7  Członek
+    
+    gracz klika PPM.
+
+  PO:
+    &7  Właściciel
+    &7  Administrator
+    &e➜ Moderator
+    &7  Członek
+    
+    Nie zamykaj i nie otwieraj ponownie całego GUI w sposób powodujący miganie ekranu, jeśli można po prostu zaktualizować odpowiedni ItemStack w Inventory.
+    
+    Można również odtworzyć krótki dźwięk potwierdzenia po prawidłowej zmianie.
+    
+    ==================================================
+    7. ZNACZENIE WYBRANEJ RANGI
+    ==================================================
+    
+    Wybrana wartość oznacza MINIMALNĄ rangę wymaganą do wykonania czynności.
+
+  Przykład:
+
+    BREAK_BLOCKS = MODERATOR
+
+  oznacza, że:
+    - OWNER może niszczyć,
+    - ADMIN może niszczyć,
+    - MODERATOR może niszczyć,
+    - MEMBER nie może,
+    - VISITOR nie może.
+
+    Czyli wszystkie rangi równe lub WYŻSZE od ustawionej mają dostęp.
+    
+    Nie sprawdzaj tego poprzez ręczne if-y dla każdej możliwej kombinacji rang.
+
+  Stwórz jedno wspólne rozwiązanie, np. hierarchię/priority/level rang oraz metodę w rodzaju:
+
+    boolean hasRequiredIslandRole(IslandRole playerRole, IslandRole requiredRole)
+    
+    Dopasuj nazwę i implementację do aktualnej architektury projektu.
+    
+    ==================================================
+    8. USTAWIENIA W MENU
+    ==================================================
+    
+    Dodaj minimum 10 sensownych ustawień dotyczących całej wyspy.
+
+  Chcę m.in.:
+
+    1. BREAK_BLOCKS
+  Nazwa: "&cNiszczenie bloków"
+    Określa, kto może niszczyć bloki.
+    
+    2. PLACE_BLOCKS
+  Nazwa: "&aStawianie bloków"
+    Określa, kto może stawiać bloki.
+    
+    3. OPEN_CONTAINERS
+  Nazwa: "&6Otwieranie pojemników"
+    Skrzynie, beczki, shulkery itp.
+    
+    4. USE_DOORS
+  Nazwa: "&eDrzwi i przejścia"
+    Drzwi, furtki, trapdoory itp.
+    
+    5. INTERACT_REDSTONE
+  Nazwa: "&cRedstone"
+    Przyciski, dźwignie i inne interakcje z redstone.
+    
+    6. INTERACT_ENTITIES
+  Nazwa: "&bInterakcja z mobami"
+    Interakcje ze zwierzętami i innymi encjami.
+    
+    7. KILL_PASSIVE_MOBS
+  Nazwa: "&cZabijanie zwierząt"
+    Określa, kto może zabijać pokojowe moby na wyspie.
+    
+    8. USE_VILLAGERS
+  Nazwa: "&aHandel z villagerami"
+    Określa dostęp do handlu.
+    
+    9. USE_ONEBLOCK
+  Nazwa: "&dOneBlock"
+    Określa, kto może korzystać/niszczyć główny blok OneBlock wyspy.
+    
+    10. MANAGE_GENERATORS
+  Nazwa: "&9Generatory"
+    Określa, kto może obsługiwać generatory wyspy.
+
+  Dodaj jeszcze kilka sensownych ustawień, jeśli istniejące systemy projektu pozwalają je rzeczywiście kontrolować, np.:
+
+    11. USE_FURNACES
+    12. USE_ANVILS
+    13. USE_ENCHANTING
+    14. PICKUP_ITEMS
+    15. DROP_ITEMS
+    
+    Nie dodawaj ustawienia, jeżeli w obecnym projekcie nie ma sensownego miejsca, w którym można je egzekwować.
+    
+    ==================================================
+    9. SETTINGS.YML
+    ==================================================
+    
+    `settings.yml` ma być prawdziwym plikiem konfiguracyjnym menu, a nie plikiem z danymi konkretnych wysp.
+
+  Powinien pozwalać ustawić przynajmniej:
+    - title,
+    - size,
+    - slot każdego ustawienia,
+    - material,
+    - display-name,
+    - description/lore,
+    - tekst zaznaczonej rangi,
+    - tekst niezaznaczonej rangi,
+    - tekst LPM/PPM,
+    - dźwięki,
+    - domyślną rangę każdego ustawienia.
+
+  Przykładowa STRUKTURA (dopasuj ją do obecnego systemu konfiguracji):
+
+  menu:
+    title: "&8Ustawienia wyspy"
+    size: 54
+
+  settings:
+    break_blocks:
+      slot: 10
+      material: DIAMOND_PICKAXE
+      name: "&cNiszczenie bloków"
+      description:
+        - "&7Określa minimalną rangę,"
+        - "&7która może niszczyć bloki."
+      default-role: MEMBER
+
+    Nie hardcoduj nazw, lore, materiałów i slotów w Javie, jeśli mogą znajdować się w settings.yml.
+    
+    ==================================================
+    10. DANE KONKRETNEJ WYSPY
+    ==================================================
+    
+    Wartości wybrane przez właściciela NIE powinny być zapisywane do globalnego `settings.yml`.
+    
+    `settings.yml` = konfiguracja GUI i wartości domyślne.
+    
+    Dane wyspy = aktualnie wybrane wartości.
+
+  Przykładowo wyspa może posiadać:
+
+  settings:
+    BREAK_BLOCKS: MEMBER
+    PLACE_BLOCKS: MEMBER
+    OPEN_CONTAINERS: ADMIN
+    USE_DOORS: MEMBER
+    INTERACT_REDSTONE: MODERATOR
+
+    Zapisz to w istniejącym systemie danych wyspy.
+
+  Jeżeli wyspa nie posiada jeszcze zapisanej wartości konkretnego ustawienia:
+    - pobierz `default-role` z settings.yml,
+    - użyj jej jako wartości,
+    - opcjonalnie zapisz ją przy pierwszej zmianie.
+
+    ==================================================
+    11. EGZEKWOWANIE USTAWIEŃ
+    ==================================================
+    
+    Samo GUI nie wystarczy.
+    
+    Ustawienia muszą RZECZYWIŚCIE kontrolować czynności na wyspie.
+
+  Przykładowo:
+    - BlockBreakEvent -> BREAK_BLOCKS
+    - BlockPlaceEvent -> PLACE_BLOCKS
+    - InventoryOpenEvent / PlayerInteractEvent -> OPEN_CONTAINERS
+    - PlayerInteractEvent -> USE_DOORS / INTERACT_REDSTONE
+    - interakcja z villagerem -> USE_VILLAGERS
+    - niszczenie OneBlock -> USE_ONEBLOCK
+    - EntityDamageByEntityEvent -> KILL_PASSIVE_MOBS, jeżeli atakującym jest gracz.
+
+    Najpierw sprawdź istniejące listenery projektu. Jeżeli projekt już chroni wyspę przed takimi czynnościami, ZINTEGRUJ ustawienia z istniejącą ochroną zamiast tworzyć drugi system ochrony.
+
+  Bardzo ważne:
+    ustawienie ma obowiązywać tylko w obrębie właściwej wyspy.
+    
+    Nie blokuj graczowi czynności na cudzej wyspie w sposób sprzeczny z istniejącym systemem ochrony. Najpierw respektuj istniejące zasady dostępu/ochrony, a potem sprawdzaj minimalną rangę dla członków danej wyspy.
+    
+    ==================================================
+    12. BEZPIECZEŃSTWO GUI
+    ==================================================
+
+  Zablokuj:
+    - wyciąganie przedmiotów z menu,
+    - shift-click,
+    - number keys,
+    - double click,
+    - dragowanie,
+    - hotbar swap,
+    - inne sposoby przenoszenia ItemStacków.
+
+    Kliknięcia obsługuj wyłącznie wtedy, gdy gracz znajduje się w konkretnym GUI ustawień swojej wyspy.
+    
+    Nie rozpoznawaj GUI wyłącznie po tytule, jeżeli projekt ma możliwość użycia własnego InventoryHolder albo innego pewnego identyfikatora.
+
+  Przed KAŻDĄ zmianą ustawienia ponownie sprawdź:
+    - czy gracz nadal należy do wyspy,
+    - czy nadal jest OWNEREM,
+    - czy wyspa nadal istnieje.
+
+    To zapobiega zmianie ustawień po utracie uprawnień przy już otwartym GUI.
+    
+    ==================================================
+    13. WAŻNE PRZYPADKI BRZEGOWE
+    ==================================================
+
+  Obsłuż:
+    - wyspę bez zapisanych ustawień,
+    - brakujące ustawienie w starszych danych wyspy,
+    - zmianę listy rang po aktualizacji,
+    - nieprawidłową rangę zapisaną w danych,
+    - usunięcie ustawienia z settings.yml,
+    - kliknięcie poza ikoną,
+    - spam LPM/PPM,
+    - restart serwera po zmianie ustawienia,
+    - usunięcie wyspy przy otwartym GUI,
+    - zmianę OWNERA przy otwartym GUI.
+
+  Jeżeli zapisana ranga już nie istnieje:
+    użyj bezpiecznie `default-role` z konfiguracji zamiast powodować wyjątek.
+    
+    ==================================================
+    14. WYGLĄD MENU
+    ==================================================
+    
+    Menu ma mieć 54 sloty.
+    
+    Rozłóż ustawienia czytelnie, np. w środkowych rzędach.
+    
+    Pozostałe sloty mogą być wypełnione istniejącym fillerem GUI używanym przez projekt.
+
+  Każda ikona powinna mieć:
+    - czytelną nazwę,
+    - krótki opis,
+    - listę rang,
+    - zaznaczoną aktualną rangę,
+    - instrukcję sterowania.
+
+  Przykład końcowego lore:
+
+    &7Określa, kto może otwierać
+    &7skrzynie i inne pojemniki.
+    
+    &8&m------------------------
+  &7Minimalna ranga:
+
+    &7  Właściciel
+    &e➜ Administrator
+    &7  Moderator
+    &7  Członek
+    &7  Gość
+
+    &8&m------------------------
+    &eLPM &7→ podnieś wymaganą rangę
+    &ePPM &7→ obniż wymaganą rangę
+    
+    ==================================================
+    15. IMPLEMENTACJA
+    ==================================================
+    
+    Nie twórz pseudokodu.
+    
+    Zaimplementuj kompletny działający system.
+
+  Najpierw przeanalizuj istniejące klasy i wykorzystaj obecny:
+    - IslandManager,
+    - model Island,
+    - system członków/rang,
+    - GUI,
+    - data storage,
+    - protection listenery,
+    jeżeli takie klasy/systemy rzeczywiście istnieją.
+    
+    Nazw klas podanych przeze mnie nie traktuj jako wymaganych, jeżeli projekt używa innych.
+
+  Kod ma:
+    - nie duplikować istniejącej logiki,
+    - nie powodować błędów przy braku danych,
+    - zapisywać ustawienia wysp,
+    - prawidłowo odświeżać GUI,
+    - egzekwować wybrane uprawnienia,
+    - kompilować się.
+
+  Na końcu:
+    1. uruchom kompilację projektu,
+    2. napraw wszystkie błędy,
+    3. sprawdź settings.yml,
+    4. wypisz wszystkie zmodyfikowane/utworzone pliki,
+    5. wypisz wszystkie dostępne ustawienia,
+    6. opisz, gdzie każde ustawienie jest egzekwowane,
+    7. podaj dokładny format zapisu ustawień wyspy,
+    8. podaj krótki scenariusz testowy dla OWNER/ADMIN/MEMBER.
+    9. Sam zdecyduj jak chcesz zapisywac dane ustwien mozesz wykorzystac do tego plik island_data lub utworzyc nowy plik w folderze data

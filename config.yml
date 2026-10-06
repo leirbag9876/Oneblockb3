@@ -1,0 +1,1423 @@
+# Plik konfiguracyjny pluginu.
+# Porada: użyj sprawdzacza składni YAML, aby mieć pewność, że format pliku jest poprawny.
+# Wbudowane Placeholdery w pluginie, których możesz użyć:
+#
+#               %island_name% - Zwraca nazwę stworzonej przez gracza wyspy.
+#               %current_island_level% - Zwraca wartość aktualnego poziomu wyspy.
+#               %next_island_level% - Zwraca wartość następnego poziomu wyspy do zdobycia.
+#               %max_island_level% - Zwraca maksymalny poziom, jaki wyspa może osiągnąć.
+#               %current_level_name% - Zwraca nazwę aktualnego poziomu wyspy.
+#               %next_level_name% - Zwraca nazwę następnego poziomu wyspy.
+#               %blocks_required_for_level% - Zwraca liczbę bloków wymaganych na odblokowanie następnego poziomu.
+#               %blocks_required_for_level_percentage% - Zwraca liczbę bloków wymaganych na odblokowanie następnego poziomu w procentach.
+#               %current_level_reward_name% - Zwraca nazwę nagrody za aktualny poziom wyspy.
+#               %next_level_reward_name% - Zwraca nazwę nagrody za odblokowanie następnego poziomu wyspy.
+#               %giveaway_time_remaining% - Zwraca czas pozostały do kolejnego rozdania nagród
+#               %boss_health% - Zwraca aktualną ilość punktów zdrowia bossa.
+#               %boss_max_health% - Zwraca wartość maksymalnej ilości punktów zdrowia bossa.
+#               %boss_hearts% - Zwraca aktualną wartość serduszek bossa.
+#               %boss_max_hearts% - Zwraca maksymalną wartość serduszek bossa.
+#               %boss_spawn_times% - Zwraca listę godzin, w których respi się boss.
+#               %boss_respawn_remaining_time% - Zwraca pozostały czas do kolejnego spawnu bossa w formacie h: mm: ss.
+#               %booster_multiplier% - Zwraca wartość mnożnika boostera.
+#               %booster_time% - Zwraca czas działania boostera.
+#
+#               %oneblock_island_name% - Zwraca nazwę wyspy gracza.
+#               %oneblock_island_country% - Zwraca wybrany kraj wyspy.
+#               %oneblock_island_rank% - Zwraca rangę wyspy.
+#               %oneblock_current_island_level% - Zwraca aktualny poziom wyspy.
+#               %oneblock_blocks_required_for_level% - Zwraca liczbę bloków wymaganych do następnego poziomu.
+#               %oneblock_blocks_required_for_level_percentage% - Zwraca postęp w procentach do następnego poziomu.
+#               %oneblock_island_currency_money% - Zwraca łączny balans wyspy.
+#               %oneblock_island_activity_points% - Zwraca łączną liczbę punktów aktywności wszystkich graczy wyspy.
+#               %oneblock_island_kills% - Zwraca liczbę zabójstw wyspy.
+#               %oneblock_island_deaths% - Zwraca liczbę śmierci wyspy.
+#               %oneblock_island_creation_date% - Zwraca datę stworzenia wyspy.
+#
+#               %oneblock_currency_money% - Zwraca balans gracza w walucie money.
+#               %oneblock_activity_points% - Zwraca punkty aktywności gracza.
+#
+#               %player_name% - Zwraca nazwę gracza.
+#               %player_status% - Zwraca status gracza (online/offline).
+#               %oneblock_player_kills% - Zwraca liczbę zabójstw gracza.
+#               %oneblock_player_deaths% - Zwraca liczbę śmierci gracza.
+#               %oneblock_player_last_seen% - Zwraca czas od ostatniej aktywności gracza (np. 23 min temu, 3h temu, 1d temu).
+#               %oneblock_player_first_join% - Zwraca datę pierwszego dołączenia gracza.
+#
+# Plik językowy, którego będą używać wszystkie wiadomości pluginu.
+lang: "PL.yml"
+# Sekcja konfiguracji dotycząca komend.
+# Komendy związane z oneblockiem.
+oneblock:
+  # Sekcja dotycząca głównych ustawień oneblocka.
+  general:
+    # Świat, w którym będą tworzone wyspy (oneblocki).
+    creation-worlds:
+    - island
+    # Odległość w blokach, w której wyspy będą od siebie oddalone.
+    islands-distance: 1000
+  # Sekcja dotycząca głównej komendy oneblocka.
+  commands:
+    # Główna komenda oneblocka.
+    main-command: "Oneblock"
+    # Lista aliasów głównej komendy.
+    aliases:
+    - island
+    - is
+    - wyspa
+    - ob
+  # System punktów aktywności kraju
+  # Punkty są wykorzystywane do tworzenia rankingu krajów.
+  #
+  # Ustaw 0, aby wyłączyć przyznawanie punktów za daną aktywność.
+  activity-points:
+    # Za godzinę aktywnej gry.
+    playtime-hour: 5
+    # Za zabicie moba.
+    mob-kill: 1
+    # Za zabicie gracza poza wojną.
+    player-kill: 5
+    # Za śmierć gracza.
+    player-death: -2
+    # Za pokonanie bossa.
+    boss-kill: 50
+    # Za udział w wojnie.
+    war-participation: 50
+    # Za wygraną wojnę.
+    war-win: 250
+    # Za przegraną wojnę.
+    war-lose: 75
+    # Za remis.
+    war-draw: 125
+    # Za zabicie gracza podczas wojny.
+    war-player-kill: 10
+    # Za śmierć podczas wojny.
+    war-player-death: -2
+    # Za przejęcie punktu kontrolnego.
+    war-capture-point: 30
+    # Za obronę punktu kontrolnego.
+    war-defend-point: 20
+    # Za przejęcie flagi.
+    war-capture-flag: 50
+    # Za obronę flagi.
+    war-defend-flag: 25
+    # Za zniszczenie celu wojennego.
+    war-objective-destroy: 75
+   # Za wykonanie celu wojennego.
+    war-objective-complete: 40
+  # Główne menu oneblocka.
+  main-menu:
+    inventory-type: CHEST
+    menu-title: "&6&lMenu oneblocka"
+    size: 54
+    items:
+      countries:
+        name: "&6Kraje"
+        slot: 0
+        material: "%animation_country_change%"
+        lore:
+        - "&fOtwiera menu krajów"
+        file: ""
+        actions:
+          commands:
+          - dm open kraje %player_name %
+      filler:
+        material: GRAY_STAINED_GLASS_PANE
+        name: ""
+        slots: 1-2,6-7,9,17,36,44,46-48,50-53
+      # Pokazuje, w jaki sposób mają być wyświetlani nowo dodani gracze.
+      player-sorting:
+        material: "%player_head%"
+        name: "[&a%player_status%] &e%player_name%"
+        slots: 10-16,19-25,28-34,37-43
+        lore:
+        - "&7Ranga: &9%oneblock_island_rank%"
+        - "&7Stan konta: &a$%oneblock_currency_money%"
+        - "&7Wkład: &5%oneblock_activity_points%"
+        - ""
+        - "&7K/D: &c%oneblock_player_kills%&7/&7%oneblock_player_deaths%"
+        - ""
+        - "&7Ostatnio widziany: &a%oneblock_player_last_seen%"
+        - "&7Dołączył: &a%oneblock_island_player_first_join%"
+
+      information:
+        material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU3NDcwMTBkODRhYTU2NDgzYjc1ZjYyNDNkOTRmMzRjNTM0NjAzNTg0YjJjYzY4YTQ1YmYzNjU4NDAxMDVmZCJ9fX0="
+        name: "&b&lInformacje"
+        slot: 3
+        lore:
+        - ""
+        - "&7Nazwa wyspy: &6%oneblock_island_name%"
+        - "&7Wybrany kraj: &6%oneblock_island_country%"
+        - ""
+        - "&7Ranga: &9%oneblock_island_rank%"
+        - ""
+        - "&7Poziom: &b%oneblock_current_island_level%"
+        - "&7Pozostałe bloki: &e%oneblock_blocks_required_for_level%"
+        - "&7Progres: &a%oneblock_blocks_required_for_level_percentage%%"
+        - ""
+        - "&7Łączny balans: &a$%oneblock_island_currency_money%"
+        - "&7Łączny wkład: &5%oneblock_island_activity_points%"
+        - ""
+        - "&7K/D wyspy: &c%oneblock_island_kills%&7/&7%oneblock_island_deaths%"
+        - ""
+        - "&7Data stworzenia: &b%oneblock_island_creation_date%"
+      ranking-wyspy:
+        material: ARMOR_STAND
+        name: "&e&lRanking wysp"
+        slot: 4
+        file: oneblock/leaderboards.yml
+        lore:
+        - "&fKliknij, aby otworzyć listę liderów wysp"
+      info-punkty:
+        material: AMETHYST_SHARD
+        name: "&5&lInformacje o punktach aktywności"
+        slot: 5
+        lore:
+        - ""
+        - "&5Czym są punkty aktywności?"
+        - "&fPunkty aktywności to pewien rodzaj waluty"
+        - "&fprzyznawany każdemu graczowi wyspy"
+        - "&fza ukończenie poszczególnych zadań"
+        - "&fpunkty określają jak wysoko znajduje się wyspa."
+        - "&fw rankingu, a dzięki wysokiej pozycji, wszyscy gracze są nagradzani."
+        - ""
+        - "&5Jak zdobywać punkty aktywności?"
+        - "&fPunkty aktywności możesz zdobywać:"
+        - "&f- zabijając moby i graczy"
+        - "&f- pokonując bossa i grając na serwerze"
+        - "&f- uczestnicząc w wojnie krajów"
+        - "&f- oraz wykonując różne zadania podczas wojny"
+      upgrades:
+        material: hdb-8786
+        name: "&6&lUlepszenia"
+        slot: 8
+        lore: "&fKliknij, aby otworzyć menu ulepszeń"
+        file: GUIs/oneblock/upgrades.yml
+        # Warunek otworzenia menu.
+        open-requirement:
+          requirement-placeholder: '%oneblock_current_island_level%'
+          requirement-operator: '>='
+          min-island-level: 15
+      misje:
+        material: WRITABLE_BOOK
+        name: "&6&lMisje"
+        slot: 18
+        lore:
+        - "&fKliknij, aby otworzyć menu misji"
+        file: GUIs/oneblock/quests/quests_menu.yml
+        open-requirements:
+          requirement-placeholder: '%oneblock_current_island_level%'
+          requirement-operator: '>='
+          min-island-level: 5
+      sklep:
+        material: hdb-50244
+        name: "&e&lSklep"
+        slot: 26
+        lore:
+        - "&fKliknij, aby otworzyć menu sklepu"
+        file: GUIs/oneblock/shop.yml
+      boss:
+        material: ZOMBIE_HEAD
+        name: "&9&lBoss"
+        slot: 27
+        lore:
+        - "&fKliknij, aby otworzyć menu bossa"
+        file: GUIs/oneblock/boss.yml
+      warpy:
+        material: COMPASS
+        name: "&6&lWarpy"
+        slot: 35
+        lore:
+        - "&fKliknij, aby otworzyć menu warpów"
+        actions:
+          commands:
+          - dm open warpy %player_name%
+      settings:
+        material: CLOCK
+        name: "&7Ustawienia"
+        slot: 45
+        lore:
+        - "&fKliknij, aby otworzyć ustawienia wyspy"
+        file: GUIs/oneblock/settings.yml
+      # Zamyka menu wyspy
+      close:
+        material: BARRIER
+        name: "&c&lZamknij"
+        slot: 49
+
+
+  # Sekcja dotycząca wyglądu wielu funkcji.
+  display:
+    # Ustawienia dotyczące poradnikowego hologramu.
+    tut-hologram:
+      enabled: true
+      # Sposób, w jaki zostanie utworzony hologram.
+      # Wspierane opcje to:
+      # Decent holograms — hologram jest tworzony za pomocą pluginu decent holograms.
+      # selfmaking — hologram jest tworzony przez plugin samodzielnie.
+      # Automatic — plugin sam wybiera lepszą opcję, w wypadku, gdyby np. nie udało mu się stworzyć hologramu z użyciem decent holograms.
+      hologram-creation: Decentholograms
+      # Możesz tutaj ustawić, na ile czasu chcesz, aby był wyświetlany hologram.
+      # -1 oznacza nieskończoność lub dopóki gracz sam nie wyłączy w ustawieniach.
+      display-time: -1
+      lore:
+      - '                   &fWitaj na swojej wyspie &b%player%&f!'
+      - '&fKop zaznaczony blok, aby zwiększać poziom wyspy i otrzymywać lepsze surowce'
+      - '&fPowiększaj swoją wyspę i ulepszaj jej perki, aby zwiększać ograniczenia wyspy.'
+      - '&fSprzedawaj bloki i surowce, aby zarabiać pieniądze i kupować potrzebne przedmioty z &e/sklep'
+      - '&fDobuduj się do osadnika, aby odblokować &2misje wyspy &fi rozwijać bonusy wybranego kraju'
+      - '&fZdobywaj klucze z misji, by otwierać kraty na &e/spawn i zdobywać ekskluzywne przedmioty'
+      - '                   &7Możesz wyłączyć ten hologram w &b/ustawienia.'
+      # Oś Y, na której będzie znajdował się armor stand z hologramem.
+      height: 1
+      # Dystans w blokach definiujący jak daleko ma się pojawić hologram od głównego bloku wyspy.
+      distance: 4
+    # Ustawienia dotyczące głównego bloku wyspy.
+    main-block:
+      # Sposób zaznaczenia głównego bloku.
+      # Wspieranymi opcjami są glowing oraz none
+      display-type: glowing
+      # Za ile sekund powinien pojawiać się następny blok?
+      # -1 oznacza, że plugin będzie respił bloki najszybciej jak może.
+      min-block-respawn-time: -1
+      # Ustaw, w jakiej odległości od gracza ma się pojawić mob.
+      mob-spawn-distance: 2
+      # Po włączeniu tej funkcji plugin będzie automatycznie kontrolował wysokość spawnowania mobów.
+      mobs-height-control: true
+      # Określa, na jakiej wysokości różnej od gracza mob ma się spawnić.
+      # Dla przykładu, jeśli wpisałeś tu jeden, mob zrespi się 1 blok wyżej niż ty, aby nie wypadł poza mapę.
+      # Działa tylko, gdy funkcja mobs-height-control jest włączona.
+      mob-player-spawn-height-difference: 1
+      # Szansa spawnowania mobu na pojedynczym respieniu bloku.
+      # Wartość od 0.0 do 1.0 lub od 1 do 100 (będzie automatycznie konwertowana).
+      # 0.10 = 10% szansy na respawn mobu przy każdym kopaniu bloku.
+      # Zwiększ wartość dla częstszych mobów, zmniejsz dla rzadszych.
+      mob-spawn-chance: 0.07
+    money-display:
+      format: "&a$%oneblock_currency_money%"
+      height: 2.35
+      update-interval-ticks: 5
+    # Sekcja dotycząca formatu leveli.
+    levels:
+      # Możesz to wybrać, w jaki sposób chcesz, aby wyświetlał się postęp wyspy.
+      # Wspierane opcje to bossbar i placeholder.
+      placeholders:
+        # Nazwa placeholdera, który będzie stworzony przez plugin.
+        # Plugin połączy prefix, input i suffix i stworzy z tego jeden placeholder, który np. tutaj będzie wyglądał tak %oneblock_bar_progress%
+        bar-progress:
+          # Treść, jaka ma się znaleźć przed placeholderem.
+          # Spacja przed domknięciem cudzysłowu oznacza spację w tym miejscu w placeholderze.
+          prefix: '&8[&a'
+          # Główna treść placeholdera.
+          input: '%progress_bar%'
+          # Pole określające co powinno się pojawić w miejsce placeholdera %progress_bar% w niejasnym przypadku.
+          # Tak powinien wyglądać pasek postępu, ma się on też aktualizować najlepiej gdzieś co sekundę lub szybciej.
+          value: '&a██████████████&7██████'
+          # Treść po placeholderze.
+          suffix: '&8]'
+    # Sekcja ustawień dotycząca warpów
+    warps:
+      # Część dotycząca ustawień warpów serwerowych
+      server-warps:
+        # Czas w sekundach pomiędzy teleportami.
+        cooldown: 15
+        # Czas w sekundach, który będzie odliczany do teleportu.
+        warm-up: 5
+        # Sposób, w jaki będzie wyświetlane odliczanie do teleportacji.
+        # Wspierane opcje to: title, subtitle, message, actionbar oraz bossbar.
+        message-format: title
+      # Część dotycząca ustawień warpów ustawionych przez graczy.
+      player-warps:
+        cooldown: 60
+        warm-up: 5
+        message-format: title
+    # Sekcja ustawień dotycząca krajów.
+    countries:
+      # Sekcja dotycząca ustawień krajów.
+      settings:
+        # placeholder używany do sprawdzenia wymagania
+        requirement-placeholder: '%oneblock_current_island_level%'
+        requirement-operator: '>='
+        min-island-level: 10
+        # Czas pomiędzy następnymi zmianami kraju.
+        switch-cooldown: 24
+      # Opisuje, jak ma wyglądać menu potwierdzenia kraju.
+      menu:
+        menu-title: "&fPotwierdź wybór kraju"
+        size: 27
+        items:
+          potwierdzenie:
+            display_name: "&a&lPotwierdź"
+            slot: 11
+            material: LIME_STAINED_GLASS_PANE
+            lore:
+            - "&fKliknij, aby potwierdzić wybór kraju"
+            # Wspieranymi akcjami są:
+            # CONFIRM — potwierdza wybór kraju i zakłada jego buffy i nerfy na wyspę gracza.
+            # CANCEL — anuluje, wybór kraju wraca, wraca do menu krajów komendą /ob kraje.
+            action: CONFIRM
+          item_kraju:
+            display_name: "&f%country_name%"
+            slot: 13
+            # Materiał pobierany z pola material w countries.yml.
+            material: "%country_material%"
+            lore:
+              - '&7&m-----------------------------'
+              - '&6✦ Bonusy:'
+              - '  &a✔ &f%country_buff_1%'
+              - '  &a✔ &f%country_buff_2%'
+              - '  &a✔ &f%country_buff_3%'
+              - '&7&m-----------------------------'
+              - '&c✘ Nerf: &f%country_nerf%'
+              - '&7&m-----------------------------'
+              - '&eCzy na pewno chcesz wybrać ten kraj?'
+              - '&cUwaga: wyboru nie można cofnąć!'
+          anuluj:
+            display_name: "&c&lAnuluj"
+            slot: 15
+            material: RED_STAINED_GLASS_PANE
+            lore:
+            - "&fKliknij, aby wrócić do menu krajów."
+    # Sekcja dotycząca animacji itemów.
+    animations:
+      # Nazwa animacji, używana w placeholderze %animation_(animation_name)%
+      country_change:
+        # Rodzaj animacji, wspieranymi opcjami są:
+        # block_change - zmienia materiał na danym slocie, co określony przedział czasu, z listy wypisanych przedmiotów.
+        animation-type: "block_change"
+        # Czas, po którym każdy kolejny materiał ma być zmieniony na kolejny w sekundach.
+        one-material-duration: 1.0
+        # Lista materiałów, które będą wyświetlane w danym slocie podczas animacji.
+        material-list:
+          country1:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU3Y2VhNzc2NzMzMGRkNDk0M2Q0NzQ5NmI1MTg2YzE3ZTYxODg4YTI5ZmJhNjUxYTIzZGFlNzVmNjUwYjUzMmMifX19
+          country2:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2E0YmU3NTlhOWNmN2YwYTE5YTdlOGU2MmYyMzc4OWFkMWQyMWNlYmFlMzhhZjlkOTU0MTY3NmEzZGIwMDE1NzIifX19
+          country3:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjZkMDMzZGM1ZjY3NWFkNTFiYzA2YzdhMTk0OWMzNWExZDM3ZTQ4YTJlMWMyNzg5YzJjZjdkMzBlYzU4ZjMyYyJ9fX0=
+          country4:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2JhNTg2YTZmMDdhMDk5YTU4ODM4YTlmYmVkODQ1ZWNmNzgwZmMyYTM5MGY3YTQ2MjBhN2RjZjBhODVlNzVhNCJ9fX0=
+          country5:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Q1ZWU2NzEyN2ZlZWM0ODM0NmRhYmE4ODRhZGM5M2Q2ZmEzYThkM2QwZjBlODRmYWNhYWJiZGNhOTdhYTdmZiJ9fX0=
+          country6:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU5NTU4N2Q3NDVhMTc0Y2QyMGYxYWY1MjMzZTQ2YTQyNDk0MzdmMzlkMTZlNDY2ZmQzZTNmODIyODY3ZDE4OSJ9fX0=
+          country7:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhlMGUwZGU3MDVkMzY2YmE1OTUwNmIzZmIxYTA0ZmQzZDUxYWZmOTBlNWNmYjRlYmJlYTY2ZWE1OTc2YzBmZiJ9fX0=
+          country8:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQyYzlmOTg2MThjZDVmN2RiZjBjMWE1NGVlMDk0NzQ2NjJiNzEzYjVhYTI2NWM4NWVmYmZjNDY0MThlOTE1In19fQ==
+          country9:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzlhNDY0NzVkNWRjYzgxNWY2YzVmMjg1OWVkYmIxMDYxMWYzZTg2MWMwZWIxNGYwODgxNjFiM2MwY2NiMmIwZDkifX19
+          country10:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2E2NmE4OTE3ZDdjMzNjYjhiYzg0NjRlYjY4OWExYTg1MTk3Mzc2ZjU1NWQwZDI0Y2QzN2ZhYjYyMGU3MjNmOTMifX19
+          country11:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjExMWU4MDI0MjJiNTM5MjkyZjFmOTJiMzgzM2VkZmQ2NTEzODYwODU5NGFhYWI0YWNiMzIyMDc3YzM2NTg3YiJ9fX0=
+          country12:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdmOWJjMDM1Y2RjODBmMWFiNWUxMTk4ZjI5ZjNhZDNmZGQyYjQyZDlhNjlhZWI2NGRlOTkwNjgxODAwYjk4ZGMifX19
+          country13:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2IwNTBjMDRlYzhjYWJjZTcxZDcxMDNmM2U5ZWY0YmI4ODE5ZjlmMzY1ZWIzMzVhOTEzOTkxMmJjMDdlZDQ0NSJ9fX0=
+          country14:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU4ZjczYzk1MWU5Y2U2ODQ1NmNhMmU0MTFiMTFhNTRmZGIyZTU1OTI5M2YzMzMwNWE0MmI0MzdmOTA2YmVjMCJ9fX0=
+          country15:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDgxNTJiNzMzNGQ3ZWNmMzM1ZTQ3YTRmMzVkZWZiZDJlYjY5NTdmYzdiZmU5NDIxMjY0MmQ2MmY0NmU2MWUifX19
+          country16:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzEwYzIzMDU1YzM5MjYwNmY3ZTUzMWRhYTI2NzZlYmUyZTM0ODk4ODgxMGMxNWYxNWRjNWIzNzMzOTk4MjMyIn19fQ==
+          country17:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzgyNmU3NDJiMzJmMGY4ZGI1OWMwN2IxYmNkZGU2ZjhhOTNmODVjOTI5ZTU5OGM3ZTkyNzNiOTIxMWYyY2U3OCJ9fX0=
+          country18:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzI4NjliNTVhNDAxYzg3ZmI5M2MzNmEyZDJlNzRlYTRkZDcyMjU0MmFiMGZjM2MwZGJmOTUxMTc3MzI1MTQ1NSJ9fX0=
+          country19:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzc1YmI4NjJhN2JiYTAzM2NhODA3MmNmMGJiOTZmMzYxZGJjNDFjNjI1MjE4NmVmODFiMzIwZTE1OWUwNmQ4MTAifX19
+          country20:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGFiY2RiMzU1NGZmMzE3NTk4MjNhMTJiOWM4YjkxODZjZDI5NTQ0ZDE4NDE5ZGNlNTUxY2Y3ODNhZDAwNmNkZiJ9fX0=
+          country21:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU5ZjIzNDk3MjlhN2VjOGQ0YjE0NzhhZGZlNWNhOGFmOTY0NzllOTgzZmJhZDIzOGNjYmQ4MTQwOWI0ZWQifX19
+          country22:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTEyNjlhMDY3ZWUzN2U2MzYzNWNhMWU3MjNiNjc2ZjEzOWRjMmRiZGRmZjk2YmJmZWY5OWQ4YjM1Yzk5NmJjIn19fQ==
+          country23:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzM3YWIzNjZlOTA0OGRiNTY0NzAwM2MzZjk3N2Y3NTM3M2Q3Njc1Yjc5Nzc5NGNlMmM5MTk4MDBlYzQ0N2M2NzcifX19
+          country24:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzE1MTRkZTZkZDJiNzY4MmIxZDNlYmNkMTAyOTFhZTFmMDIxZTMwMTJiNWM4YmVmZmViNzViMTgxOWViNDI1OWQifX19
+          country25:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJiZDQ1MjE5ODMzMDllMGFkNzZjMWVlMjk4NzQyODc5NTdlYzNkOTZmOGQ4ODkzMjRkYThjODg3ZTQ4NWVhOCJ9fX0=
+          country26:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzIzY2YyMTBlZGVhMzk2ZjJmNWRmYmNlZDY5ODQ4NDM0ZjkzNDA0ZWVmZWFiZjU0YjIzYzA3M2IwOTBhZGYifX19
+          country27:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmY4OWU0NmYxZDU0NTRjOTY3Njc2ZWZiNDk3N2E4NGExOGQwMDg0MzI2Yzc2YzdiZmM0ZTc4NDNiYjFhOTAxIn19fQ==
+          country28:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2JlNjNmY2FhMDIwM2Y4MDQ2ZmI5NjM3NWQwNzlhNWMwOWI0MTYxZDAxMTlkNzE5NDU2NmU2ODljYWIxOGY2OCJ9fX0=
+          country29:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODFjY2NmZDQxOTMzODM3N2IyZDkxMzc3MmFiMzVlZjY1MDFkMzZjYjFkNDFhZTU1OWJkZmQzNTIxN2QxNWI1YyJ9fX0=
+          country30:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWNkOWJhZGYxOTcyNTgzYjY2M2I0NGIxZTAyNzI1NWRlOGYyNzVhYTFlODlkZWZjZjc3NzgyYmE2ZmNjNjUyIn19fQ==
+          country31:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWNhN2Q4ZDczZTlkNGE4YzAyMWZmOTE4NDVkNjFlMDQxOTg3NjkxOWUwZDdhMTMzOGQ4YzdkZTBlZjk1ZDIifX19
+          country32:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRkNGRlZjgxMTkwNWQ2N2YzZWRlZjQxNTc4ZjNhN2MyNzdmZjFlYzRjZmViMTM5YWQyZDhkMzE2YTQ2NWVkZiJ9fX0=
+          country33:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWJhMDg2YTJjYzcyNzJjZjViYTQ5YzgwMjQ4NTQ2YzIyZTVlZjFiYWI1NDEyMGU4YThlNWQ5ZTc1YjZhIn19fQ==
+          country34:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNhMTdlYTNhZTIzNTY0NDE1YzdhNzBiNDQ3YzA1NGJkNzVkM2NjODY2MmFjM2ZlZTg2OThiNTQwYjJiNjU4NCJ9fX0=
+          country35:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDZjMmNhNzIzODY2NmFlMWI5ZGQ5ZGFhM2Q0ZmM4MjlkYjIyNjA5ZmI1NjkzMTJkZWMxZmIwYzhkNmRkNmMxZCJ9fX0=
+          country36:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWVjYjBhOTM1OGM0YzdkMTc0YjIwMGY3M2U3MWMxZTAzNzk0MWMyZjM3YTdjNjNiZTExNDI5NjFkM2U5ZGVlYyJ9fX0=
+          country37:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YyNDFhNjk3ZjZkZmIxYzU3Y2RhMzI3YmFhNjczMmE3ODI4YzM5OGJlNGViZmRiZDE2NmMyMzJiY2FlMmIifX19
+          country38:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY3MDgyOGI0NGJhODg5NmNhMTEzNDk0OTIyYTMzNGRkMzFkZjU1ZjQxYTM5MzY0MzU1MzA0ZDRkMjVjYjM2OCJ9fX0=
+          country39:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzcyMTIwYjlmZTc3ZDc3MGIyNTRiMzljN2JlOWIxY2VjY2VmNmFkZmU3YTVjYzY4OWFiMWZkMjNlM2MifX19
+          country40:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2ZjMWJlNWYxMmY0NWU0MTNlZGE1NmYzZGU5NGUwOGQ5MGVkZThlMzM5YzdiMWU4ZjMyNzk3MzkwZTlhNWYifX19
+          country41:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzkxNGVmNTI0MmRkMzRiZWJhZjlkZTVjZjE5OWViODg1NGZjZmY0ZjdjNTg2OWQyMzgyMzMxZDQwYjVlZWE3NCJ9fX0=
+          country42:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM5MzgyZGRkNDg0NWI0NjE5NmY1NDM0ZGU5ZTgyODdmOTI5NDcxZGFkNTczZGNiMDRmYjBmODU4NzIwMzA3YiJ9fX0=
+          country43:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzIwNDE5ZWYyYzY2ZTI5YTE0MmVmMzQxYzBlY2NmNjk3YWNhODZlYzA5YzZkMThmNjA0M2E1M2NhMzBjZjJkMSJ9fX0=
+          country44:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzU0YjkwNDFkZWE2ZGI2ZGI0NDc1MGYxMzg1YTc0M2FkZjY1Mzc2N2I0Yjg4MDJjYWQ0YzU4NWRkM2Y1YmU0NiJ9fX0=
+          country45:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2NlYzVlMjJmZDkwMTNkNmNiNGZiMDlmYjdmMzRiNWU2NGE1MzEwYWQzOWJjNDAwYzRiZjIzZDJhYjE2YzllZiJ9fX0=
+          country46:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzc1M2VjNmE3NDI5ODI4YzdhOGY4MWUxZjlmZTZlMTZmYjE2YjQzM2I0ZjhlOTQ1MzViOThhOTZkNjIxZjQifX19
+          country47:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTNjNzlhNzhkZTVjYmVkYmQyMjEwMzZhNjRmNGM2ZWMzOTExOTYwZGUxNzZiZGJlNDliNGQ1MDFmNDFkZjMifX19
+          country48:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVlNzg5OWI0ODA2ODU4Njk3ZTI4M2YwODRkOTE3M2ZlNDg3ODg2NDUzNzc0NjI2YjI0YmQ4Y2ZlY2M3N2IzZiJ9fX0=
+          country49:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2I1ZTBjZWIwNDYxZmM5NTEzNTRmNmQ0Nzc3ODAyZDVlNDI2OGMxZjgxNzE5ZTQ2NjY3ODMyYjE4M2RmOTUxMCJ9fX0=
+          country50:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmRhMDQ4YmMxNTNiMzg0NjdlNzZhMzM0N2YzODM5Njg2MGE4YmM2ODYwMzkzMWU5MWY3YWY1OGJlYzU3MzgzZCJ9fX0=
+          country51:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Y2MDQ1NzllYjhlM2RjYzNiMmI5NDE2YjdlZGM2OGM5N2NkMTEyYTdkODVhNDk0YjhlYzllZmMzNWFiYzU3MyJ9fX0=
+          country52:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzBjZmJmOTY2MDYyMzdmYTY3ZTJhYjg3ZWU0NDQyN2MyYTYzODM2ZDZmM2FkYmUzNGI1NDZiOGY3ZjQzZTI0MCJ9fX0=
+          country53:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRiOGRhODNhODVmMTFlYjc0ZTc2MDg0YTZkNjQwODRhM2RkNWRhY2FhM2E5NzIxZTNhZjJjYWQ4OGVlZjcifX19
+          country54:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE3OGRlNjkxYjUwOGQ2MjQ5MTA5ZmM1NGFmNmZiYTQ5YmFhODM3N2FkMzcwNjEyZWQ2MTdkNzdkZDZhZDU4OCJ9fX0=
+          country55:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRkMDNiZDQ0MTBiYWJkYzY4MjQ5M2IzYzJiYmEyNmU3MzBlNmJjNjU4ZDM4ODhlNzliZjcxMmY4NTMifX19
+          country56:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdmYTI2OWI4YTY2M2Y1MmQ2MzIzZGNkOTJlZGNjODNkNWY5MWQ1MDhhZmE4MTk4ODJkZWRhMTUzNzVmMDNkIn19fQ==
+          country57:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWJkNTFmNDY5M2FmMTc0ZTZmZTE5NzkyMzNkMjNhNDBiYjk4NzM5OGUzODkxNjY1ZmFmZDJiYTU2N2I1YTUzYSJ9fX0=
+          country58:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzE2ZWFmZWY5ODBkNjExN2RhYmU4OTgyYWM0YjQ1MDk4ODdlMmM0NjIxZjZhOGZlNWM5YjczNWE4M2Q3NzVhZCJ9fX0=
+          country59:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTYxYTFlYWNjMTA1MjRkMWY0NWYyM2IwZTQ4N2JiMmZjMzM5NDhkOTY3NmI0MThiMTlhM2RhMGIxMDlkMGUzYyJ9fX0=
+          country60:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNlYjE3MDhkNTQwNGVmMzI2MTAzZTdiNjA1NTljOTE3OGYzZGNlNzI5MDA3YWM5YTBiNDk4YmRlYmU0NjEwNyJ9fX0=
+          country61:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWIwNDgzYTRmMGRkZjRmYmJjOTc3YjEyN2IzZDI5NGQ3YTg2OWY5OTUzNjZlM2Y1MGY2YjA1YTcwZjUyMjUxMCJ9fX0=
+          country62:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI1ZWQxMWY3OTdmM2ZjNjFlYWY4ZGFmYjZiZjMyMzRkMzFiOTZhYjc1OTZiZDJkZjcyMmQyZWYzNDczYzI3In19fQ==
+          country63:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU3MmZmYWJjNDBhM2E4MmE5ZGJiMDgxMDM4Zjk4MzQ3MDdiOGE3YTU5NWU0N2Q2M2U0YzdhN2UyNGE2Yzg4MjkifX19
+          country64:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2U5MTA5MDRiZmY5Yzg2ZjZlZDQ3Njg4ZTk0MjljMjZlOGQ5YzVkNTc0M2JkM2ViYjhlNmY1MDQwYmUxOTI5OTgifX19
+          country65:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmM3MmE4YzExNWExZmI2NjlhMjU3MTVjNGQxNWYyMjEzNmFjNGMyNDUyNzg0ZTQ4OTRiM2Q1NmJjNWIwYjkifX19
+          country66:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGMwZTIwODhhNTZjZGMyYzVmYjcxZjc1MDBhM2FkNjFmMTA1MWJlN2Q0YTQzOGYzM2U2ZDA0YWU5NmEwODZhYSJ9fX0=
+          country67:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE1YmUzY2RjMWFmMTRjYTE1MTU1NTE3MTEwYmEzMjZkOTk0NTAwN2E4ODllNjY4MTk5OWMzN2QwN2JkNjVmNSJ9fX0=
+          country68:
+            material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk4NTJiOWFiYTM0ODIzNDg1MTRjMTAzNGQwYWZmZTczNTQ1YzlkZTY3OWFlNDY0N2Y5OTU2MmI1ZTVmNDdkMDkifX19
+          country69:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhiOWY1MmUzNmFhNWM3Y2FhYTFlN2YyNmVhOTdlMjhmNjM1ZThlYWM5YWVmNzRjZWM5N2Y0NjVmNWE2YjUxIn19fQ==
+          country70:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzMwOTY5MjhjMTUzMDdlYTRkMjlhNWM3MTM0MWFhMzVmZjdiODlmNTY1M2I5M2RiNDk2MDZmNWEyMGY0NzcifX19
+          country71:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNhYzk3NzRkYTEyMTcyNDg1MzJjZTE0N2Y3ODMxZjY3YTEyZmRjY2ExY2YwY2I0YjM4NDhkZTZiYzk0YjQifX19
+          country72:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGE5YzNjNGI2YzUwMzEzMzJkZDJiZmVjZTVlMzFlOTk5ZjhkZWZmNTU0NzQwNjVjYzg2OTkzZDdiZGNkYmQwIn19fQ==
+          country73:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTMwMzMwNDliYWFlMTE4Nzc0MDZkYTQwYmQwNTE3Y2JmYjJiMzdhMjM5OGJlM2JkYTQ5OTViNjFmZmVhYTI0MyJ9fX0=
+          country74:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc5ZDk5ZDljNDY0NzRlMjcxM2E3ZTg0YTk1ZTRjZTdlOGZmOGVhNGQxNjQ0MTNhNTkyZTQ0MzVkMmM2ZjlkYyJ9fX0=
+          country75:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM4YjdjN2ZiMDhhYjg5NDc4MTJiYjlkMTRkYTA0OWVkMmQ1MWFkOGNiOTMyYjM5MmMyMjY2YjI1N2FkYzJhYyJ9fX0=
+          country76:
+            material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODVjZTg5MjIzZmE0MmZlMDZhZDY1ZDhkNDRjYTQxMmFlODk5YzgzMTMwOWQ2ODkyNGRmZTBkMTQyZmRiZWVhNCJ9fX0=
+    # Sekcja ustawień dotycząca npc.
+    OlekNpc:
+      # Stwierdza, którego pluginu użyć do stworzenia npc.
+      # Wspieranymi opcjami są:
+      # Citizens2 - plugin spróbuje stworzyć npc za pomocą pluginu Citizens2.
+      # Selfmaking — plugin samodzielnie spróbuje stworzyć npc bez pomocy innych pluginów.
+      # Automatic - plugin sam wybiera lepszą opcję, w wypadku, gdyby np. nie udało mu się stworzyć npc z użyciem Citizens2.
+      npc-creation: automatic
+      # sekcja dotycząca podstawowego wyglądu npc.
+      display:
+        display-name: '&b&lOlek'
+        # Linie tekstu npc, które będą wyświetlane nad nazwą npc w kolejności od najwyższej linii do najniższej.
+        npc-lines:
+          # tekst w line1 oraz w line12 ma być wyśrodkowany.
+          line1: '&fGłówne centrum rozwojowe, które daje ci najwięcej.'
+          line2: '&7-----------------------------------------------------'
+          line3: '&fWykonuj &bmisje rozwojowe&f, aby zdobywać punkty rozwojowe, których'
+          line4: '&fmożesz użyć do zakupu przedmiotów w sklepie państwowym lub do ulepszeń kraju.'
+          line5: '&fWykonuj &amisje codzienne&f, aby zdobywać klucze do krat i kasę.'
+          line6: '&fWykonuj &5questy playtime &foraz &emisje specjalne, by zdobywać najlepsze nagrody.'
+          line7: '&7-----------------------------------------------------'
+          line8: '&fRozwijaj poziom wyspy, aby odblokowywać nowe &bmisje rozwojowe&f.'
+          line9: '&fUkończ pierwszy poradnik, w celu odblokowania nowych rzeczy i'
+          line10: '&fukończaj kolejne poradniki dla niewielkich nagród i nowych misji'
+          line11: '&7----------------------------------------------------'
+          line12: '&7(Kliknij, aby otworzyć główne menu)'
+        # Postać, jaką ma być npc.
+        mob-type: villager
+        # Czy mob powinien patrzeć się na gracza?
+        look-at-player: true
+        # Określa, czy mob jest odporny na wszelkie obrażenia, czy nie.
+        invincible: true
+        # Ustaw, czy mob powinien zachować normalną fizykę, czy w ogóle nie spadać.
+        floating: true
+        # Dystans npc od środka wyspy gracza.
+        distance: 10
+      # Ustawienie dotyczące akcji, jakie będzie wykonywał osadnik
+      actions:
+        # Determinuje w jaki sposób interaktować z osadnikiem.
+        # Wspierane opcje to: Left click, Right click oraz any.
+        click-type: any
+        # Komenda, która będzie stosowana po kliknięciu npc.
+        # Możesz wpisać więcej niż jedną komendę.
+        command-on-click:
+        - ob menu %player%
+        # Czas w sekundach, pomiędzy następnymi kliknięciami na npc.
+        cooldown: 2
+    # Sekcja ustawień dotycząca bossa.
+    bossOlina:
+      boss-creation: selfmaking
+      # Liczba serduszek bossa.
+      # 1000 = 500 pełnych serc.
+      health: 1000
+      # Podstawowe obrażenia zadawane przez bossa.
+      damage: 10
+      # Prędkość poruszania się bossa.
+      # Domyślny gracz ma około 0.1.
+      movement-speed: 0.25
+      # Sekcja zawierające ustawienia wyglądu funkcji bossa.
+      display:
+        # Nazwa wyświetlana nad bossem.
+        name: "&d&lOlina"
+        name-display: BELOW_NAME
+        # Typ mob reprezentującego bossa.
+        # Przykłady:
+        # ZOMBIE
+        # SKELETON
+        # WITCH
+        # EVOKER
+        # ENDERMAN
+        mob-type: ZOMBIE
+        # Sposób wyświetlania zdrowia.
+        # BOSSBAR
+        # BELOW_NAME
+        # BOTH
+        health-display: BELOW_NAME
+        # Nie działa w przypadku ustawienia tylko below_name.
+        # Kolor boss bara.
+        health-format: "&c%boss_hearts%❤︎"
+        bossbar-color: PURPLE
+        # Nie działa w przypadku ustawienia tylko below_name.
+        # Styl boss bara.
+        bossbar-style: SEGMENTED_10
+        # Wiadomości wypowiadane przez bossa.
+        messages:
+          - "&dOlina: &fWitaj podróżniku..."
+          - "&dOlina: &fPokaż swoją siłę!"
+          - "&dOlina: &fNigdy mnie nie pokonasz!"
+          - "&dOlina: &fTo dopiero początek..."
+      # Sekcja związana z umiejętnościami bossa.
+      skills:
+        # Zwykły atak wręcz.
+        punch:
+          enabled: true
+          damage-multiplier: 1.0
+        # Odrzuca pobliskich graczy.
+        knockback:
+          enabled: true
+          cooldown: 15
+          radius: 5
+          power: 2
+        # Przywołuje błyskawicę.
+        lightning:
+          enabled: true
+          cooldown: 20
+          damage: 6
+        # Leczenie bossa.
+        heal:
+          enabled: true
+          cooldown: 30
+          amount: 50
+        # Przywołuje pomocników.
+        summon-minions:
+          enabled: true
+          cooldown: 40
+          mob: skeleton
+          amount: 3
+      # Sekcja dotycząca form bossa.
+      forms:
+        # Forma początkowa.
+        normal:
+          activate-health: 1000
+          health-multiplier: 1.0
+          damage-multiplier: 1.0
+          speed-multiplier: 1.0
+          skill-damage-multiplier: 1.0
+          message: "&dOlina: &fNie wyglądasz groźnie."
+
+        # Aktywuje się poniżej 75% HP.
+        angry:
+          activate-health: 750
+          health-multiplier: 1.0
+          damage-multiplier: 1.3
+          speed-multiplier: 1.2
+          skill-damage-multiplier: 1.1
+          message: "&dOlina: &cZaczynasz mnie denerwować!"
+          additional-skills:
+            disarm:
+              enabled: true
+              cooldown: 30
+              stun: 1
+        # Aktywuje się poniżej 50% HP.
+        enraged:
+          activate-health: 500
+          health-multiplier: 1.0
+          damage-multiplier: 1.6
+          speed-multiplier: 1.4
+          skill-damage-multiplier: 1.2
+          message: "&dOlina: &4Poczuj mój gniew!"
+          additional-skills:
+            # Wysyła pociski w postaci particle, które automatycznie lecą w stronę dwóch najbliższych graczy.
+            # Particle ma się dynamicznie przemieszczać w stronę stale aktualizowanej pozycji gracza zgodnie z prędkością podaną poniżej.
+            # W momencie dotknięcia particle wybucha na graczu i znika, w przypadku gdy pocisk nie zdąży dolecieć do gracza, po prostu znika.
+            homing:
+              enabled: true
+              cooldown: 60
+              quantity: 2
+              damage: 8
+              missile-speed: 0.15
+              lifetime: 15
+        # Aktywuje się poniżej 25% HP.
+        final:
+          activate-health: 250
+          health-multiplier: 1.0
+          damage-multiplier: 2.0
+          speed-multiplier: 1.2
+          skill-damage-multiplier: 1.4
+          message: "&dOlina: &5Nie odejdę sama!"
+          additional-skills:
+            extreme-override:
+              enabled: true
+              cooldown: one-use
+              area-damage: 5
+              area-knowback: 7
+              area-stun: 1.5
+              sub-abilities:
+                strength-boost:
+                  lenght: 10
+                  multiplier: 1.3
+                minions-bow-damage-boost:
+                  lenght: 120
+                  multiplier: 1.5
+                minions-gear-up:
+                  lenght: infinite
+                  armor-pieces:
+                  - iron_helmet
+                  - iron_chestplate
+                  - iron_leggings
+                  - iron_boots
+                boss-gear-up:
+                  lenght: infinite
+                  armor-pieces:
+                  - diamond_helmet
+                  - diamond_chestplate
+                  - diamond_leggings
+                  - diamond_boots
+                  - wood_sword
+            # Losuje enchant, który będzie nakładany na zbroję lub miecz oraz na wyposażenie minion.
+            # Enchant ma być zapisany na walkę, czyli nawet gdy respire się nowe miniony i zostanie nałożona na nie wyposażenie, to ma ono mieć aktywne enchanty.
+            # Poszczególne enchanty mają być nakładane na odpowiednie wyposażenie.
+            random-buff:
+              enabled: true
+              cooldown: 45
+              enchants:
+                - protection(I-III)
+                - unbreaking(I-II)
+                - sharpness(I-III)
+                - power(I-III)
+                - flame
+                - fire_aspect(I-II)
+      # Sekcja dotycząca ogólnych ustawień.
+      settings:
+        # Sekcja ogólnych ustawień związanych z bossem.
+        boss:
+          # Świat, w którym ma się respić boss.
+          spawn-world: OneBlockLobby
+          # Dokładne kordy, na których ma się respić boss.
+          spawn-cords:
+            # Wymiar X na koordynatach.
+            X: 53
+            # Wymiar Y na koordynatach.
+            Y: 53
+            # Wymiar Z na koordynatach.
+            Z: 32
+          # Czas w minutach, po których boss ma zniknąć.
+          lifetime: 20
+          # Godzina, określająca, kiedy w dniu ma nastąpić pierwszy spawn bossa.
+          first-spawn-time: 00:00
+          # Czas, po którym ma się ponownie zrespić boss.
+          # Dla przykładu, gdy respawn time wynosi 1h, a first spawn time to 00:00 to boss będzie się respił o 1:00, 2:00, 3:00 itd.
+          respawn-time: 1h
+          # Czas w minutach odliczający nadejście bossa.
+          # To oznacza, że 15 min przed spawnem lub innym ustawionym czasem bossa plugin wyśle broadcast.
+          # Wiadomości są konfigurowalne w messages.yml
+          countdowns:
+          - 15
+          - 5
+          - 1
+        # Sekcja ustawień ogólnych związanych z hologramem bossa.
+        # Świat i kordy są takie same jak te, co zostały ustawione dla bossa.
+        boss-hologram:
+          enabled: true
+          hologram-creation: Decentholograms
+          offset:
+            X: 0
+            Y: 0
+            Z: 0
+          lore:
+          - "            &b&lOlina &fponownie się wzniesie za:"
+          - "              &b%boss_respawn_remaining_time%"
+          # Warunek, określający, kiedy ma być wyświetlany hologram.
+          # W tym przypadku oznacza to, że hologram ma być wyświetlany tylko wtedy gdy bossa nie ma na świecie.
+          display-condition: '%boss_health% = 0'
+          # To ustawienie definiuje, jak szybko mają się aktualizować placeholdery w hologramie.
+          # -1 oznacza tak szybko, jak to jest możliwe.
+          placeholders-update-interval: -1
+      # Sekcja ustawień dotycząca nagród z bossa.
+      # Komendy wykonywane przez konsolę serwera — %player% zostanie podmienione na nick gracza.
+      rewards:
+        money:
+          display-name: "&a%amount% monet"
+          command: "currency money give %player% %amount%"
+          amounts:
+            rank-1: [25000, 40000, 55000]
+            rank-2: [15000, 25000]
+            rank-3: [10000, 18000]
+            participation: [5000, 8000]
+          weight: 100
+        boss-currency:
+          display-name: "&d%amount% waluty bossa"
+          command: "currency boss give %player% %amount%"
+          amounts:
+            rank-1: [3, 5, 8]
+            rank-2: [2, 4]
+            rank-3: [1, 3]
+          weight: 35
+        sell-booster-player:
+          display-name: "&eBooster sprzedaży (&f%amount%x &ena &f%duration%&e)"
+          command: "booster give %player% sell_boost player %duration% %amount%"
+          durations: ["15m", "30m"]
+          amounts: [1.25, 1.5, 2.0]
+          weight: 25
+        sell-booster-global:
+          display-name: "&6&lGlobalny booster sprzedaży (&f%amount%x &ena &f%duration%&6&l)"
+          command: "booster give %player% sell_boost global %duration% %amount%"
+          durations: ["15m"]
+          amounts: [1.5, 2.0]
+          weight: 4
+        crate-key:
+          display-name: "&5%amount%x Klucz do kraty bossa"
+          command: "crates key give %player% boss_key %amount%"
+          amounts: [1, 2]
+          weight: 12
+        spawner:
+          display-name: "&6Spawner &f%mob%"
+          type: item
+          mob-types: [chicken, pig, cow]
+          weight: 8
+        enchanted-weapon:
+          display-name: "&b%material% &7(%enchants%)"
+          type: item
+          materials: [DIAMOND_PICKAXE, DIAMOND_SWORD, NETHERITE_PICKAXE, NETHERITE_SWORD]
+          enchants:
+            - "efficiency:4-6"
+            - "unbreaking:3"
+            - "sharpness:4-6"
+            - "looting:2-3"
+            - "fortune:3"
+            - "mending:1"
+          weight: 3
+      top-damagers:
+        minimum-damage-percent: 10
+        ranks:
+          "1":
+            max-rewards: 3
+            reward-pool: [money, boss-currency, sell-booster-player, sell-booster-global, crate-key, spawner, enchanted-weapon]
+          "2":
+            max-rewards: 2
+            reward-pool: [money, boss-currency, sell-booster-player, crate-key, spawner, enchanted-weapon]
+          "3":
+            max-rewards: 2
+            reward-pool: [money, boss-currency, sell-booster-player, crate-key, spawner]
+          participation:
+            max-rewards: 1
+            reward-pool: [money, sell-booster-player]
+        defeat-message:
+          header:
+            - ""
+            - "&d&l✦ &5&lOlina została pokonana! &d&l✦"
+            - "&7Najlepsi wojownicy:"
+          rank-line: "&6&l#{rank} &b%player% &7— &c%damage% &7obrażeń (&e%damage_percent%%&7)"
+          reward-line: "  &8» &a%reward_name%"
+          footer:
+            - ""
+            - "&7Boss wzniesie się ponownie za: &b%boss_respawn_remaining_time%"
+            - ""
+    # Sekcja związana z ustawieniami rozdań kluczy.
+    keys-rewards:
+      display:
+        display-text: "&fRozdania kluczy codziennie o &b&l9:00&f, &b&l11:00 &foraz o &b&l13:00&f"
+        display-type: BOSSBAR
+        bossbar-color: BLUE
+        # Nie działa w przypadku ustawienia below_name.
+        bossbar-style: SEGMENTED_10
+      actions:
+        rewards:
+          keys:
+            commands:
+            - crates key give %player% rare_key 1
+            - crates key give %player% epic_key 1
+            messages:
+            - "&aOtrzymałeś 1x rzadki klucz!"
+            - "&aOtrzymałeś 1x epicki klucz!"
+            effects:
+              fireworks:
+                colors:
+                  - RED
+                  - GOLD
+                  - GREEN
+                  - BLUE
+                  - PURPLE
+              sounds:
+                enabled: true
+                name: ENTITY_PLAYER_LEVELUP
+                volume: 1.0
+                pitch: 1.5
+        countdown:
+          enabled: true
+          countdown-timers:
+          - 30
+          - 15
+          - 5
+          - 4
+          - 3
+          - 2
+          - 1
+          countdown-type: TITLE
+          countdown-message:
+          - "&6&l%time_remaining%"
+    # Sekcja ustawień poświęcona boosterom.
+    boosters:
+      # Typ boostera
+      money:
+        display:
+          display_name: "&aBooster kasy x%booster_multiplier% na %booster_time%"
+          lore:
+          - "&fZwiększa ilość kasy &a&l%booster_multiplier% &f na &a&l%booster_time%"
+          - "&fze wszystkich źródeł oprócz sprzedaży przedmiotów w sklepie"
+          - "&fKliknij prawym, aby użyć"
+          # Używana jest tutaj głowa za pomocą pluginu head database.
+          # Trzeba dodać dependency tego pluginu i stworzyć metodę, aby głowa się wczytywała.
+          material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODIyMjkyZDkxODNlMzhmM2JlOWYwNmY5NjYzOTRlMmRhZmYzNjJmNzBhZTQ1Y2RlNDEyYjg3YmNkYjg5YzE1OCJ9fX0=
+        mechanics:
+          # Determinuje czy booster może się stakować.
+          stackable: false
+          # Możliwość zablokowania stawiania bloku.
+          block-placing: true
+          click-type: RIGHT
+          commands-on-click:
+          - shop booster use %player% money_boost %booster_multiplier% %booster_time%
+          - msg %player% &aBooster został użyty pomyślnie!
+      boss:
+        display:
+          display_name: "&aBooster boss tokenów x%booster_multiplier% na %booster_time%"
+          lore:
+            - "&fZwiększa ilość boss tokenów &a&l%booster_multiplier% &f na &a&l%booster_time%"
+            - "&fza zabicie bossa"
+            - "&fKliknij prawym, aby użyć"
+          material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzVkM2E5MGY0NzFjOTVmY2M5NzAyZjZmZTU3M2NjMTEzY2RmNmQ4YzUzOWIyNjFlZTNjMzA3NzFiMThlMmFjIn19fQ==
+        mechanics:
+          # Determinuje czy booster może się stakować.
+          stackable: false
+          # Możliwość zablokowania stawiania bloku.
+          block-placing: true
+          click-type: RIGHT
+          commands-on-click:
+            - shop booster use %player% boss_boost %booster_multiplier% %booster_time%
+            - msg %player% &aBooster został użyty pomyślnie!
+      sell:
+        display:
+          display_name: "&aBooster sprzedaży x%booster_multiplier% na %booster_time%"
+          lore:
+            - "&fZwiększa ilość kasy &a&l%booster_multiplier% &f na &a&l%booster_time%"
+            - "&fza sprzedaż każdego przedmiotu w sklepie"
+            - "&fKliknij prawym, aby użyć"
+          material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmI2MWE0YTdhYWE0NDc1ODFhZWRhMGVjMWNlMDFlMDkzZTBiOTg4ZmZjZDE2ZTg4YTFjMjBkYjlkZWNkMzFiZiJ9fX0=
+        mechanics:
+          # Determinuje czy booster może się stalkować.
+          stackable: false
+          # Możliwość zablokowania stawiania bloku.
+          block-placing: true
+          click-type: RIGHT
+          commands-on-click:
+            - shop booster use %player% sell_boost %booster_multiplier% %booster_time%
+            - msg %player% &aBooster został użyty pomyślnie!
+
+  # Sekcja związana ze sklepem.
+  shop:
+    # Sekcja związana z komendami:
+    command:
+      # Główna komenda sklepu.
+      main-command: sklep
+      # Lista aliasów głównej komendy.
+      aliases:
+      - market
+      - shop
+      - ah
+    item-value-lore:
+      enabled: true
+      normal-format: '&a$%sell_price%'
+      boosted-format: '&7(x%booster_multiplier%) &a$%sell_price%'
+      refresh-interval-ticks: 40
+    # Sekcja związana z menu sklepu.
+    main-menu:
+      # Opisuje, co ile sekund można ponownie użyć głównej komendy.
+      command-cooldown: 2
+      # Rodzaj ekwipunku, który będzie zastosowany dla wszystkich menu sklepu.
+      inventory-type: CHEST
+      # Rozmiar głównego menu.
+      size: 45
+      # Ścieżka, z której plugin będzie pobierał menu dla sekcji sklepu.
+      menus-loading-path: resources/GUIs/shop
+      # Ustawienia sekcji sklepu.
+      # Jest to też lista plików, które plugin ma wczytać.
+      shop-sections:
+        # Przykładowa sekcja sklepu.
+        blocks:
+          # Nazwa sekcji wyświetlana w głównym menu.
+          display-title: "&e&lʙʟᴏᴋɪ"
+          # Przedmiot reprezentujący sekcje.
+          material: GRASS_BLOCK
+          # Miejsce, w głównym menu, na którym będzie się znajdować ikona sekcji.
+          slot: 20
+          # Nazwa pliku, którego plugin będzie szukał i podpinał do sekcji, aby po kliknięciu, w sekcje otworzyło się kolejne menu.
+          file: blocks.yml
+        food:
+          display-title: "&6&lᴊᴇᴅᴢᴇɴɪᴇ"
+          material: COOKED_BEEF
+          slot: 21
+          file: food.yml
+        minerals:
+          display-title: "&b&lʀᴜᴅʏ"
+          material: DIAMOND
+          slot: 22
+          file: minerals.yml
+        mob_drops:
+          display-title: "&6&lᴍᴏʙᴏᴡᴇ ᴅʀᴏᴘʏ"
+          material: GUNPOWDER
+          slot: 23
+          file: mob_drops.yml
+        spawners:
+          display-title: "&6&lsᴘᴀᴡɴᴇʀʏ"
+          material: SPAWNER
+          slot: 24
+          file: spawners.yml
+        info:
+          display-title: "%player_name%"
+          material: '%player_head%'
+          slot: 36
+          file: ''
+          lore:
+          - ''
+          - '&fBalans: &a%oneblock_currency_money%$'
+        search:
+          display-title: "&b&lWyszukaj przedmiot"
+          material: SPYGLASS
+          slot: 44
+          file: ''
+          lore:
+          - ''
+          - '&7Kliknij, aby wpisać nazwę'
+          - '&7lub poczatek nazwy przedmiotu.'
+          - ''
+          - '&eKliknij, aby wyszukać!'
+          action: SEARCH
+      # Możliwość ustawienia specyficznych akcji po kliknięciu, na dany przedmiot w sekcji.
+      # Wspieranymi akcjami są: BUY, BUY_MOST, SELL, SELL_ALL.
+      # Wspieranymi kliknięciami są: LEFT, SHIFT_LEFT, RIGHT, SHIFT_RIGHT.
+      click-mappings:
+        BUY: LEFT
+        SELL: RIGHT
+        SELL_ALL: SHIFT_RIGHT
+      # Ustawienia dotyczące zniżek sklepowych.
+      discounts:
+        # Determinuje, czy zniżki powinny byc włączone
+        enabled: true
+        # Określa, czy włączyć możliwość mnożenia zysku ze sprzedaży przez graczy z aktywnym boosterem, bądź bonusem od kraju
+        enable-sell-multipliers: true
+        # Wygląd zniżki na przedmiocie
+        discount-format: "&m&a$%item_cost% &a$%discount_item_cost%"
+        # Wygląd ceny sprzedaży z boosterem
+        sell-format: "&c&m$%normal_sell_income% &a$%boosted_sell_income%"
+      # Sekcja dotycząca przedmiotów w sekcji.
+      items:
+        item-lore:
+        - "&aLeft Click: Kup: &a$%item_cost%"
+        - "&6Right Click: Sprzedaj: %sell-format%"
+        - "&bShift + Right Click: Sell All"
+        # Określa, czy wartość przedmiotu ma być wyświetlana w jego lore.
+        value-in-item-lore: true
+        # Lista menu dotyczących różnych przypadków po kliknięciu, na przedmiot.
+        items-menu:
+          # Menu kupna przedmiotu.
+          # Dostępnymi akcjami do użycia są:
+          # ADD(1/16/32/64...) - dodaje wybrana ilość przedmiotów do kupna.
+          # REMOVE(1/16/32) - odejmuje wybrana ilość przedmiotu, od aktualnego stanu.
+          # BACK — wraca do menu sekcji.
+          # OPEN_BUY_STACKS - otwiera menu ze stackami.
+          # SELL_ALL - Sprzedaje wszystkie przedmioty tego samego rodzaju.
+          # BUY_ALL - Kupuje, tyle przedmiotów ile gracz ma pieniędzy.
+          # BUY(%amount%) - Kupuje określoną ilość przedmiotu.
+          buy-screen:
+            # Rozmiar menu.
+            size: 54
+            # Lista przedmiotów wyświetlanych w menu.
+            items:
+              # Numer przedmiotu.
+              1:
+                # Materiał przedmiotu.
+                material: red_stained_glass_pane
+                # Nazwa przedmiotu.
+                name: '&c&l-32'
+                # Ilość wyświetlanego przedmiotu.
+                amount: 32
+                action: REMOVE32
+                # Miejsce przedmiotu w menu.
+                slot: 19
+              2:
+                material: red_stained_glass_pane
+                name: '&c&l-16'
+                amount: 16
+                action: REMOVE16
+                slot: 20
+              3:
+                material: red_stained_glass_pane
+                name: '&c&l-1'
+                action: REMOVE1
+                slot: 21
+              4:
+                material: lime_stained_glass_pane
+                name: '&a&l+1'
+                action: ADD1
+                slot: 23
+              5:
+                material: lime_stained_glass_pane
+                name: '&a&l+16'
+                amount: 16
+                action: ADD16
+                slot: 24
+              6:
+                material: lime_stained_glass_pane
+                name: '&a&l+32'
+                amount: 32
+                action: ADD32
+                slot: 25
+              7:
+                material: paper
+                name: 'Kupić?'
+                lore:
+                - '&a$%total_price%'
+                action: CONFIRM_TRANSACTION
+                slot: 22
+                type: CONFIRM
+              8:
+                slot: 13
+                type: SELECTED_ITEM
+                lore:
+                - '§5x %amount%'
+              9:
+                material: emerald
+                slot: 31
+                name: '&aBalans'
+                lore:
+                - ''
+                - '&fBalans: &a$%oneblock_currency_money%'
+
+              10:
+                material: CHEST
+                name: '&fKup więcej'
+                slot: 39
+                action: OPEN_BUY_STACKS
+              11:
+                 material: BARRIER
+                 name: '&cWróć'
+                 slot: 41
+                 action: BACK
+
+          sell-screen:
+            size: 45
+            items:
+              1:
+                material: red_stained_glass_pane
+                name: '&c&l-32'
+                amount: 32
+                action: REMOVE32
+                slot: 19
+              2:
+                material: red_stained_glass_pane
+                name: '&c&l-16'
+                amount: 16
+                action: REMOVE16
+                slot: 20
+              3:
+                material: red_stained_glass_pane
+                name: '&c&l-1'
+                action: REMOVE1
+                slot: 21
+              4:
+                material: lime_stained_glass_pane
+                name: '&a&l+1'
+                action: ADD1
+                slot: 23
+              5:
+                material: lime_stained_glass_pane
+                name: '&a&l+16'
+                amount: 16
+                action: ADD16
+                slot: 24
+              6:
+                material: lime_stained_glass_pane
+                name: '&a&l+32'
+                amount: 32
+                action: ADD32
+                slot: 25
+              7:
+                material: paper
+                name: 'Sprzedać?'
+                lore:
+                  - '%sell-format%'
+                action: CONFIRM_TRANSACTION
+                slot: 22
+                type: CONFIRM
+              8:
+                slot: 13
+                type: SELECTED_ITEM
+              9:
+                material: emerald
+                name: '&fSprzedaj wszystko'
+                slot: 31
+                action: SELL_ALL
+
+          buy-stacks-screen:
+            size: 27
+            items:
+              1:
+                # Ma tu być wyświetlony materiał itemu wybranego do zakupu.
+                material: '%item_material%'
+                name: '&aKup 1 stack'
+                action: BUY64
+                lore:
+                  - ''
+                  - '&aCena: &a$%total_price%$'
+                  - ''
+                  - '&fKliknij lewym aby kupić'
+                slot: 0
+              2:
+                material: '%item_material%'
+                name: '&aKup 2 stacki'
+                amount: 2
+                action: BUY128
+                lore:
+                  - ''
+                  - '&aCena: &a$%total_price%$'
+                  - ''
+                  - '&fKliknij lewym aby kupić'
+                slot: 1
+              3:
+                material: '%item_material%'
+                name: '&aKup 3 stacki'
+                amount: 3
+                action: BUY192
+                lore:
+                  - ''
+                  - '&aCena: &a$%total_price%$'
+                  - ''
+                  - '&fKliknij lewym aby kupić'
+                slot: 2
+              4:
+                material: '%item_material%'
+                name: '&aKup 4 stacki'
+                amount: 4
+                action: BUY256
+                lore:
+                  - ''
+                  - '&aCena: &a$%total_price%$'
+                  - ''
+                  - '&fKliknij lewym aby kupić'
+                slot: 3
+              5:
+                material: '%item_material%'
+                name: '&aKup 5 stacków'
+                amount: 5
+                action: BUY320
+                lore:
+                  - ''
+                  - '&aCena: &a$%total_price%$'
+                  - ''
+                  - '&fKliknij lewym aby kupić'
+                slot: 4
+              6:
+                material: BARRIER
+                name: '&cWróć'
+                slot: 22
+                action: BACK
+              7:
+                material: '%item_material%'
+                name: '&aKup 7 stacków'
+                amount: 7
+                action: BUY448
+                lore:
+                  - ''
+                  - '&aCena: &a$%total_price%$'
+                  - ''
+                  - '&fKliknij lewym aby kupić'
+                slot: 6
+              8:
+                material: '%item_material%'
+                name: '&aKup 8 stacków'
+                amount: 8
+                action: BUY512
+                lore:
+                  - ''
+                  - '&aCena: &a$%total_price%$'
+                  - ''
+                  - '&fKliknij lewym aby kupić'
+                slot: 7
+              10:
+                material: '%item_material%'
+                name: '&aKup 9 stacków'
+                amount: 9
+                action: BUY576
+                lore:
+                  - ''
+                  - '&aCena: &a$%total_price%$'
+                  - ''
+                  - '&fKliknij lewym aby kupić'
+                slot: 8
+              11:
+                material: light_gray_stained_glass_pane
+                slots:
+                - 18
+                - 19
+                - 20
+                - 21
+                - 22
+                - 23
+                - 24
+                - 25
+                - 26
+          # Menu wyskakujące po komendzie /sellall.
+          sell-all-menu:
+            items:
+              info-item:
+                material: NETHER_STAR
+                slot: 4
+                name: "&a&lGUI sprzedaży"
+                lore:
+                  - "&6Wrzuć tutaj wszystkie przedmioty do sprzedania,"
+                  - "&6po zamknięciu menu, wszystkie przedmioty zostaną sprzedane,"
+                  - "&ea itemy, które nie mogły zostać sprzedane"
+                  - "&wrócą do twojego ekwipunku."
+              fill-item:
+                material: GRAY_STAINED_GLASS_PANE
+                name: ' '
+                slots:
+                - 0
+                - 1
+                - 2
+                - 3
+                - 5
+                - 6
+                - 7
+                - 8
+                - 9
+                - 17
+                - 18
+                - 26
+                - 27
+                - 35
+                - 36
+                - 44
+                - 45
+                - 46
+                - 47
+                - 48
+                - 49
+                - 50
+                - 51
+                - 52
+                - 53
+
+    search-menu:
+      title: '&b&lWyszukiwarka &7(%page%/%pages%)'
+      size: 54
+      result-slots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      items:
+        filler:
+          material: GRAY_STAINED_GLASS_PANE
+          name: ' '
+        previous:
+          material: ARROW
+          name: '&cPoprzednia strona'
+          slot: 45
+        close:
+          material: BARRIER
+          name: '&cWyjdz'
+          slot: 49
+        next:
+          material: ARROW
+          name: '&aNastepna strona'
+          slot: 53
+

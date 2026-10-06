@@ -1,0 +1,75 @@
+name: OneBlock
+version: 1.0
+main: pl.gabriel.oneblock.OneBlockPlugin
+api-version: '1.21.11'
+author: Gabriel
+softdepend:
+  - PlaceholderAPI
+  - HeadDatabase
+  - HeadDB
+  - ExcellentCrates
+commands:
+  oneblock:
+    description: Główna komenda OneBlock.
+    usage: /oneblock
+    aliases:
+      - island
+      - is
+      - wyspa
+      - ob
+  sklep:
+    description: Główna komenda sklepu.
+    usage: /sklep
+    aliases:
+      - market
+      - shop
+      - ah
+  sellall:
+    description: Komenda sprzedaży wszystkich przedmiotów.
+    usage: /sellall
+  pay:
+    description: Przelewa pieniądze innemu graczowi.
+    usage: /pay <gracz> <kwota>
+permissions:
+  oneblock.pay:
+    description: Pozwala przelewać pieniądze innym graczom
+    default: true
+  oneblock.reload:
+    description: Pozwala na przeładowanie konfiguracji pluginu
+    default: op
+  oneblock.cleanup:
+    description: Pozwala na czyszczenie starych hologramów
+    default: op
+  oneblock.admin:
+    description: Pozwala widzieć podpowiedzi komend administracyjnych OneBlock
+    default: op
+  oneblock.admin.give:
+    description: Pozwala dawać custom itemy OneBlock
+    default: op
+  oneblock.admin.boss:
+    description: Pozwala używać testowych komend bossa OneBlock
+    default: op
+  oneblock.shop.currency.add:
+    description: Pozwala na dodawanie nowych walut
+    default: op
+  oneblock.shop.currency.remove:
+    description: Pozwala na usuwanie walut
+    default: op
+  oneblock.shop.currency.list:
+    description: Pozwala na wyświetlanie listy walut
+    default: op
+  oneblock.shop.currency.give:
+    description: Pozwala na dawanie walut graczom
+    default: op
+  oneblock.shop.currency.set:
+    description: Pozwala na ustawianie salda waluty graczom
+    default: op
+  oneblock.shop.reload:
+    description: Pozwala na przeładowanie konfiguracji sklepu
+    default: op
+  oneblock.shop.booster.give:
+    description: Pozwala na dawanie boosterów graczom
+    default: op
+  oneblock.shop.booster.use:
+    description: Pozwala na używanie boosterów
+    default: true

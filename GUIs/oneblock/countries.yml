@@ -1,0 +1,758 @@
+albania:
+  name: Albania
+  buffs:
+    - +6% szansy na dodatkowy drop z bloków ziemi i kamienia
+    - +5% do prędkości kopania bloków w przyborniku
+    - +6% do ceny sprzedaży bloków ziemnych
+  nerf: -6% do punktów HP regenerowanych po każdej walce
+  open command: oneblock admin open albania %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU3Y2VhNzc2NzMzMGRkNDk0M2Q0NzQ5NmI1MTg2YzE3ZTYxODg4YTI5ZmJhNjUxYTIzZGFlNzVmNjUwYjUzMmMifX19
+
+arabia:
+  name: Arabia Saudyjska
+  buffs:
+    - +8% do ceny sprzedaży złota i złotych itemów
+    - +6% szansy na dodatkowy drop przy zabiciu moba
+    - +5% szansy na drop złota przy kopaniu piasku i piaskowca
+  nerf: -7% do prędkości poruszania się podczas noszenia pełnej zbroi
+  open command: oneblock admin open arabia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2E0YmU3NTlhOWNmN2YwYTE5YTdlOGU2MmYyMzc4OWFkMWQyMWNlYmFlMzhhZjlkOTU0MTY3NmEzZGIwMDE1NzIifX19
+
+argentyna:
+  name: Argentyna
+  buffs:
+    - +8% do ceny sprzedaży mięsa i skór
+    - +6% szansy na dodatkowy drop z krów
+    - +6% do XP z hodowli bydła
+  nerf: -6% do obrażeń zadawanych mobom stepowym
+  open command: oneblock admin open argentyna %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjZkMDMzZGM1ZjY3NWFkNTFiYzA2YzdhMTk0OWMzNWExZDM3ZTQ4YTJlMWMyNzg5YzJjZjdkMzBlYzU4ZjMyYyJ9fX0=
+
+australia:
+  name: Australia
+  buffs:
+    - +8% do ceny sprzedaży wełny i skór
+    - +6% szansy na dodatkowy drop z mobów pustynnych
+    - +6% do XP z polowania
+  nerf: -6% do obrażeń zadawanych pająkom
+  open command: oneblock admin open australia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2JhNTg2YTZmMDdhMDk5YTU4ODM4YTlmYmVkODQ1ZWNmNzgwZmMyYTM5MGY3YTQ2MjBhN2RjZjBhODVlNzVhNCJ9fX0=
+
+austria:
+  name: Austria
+  buffs:
+    - +8% do ceny sprzedaży śniegu i lodowych bloków
+    - +6% szansy na dodatkowy drop w górach
+    - +6% do XP z wspinaczki i eksploracji jaskiń
+  nerf: -5% do obrażeń zadawanych kozom
+  open command: oneblock admin open austria %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Q1ZWU2NzEyN2ZlZWM0ODM0NmRhYmE4ODRhZGM5M2Q2ZmEzYThkM2QwZjBlODRmYWNhYWJiZGNhOTdhYTdmZiJ9fX0=
+
+bangladesz:
+  name: Bangladesz
+  buffs:
+    - +8% do ceny sprzedaży ryżu
+    - +6% szansy na dodatkowy drop z upraw ryżu
+    - +6% do szybkości wzrostu upraw wodnych
+  nerf: -6% do obrażeń otrzymywanych podczas powodzi (tonięcie)
+  open command: oneblock admin open bangladesz %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU5NTU4N2Q3NDVhMTc0Y2QyMGYxYWY1MjMzZTQ2YTQyNDk0MzdmMzlkMTZlNDY2ZmQzZTNmODIyODY3ZDE4OSJ9fX0=
+
+belgia:
+  name: Belgia
+  buffs:
+    - +8% do ceny sprzedaży kakao i przedmiotów kulinarnych
+    - +6% szansy na dodatkowy drop z upraw kakao
+    - +6% do XP z warzenia eliksirów
+  nerf: -6% do obrażeń zadawanych piglinom
+  open command: oneblock admin open belgia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhlMGUwZGU3MDVkMzY2YmE1OTUwNmIzZmIxYTA0ZmQzZDUxYWZmOTBlNWNmYjRlYmJlYTY2ZWE1OTc2YzBmZiJ9fX0=
+
+boliwia:
+  name: Boliwia
+  buffs:
+    - +8% do ceny sprzedaży srebra
+    - +6% szansy na dodatkowy drop żelaza przy kopaniu w górach
+    - +6% do XP za wydobycie rud w górach
+  nerf: -6% do obrażeń otrzymywanych od upadku w górach
+  open command: oneblock admin open boliwia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQyYzlmOTg2MThjZDVmN2RiZjBjMWE1NGVlMDk0NzQ2NjJiNzEzYjVhYTI2NWM4NWVmYmZjNDY0MThlOTE1In19fQ==
+
+brazylia:
+  name: Brazylia
+  buffs:
+    - +8% szansy na podwójny drop z bloków roślinnych
+    - +6% do ceny sprzedaży jedzenia i upraw
+    - +6% szybszego wzrostu upraw na wyspie
+  nerf: -5% do obrażeń zadawanych mobom w nocy
+  open command: oneblock admin open brazylia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzlhNDY0NzVkNWRjYzgxNWY2YzVmMjg1OWVkYmIxMDYxMWYzZTg2MWMwZWIxNGYwODgxNjFiM2MwY2NiMmIwZDkifX19
+
+bułgaria:
+  name: Bułgaria
+  buffs:
+    - +8% do ceny sprzedaży rud i kamieni
+    - +6% szansy na bonusową rudę żelaza lub złota
+    - +5% do XP otrzymywanego za wydobycie bloków
+  nerf: -6% do punktów HP regenerowanych naturalnie
+  open command: oneblock admin open bulgaria %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2E2NmE4OTE3ZDdjMzNjYjhiYzg0NjRlYjY4OWExYTg1MTk3Mzc2ZjU1NWQwZDI0Y2QzN2ZhYjYyMGU3MjNmOTMifX19
+
+chile:
+  name: Chile
+  buffs:
+    - +8% do ceny sprzedaży miedzi
+    - +6% szansy na dodatkowy drop miedzi przy kopaniu
+    - +6% do XP za wydobycie rud
+  nerf: -6% do obrażeń zadawanych mobom górskim
+  open command: oneblock admin open chile %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjExMWU4MDI0MjJiNTM5MjkyZjFmOTJiMzgzM2VkZmQ2NTEzODYwODU5NGFhYWI0YWNiMzIyMDc3YzM2NTg3YiJ9fX0=
+
+chiny:
+  name: Chiny
+  buffs:
+    - +8% do ceny sprzedaży craftowalnych przedmiotów
+    - +6% do ilości itemów otrzymywanych z handlu z wioską
+    - +6% do durability wszystkich narzędzi i broni
+  nerf: -5% do obrażeń zadawanych szkieletom i huskom
+  open command: oneblock admin open chiny %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdmOWJjMDM1Y2RjODBmMWFiNWUxMTk4ZjI5ZjNhZDNmZGQyYjQyZDlhNjlhZWI2NGRlOTkwNjgxODAwYjk4ZGMifX19
+
+chorwacja:
+  name: Chorwacja
+  buffs:
+    - +8% do ceny sprzedaży ryb i morskich itemów
+    - +6% szansy na dodatkowy drop z mobów wodnych
+    - +6% do XP z wędkowania na wyspie
+  nerf: -6% do obrażeń zadawanych mobom w Netherze
+  open command: oneblock admin open chorwacja %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2IwNTBjMDRlYzhjYWJjZTcxZDcxMDNmM2U5ZWY0YmI4ODE5ZjlmMzY1ZWIzMzVhOTEzOTkxMmJjMDdlZDQ0NSJ9fX0=
+cypr:
+  name: Cypr
+  buffs:
+    - +8% do ceny sprzedaży miedzi
+    - +6% szansy na dodatkowy drop miedzi
+    - +6% do XP za wydobycie rud
+  nerf: -6% do obrażeń zadawanych mobom morskim
+  open command: oneblock admin open cypr %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU4ZjczYzk1MWU5Y2U2ODQ1NmNhMmU0MTFiMTFhNTRmZGIyZTU1OTI5M2YzMzMwNWE0MmI0MzdmOTA2YmVjMCJ9fX0=
+
+czechy:
+  name: Czechy
+  buffs:
+    - +8% do ceny sprzedaży chmielu i przedmiotów piwnych
+    - +6% szansy na dodatkowy drop z upraw
+    - +6% do XP z warzenia
+  nerf: -5% do prędkości biegu
+  open command: oneblock admin open czechy %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDgxNTJiNzMzNGQ3ZWNmMzM1ZTQ3YTRmMzVkZWZiZDJlYjY5NTdmYzdiZmU5NDIxMjY0MmQ2MmY0NmU2MWUifX19
+
+dania:
+  name: Dania
+  buffs:
+    - +8% do ceny sprzedaży itemów z hodowli zwierząt
+    - +6% szansy na podwójny drop z krów i świń
+    - +5% do XP ze wszystkich źródeł na wyspie
+  nerf: -5% do obrażeń od łuku i kuszy
+  open command: oneblock admin open dania %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzEwYzIzMDU1YzM5MjYwNmY3ZTUzMWRhYTI2NzZlYmUyZTM0ODk4ODgxMGMxNWYxNWRjNWIzNzMzOTk4MjMyIn19fQ==
+
+egypt:
+  name: Egipt
+  buffs:
+    - +8% do ceny sprzedaży piasku i piaskowca
+    - +6% szansy na drop Ancient Debris przy kopaniu deepslate
+    - +6% do XP za odkrycie nowego poziomu wyspy
+  nerf: -7% do punktów HP regenerowanych podczas kopania
+  open command: oneblock admin open egipt %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzgyNmU3NDJiMzJmMGY4ZGI1OWMwN2IxYmNkZGU2ZjhhOTNmODVjOTI5ZTU5OGM3ZTkyNzNiOTIxMWYyY2U3OCJ9fX0=
+
+ekwador:
+  name: Ekwador
+  buffs:
+    - +8% do ceny sprzedaży kakao
+    - +6% szansy na dodatkowy drop kakao
+    - +6% do XP z upraw kakaowych
+  nerf: -6% do obrażeń zadawanych mobom dżungli
+  open command: oneblock admin open ekwador %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzI4NjliNTVhNDAxYzg3ZmI5M2MzNmEyZDJlNzRlYTRkZDcyMjU0MmFiMGZjM2MwZGJmOTUxMTc3MzI1MTQ1NSJ9fX0=
+
+etiopia:
+  name: Etiopia
+  buffs:
+    - +8% do ceny sprzedaży bloków roślinnych
+    - +6% szybszego wzrostu wszystkich upraw
+    - +5% do XP za farmowanie i hodowlę zwierząt
+  nerf: -6% do obrażeń zadawanych mobom w nocy
+  open command: oneblock admin open etiopia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzc1YmI4NjJhN2JiYTAzM2NhODA3MmNmMGJiOTZmMzYxZGJjNDFjNjI1MjE4NmVmODFiMzIwZTE1OWUwNmQ4MTAifX19
+
+filipiny:
+  name: Filipiny
+  buffs:
+    - +8% do ceny sprzedaży ryb i owoców morza
+    - +6% szansy na dodatkowy drop z raf koralowych
+    - +6% do XP z nurkowania
+  nerf: -6% do obrażeń zadawanych mobom morskim
+  open command: oneblock admin open filipiny %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGFiY2RiMzU1NGZmMzE3NTk4MjNhMTJiOWM4YjkxODZjZDI5NTQ0ZDE4NDE5ZGNlNTUxY2Y3ODNhZDAwNmNkZiJ9fX0=
+
+finlandia:
+  name: Finlandia
+  buffs:
+    - +8% do ceny sprzedaży drewna i bloków leśnych
+    - +6% szansy na podwójny drop z drzew
+    - +6% szansy na rzadki loot po zabiciu wilka lub niedźwiedzia
+  nerf: -7% do obrażeń zadawanych mobom w biomach śnieżnych
+  open command: oneblock admin open finlandia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU5ZjIzNDk3MjlhN2VjOGQ0YjE0NzhhZGZlNWNhOGFmOTY0NzllOTgzZmJhZDIzOGNjYmQ4MTQwOWI0ZWQifX19
+
+francja:
+  name: Francja
+  buffs:
+    - +8% do ceny sprzedaży win. przedmiotów kulinarnych (tort, chleb)
+    - +6% szansy na rzadki drop z upraw winogron/jagód
+    - +6% do XP z warzenia i craftowania jedzenia
+  nerf: -5% do obrażeń zadawanych zombie
+  open command: oneblock admin open francja %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTEyNjlhMDY3ZWUzN2U2MzYzNWNhMWU3MjNiNjc2ZjEzOWRjMmRiZGRmZjk2YmJmZWY5OWQ4YjM1Yzk5NmJjIn19fQ==
+
+ghana:
+  name: Ghana
+  buffs:
+    - +8% do ceny sprzedaży gliny i piasku
+    - +6% szansy na dodatkowy drop gliny przy kopaniu
+    - +5% do prędkości kopania miękkiego terenu
+  nerf: -6% do XP otrzymywanego z walki z mobami
+  open command: oneblock admin open ghana %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzM3YWIzNjZlOTA0OGRiNTY0NzAwM2MzZjk3N2Y3NTM3M2Q3Njc1Yjc5Nzc5NGNlMmM5MTk4MDBlYzQ0N2M2NzcifX19
+
+grecja:
+  name: Grecja
+  buffs:
+    - +8% do ceny sprzedaży kamienia i jego odmian
+    - +6% szansy na dodatkowy drop przy kopaniu bloków kamiennych
+    - +6% do XP za budowanie i stawianie bloków
+  nerf: -5% do obrażeń zadawanych morskim mobom
+  open command: oneblock admin open grecja %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzE1MTRkZTZkZDJiNzY4MmIxZDNlYmNkMTAyOTFhZTFmMDIxZTMwMTJiNWM4YmVmZmViNzViMTgxOWViNDI1OWQifX19
+
+hiszpania:
+  name: Hiszpania
+  buffs:
+    - +8% do ceny sprzedaży czerwonych bloków (terakota, wełna)
+    - +6% szansy na dodatkowy drop z byków (krów)
+    - +6% do XP z walki wręcz
+  nerf: -6% do obrażeń otrzymywanych od upadku
+  open command: oneblock admin open hiszpania %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJiZDQ1MjE5ODMzMDllMGFkNzZjMWVlMjk4NzQyODc5NTdlYzNkOTZmOGQ4ODkzMjRkYThjODg3ZTQ4NWVhOCJ9fX0=
+
+holandia:
+  name: Holandia
+  buffs:
+    - +8% do ceny sprzedaży kwiatów i barwników
+    - +6% szansy na rzadki kwiat przy kopaniu trawy
+    - +6% do ceny sprzedaży upraw pszenicy i marchwi
+  nerf: -5% do obrażeń zadawanych mobom w Endzie
+  open command: oneblock admin open holandia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzIzY2YyMTBlZGVhMzk2ZjJmNWRmYmNlZDY5ODQ4NDM0ZjkzNDA0ZWVmZWFiZjU0YjIzYzA3M2IwOTBhZGYifX19
+
+indie:
+  name: Indie
+  buffs:
+    - +8% do wartości handlu z wioską
+    - +6% do ilości szmaragdów z każdej transakcji
+    - +6% szansy na rzadki item w nagrodzie za handel
+  nerf: -6% do prędkości poruszania się po wyspie
+  open command: oneblock admin open indie %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmY4OWU0NmYxZDU0NTRjOTY3Njc2ZWZiNDk3N2E4NGExOGQwMDg0MzI2Yzc2YzdiZmM0ZTc4NDNiYjFhOTAxIn19fQ==
+
+indonezja:
+  name: Indonezja
+  buffs:
+    - +8% do ceny sprzedaży trzciny cukrowej i przypraw
+    - +6% szansy na dodatkowy drop z upraw dżungli
+    - +6% do XP z eksploracji dżungli
+  nerf: -5% do obrażeń zadawanych pandom
+  open command: oneblock admin open indonezja %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2JlNjNmY2FhMDIwM2Y4MDQ2ZmI5NjM3NWQwNzlhNWMwOWI0MTYxZDAxMTlkNzE5NDU2NmU2ODljYWIxOGY2OCJ9fX0=
+
+irak:
+  name: Irak
+  buffs:
+    - +8% do ceny sprzedaży ropy (czarnego wełny/obsydianu)
+    - +6% szansy na dodatkowy drop obsydianu
+    - +6% do XP z Netheru
+  nerf: -6% do obrażeń otrzymywanych od ognia
+  open command: oneblock admin open irak %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODFjY2NmZDQxOTMzODM3N2IyZDkxMzc3MmFiMzVlZjY1MDFkMzZjYjFkNDFhZTU1OWJkZmQzNTIxN2QxNWI1YyJ9fX0=
+
+iran:
+  name: Iran
+  buffs:
+    - +8% do ceny sprzedaży dywanów i wełny
+    - +6% szansy na dodatkowy drop wełny
+    - +6% do XP z tkactwa
+  nerf: -6% do obrażeń otrzymywanych na pustyni
+  open command: oneblock admin open iran %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWNkOWJhZGYxOTcyNTgzYjY2M2I0NGIxZTAyNzI1NWRlOGYyNzVhYTFlODlkZWZjZjc3NzgyYmE2ZmNjNjUyIn19fQ==
+
+irlandia:
+  name: Irlandia
+  buffs:
+    - +8% do ceny sprzedaży zielonych bloków i roślin
+    - +6% do naturalnej regeneracji HP na wyspie
+    - +6% szansy na dodatkowy drop z owiec i krów
+  nerf: -7% do obrażeń od strzał i pocisków
+  open command: oneblock admin open irlandia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWNhN2Q4ZDczZTlkNGE4YzAyMWZmOTE4NDVkNjFlMDQxOTg3NjkxOWUwZDdhMTMzOGQ4YzdkZTBlZjk1ZDIifX19
+
+islandia:
+  name: Islandia
+  buffs:
+    - +8% do ceny sprzedaży lodu i śniegu
+    - +6% szansy na dodatkowy drop w biomach śnieżnych
+    - +6% do odporności na zimno (mniejsze obrażenia od zamarzania)
+  nerf: -6% do ceny sprzedaży bloków pustynnych
+  open command: oneblock admin open islandia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRkNGRlZjgxMTkwNWQ2N2YzZWRlZjQxNTc4ZjNhN2MyNzdmZjFlYzRjZmViMTM5YWQyZDhkMzE2YTQ2NWVkZiJ9fX0=
+
+izrael:
+  name: Izrael
+  buffs:
+    - +8% do ceny sprzedaży owoców pustynnych (kaktus, melon)
+    - +6% szansy na dodatkowy drop z upraw pustynnych
+    - +6% do XP z farmowania na pustyni
+  nerf: -6% do obrażeń otrzymywanych na pustyni
+  open command: oneblock admin open izrael %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWJhMDg2YTJjYzcyNzJjZjViYTQ5YzgwMjQ4NTQ2YzIyZTVlZjFiYWI1NDEyMGU4YThlNWQ5ZTc1YjZhIn19fQ==
+
+jamajka:
+  name: Jamajka
+  buffs:
+    - +8% do ceny sprzedaży owoców tropikalnych
+    - +6% szansy na dodatkowy drop z dżungli
+    - +6% do XP z eksploracji tropików
+  nerf: -6% do obrażeń zadawanych mobom dżungli
+  open command: oneblock admin open jamajka %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNhMTdlYTNhZTIzNTY0NDE1YzdhNzBiNDQ3YzA1NGJkNzVkM2NjODY2MmFjM2ZlZTg2OThiNTQwYjJiNjU4NCJ9fX0=
+
+japonia:
+  name: Japonia
+  buffs:
+    - +8% do obrażeń zadawanych mieczem
+    - +6% do ceny sprzedaży broni i zbroi
+    - +6% szansy na ulepszenie enchantu przy craftowaniu
+  nerf: -6% do ceny sprzedaży bloków ziemi i roślin
+  open command: oneblock admin open japonia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDZjMmNhNzIzODY2NmFlMWI5ZGQ5ZGFhM2Q0ZmM4MjlkYjIyNjA5ZmI1NjkzMTJkZWMxZmIwYzhkNmRkNmMxZCJ9fX0=
+
+jordania:
+  name: Jordania
+  buffs:
+    - +8% do ceny sprzedaży piaskowca
+    - +6% szansy na dodatkowy drop przy kopaniu piaskowca
+    - +6% do XP z eksploracji świątyń pustynnych
+  nerf: -6% do obrażeń otrzymywanych na pustyni
+  open command: oneblock admin open jordania %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWVjYjBhOTM1OGM0YzdkMTc0YjIwMGY3M2U3MWMxZTAzNzk0MWMyZjM3YTdjNjNiZTExNDI5NjFkM2U5ZGVlYyJ9fX0=
+
+kanada:
+  name: Kanada
+  buffs:
+    - +8% do ceny sprzedaży drewna i leśnych zasobów
+    - +6% szansy na dodatkowy drop z drzew iglastych
+    - +6% do XP za pokonanie zwierzyny leśnej
+  nerf: -6% do obrażeń zadawanych mobom w ciepłych biomach
+  open command: oneblock admin open kanada %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YyNDFhNjk3ZjZkZmIxYzU3Y2RhMzI3YmFhNjczMmE3ODI4YzM5OGJlNGViZmRiZDE2NmMyMzJiY2FlMmIifX19
+
+kenia:
+  name: Kenia
+  buffs:
+    - +8% do ceny sprzedaży skór i mięsa
+    - +6% szansy na dodatkowy drop z polowania
+    - +6% do XP z polowania na zwierzynę
+  nerf: -6% do obrażeń zadawanych mobom sawanny
+  open command: oneblock admin open kenia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY3MDgyOGI0NGJhODg5NmNhMTEzNDk0OTIyYTMzNGRkMzFkZjU1ZjQxYTM5MzY0MzU1MzA0ZDRkMjVjYjM2OCJ9fX0=
+
+kolumbia:
+  name: Kolumbia
+  buffs:
+    - +8% do ceny sprzedaży kawy i upraw tropikalnych
+    - +6% szansy na dodatkowy drop z dżungli
+    - +6% do XP z upraw kakao
+  nerf: -5% do obrażeń zadawanych ocelotom
+  open command: oneblock admin open kolumbia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzcyMTIwYjlmZTc3ZDc3MGIyNTRiMzljN2JlOWIxY2VjY2VmNmFkZmU3YTVjYzY4OWFiMWZkMjNlM2MifX19
+
+koreapołudniowa:
+  name: Korea Pd.
+  buffs:
+    - +8% do durability wszystkich narzędzi
+    - +6% do ceny sprzedaży gotowych itemów
+    - +6% do XP ze wszystkich źródeł na wyspie
+  nerf: -5% do obrażeń w walce wręcz bez zbroi
+  open command: oneblock admin open korea %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2ZjMWJlNWYxMmY0NWU0MTNlZGE1NmYzZGU5NGUwOGQ5MGVkZThlMzM5YzdiMWU4ZjMyNzk3MzkwZTlhNWYifX19
+
+kostaryka:
+  name: Kostaryka
+  buffs:
+    - +8% do ceny sprzedaży owoców i kawy
+    - +6% szansy na dodatkowy drop z upraw
+    - +6% do XP z farmowania w dżungli
+  nerf: -5% do obrażeń zadawanych żabom (mobom dżungli)
+  open command: oneblock admin open kostaryka %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzkxNGVmNTI0MmRkMzRiZWJhZjlkZTVjZjE5OWViODg1NGZjZmY0ZjdjNTg2OWQyMzgyMzMxZDQwYjVlZWE3NCJ9fX0=
+
+kuba:
+  name: Kuba
+  buffs:
+    - +8% do ceny sprzedaży trzciny cukrowej
+    - +6% szansy na dodatkowy drop trzciny
+    - +6% do XP z farmowania trzciny
+  nerf: -5% do prędkości pływania
+  open command: oneblock admin open kuba %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM5MzgyZGRkNDg0NWI0NjE5NmY1NDM0ZGU5ZTgyODdmOTI5NDcxZGFkNTczZGNiMDRmYjBmODU4NzIwMzA3YiJ9fX0=
+
+liban:
+  name: Liban
+  buffs:
+    - +8% do ceny sprzedaży drewna cedrowego
+    - +6% szansy na dodatkowy drop z drzew
+    - +6% do XP z wycinki drzew
+  nerf: -5% do obrażeń zadawanych kozom
+  open command: oneblock admin open liban %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzIwNDE5ZWYyYzY2ZTI5YTE0MmVmMzQxYzBlY2NmNjk3YWNhODZlYzA5YzZkMThmNjA0M2E1M2NhMzBjZjJkMSJ9fX0=
+
+malezja:
+  name: Malezja
+  buffs:
+    - +8% do ceny sprzedaży drewna egzotycznego
+    - +6% szansy na dodatkowy drop z drzew dżungli
+    - +6% do XP z wycinki drzew
+  nerf: -6% do obrażeń zadawanych mobom dżungli
+  open command: oneblock admin open malezja %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzU0YjkwNDFkZWE2ZGI2ZGI0NDc1MGYxMzg1YTc0M2FkZjY1Mzc2N2I0Yjg4MDJjYWQ0YzU4NWRkM2Y1YmU0NiJ9fX0=
+
+malta:
+  name: Malta
+  buffs:
+    - +8% do ceny sprzedaży bloków wapiennych
+    - +6% szansy na dodatkowy drop kamienia
+    - +6% do XP z budowania
+  nerf: -6% do obrażeń otrzymywanych na morzu
+  open command: oneblock admin open malta %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2NlYzVlMjJmZDkwMTNkNmNiNGZiMDlmYjdmMzRiNWU2NGE1MzEwYWQzOWJjNDAwYzRiZjIzZDJhYjE2YzllZiJ9fX0=
+
+maroko:
+  name: Maroko
+  buffs:
+    - +8% do wartości handlu z wioską
+    - +6% szansy na bonus z terakoty i gliny przy kopaniu
+    - +6% do XP za odkrycie nowych biomów i poziomów
+  nerf: -5% do obrażeń zadawanych huskom i strąkom
+  open command: oneblock admin open maroko %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzc1M2VjNmE3NDI5ODI4YzdhOGY4MWUxZjlmZTZlMTZmYjE2YjQzM2I0ZjhlOTQ1MzViOThhOTZkNjIxZjQifX19
+
+meksyk:
+  name: Meksyk
+  buffs:
+    - +8% do ceny sprzedaży kaktusów i pustynnych bloków
+    - +6% szansy na rzadki drop po zabiciu huska
+    - +6% do ceny sprzedaży jedzenia
+  nerf: -6% do punktów HP regenerowanych w Netherze
+  open command: oneblock admin open meksyk %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTNjNzlhNzhkZTVjYmVkYmQyMjEwMzZhNjRmNGM2ZWMzOTExOTYwZGUxNzZiZGJlNDliNGQ1MDFmNDFkZjMifX19
+
+niemcy:
+  name: Niemcy
+  buffs:
+    - +8% do durability diamentowych i netherytowych narzędzi
+    - +6% do ceny sprzedaży redstone i mechanizmów
+    - +6% do ilości itemów przy craftowaniu masowym
+  nerf: -6% do ceny sprzedaży bloków surowych
+  open command: oneblock admin open niemcy %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVlNzg5OWI0ODA2ODU4Njk3ZTI4M2YwODRkOTE3M2ZlNDg3ODg2NDUzNzc0NjI2YjI0YmQ4Y2ZlY2M3N2IzZiJ9fX0=
+
+nigeria:
+  name: Nigeria
+  buffs:
+    - +8% do ceny sprzedaży drewna i ziemi
+    - +6% szansy na podwójny drop z bloków ziemnych
+    - +5% do prędkości kopania wszystkich bloków
+  nerf: -6% do obrażeń otrzymywanych w głębokich jaskiniach i deepslate
+  open command: oneblock admin open nigeria %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2I1ZTBjZWIwNDYxZmM5NTEzNTRmNmQ0Nzc3ODAyZDVlNDI2OGMxZjgxNzE5ZTQ2NjY3ODMyYjE4M2RmOTUxMCJ9fX0=
+
+norwegia:
+  name: Norwegia
+  buffs:
+    - +8% do ceny sprzedaży ryb
+    - +6% szansy na dodatkowy drop z wędkowania
+    - +6% do XP z wędkowania
+  nerf: -6% do obrażeń zadawanych polarnym mobom (wielki miś polarny)
+  open command: oneblock admin open norwegia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmRhMDQ4YmMxNTNiMzg0NjdlNzZhMzM0N2YzODM5Njg2MGE4YmM2ODYwMzkzMWU5MWY3YWY1OGJlYzU3MzgzZCJ9fX0=
+
+nowazelandia:
+  name: Nowa Zelandia
+  buffs:
+    - +8% do ceny sprzedaży wełny owczej
+    - +6% szansy na dodatkowy drop z owiec
+    - +6% do XP z hodowli
+  nerf: -5% do prędkości skoku
+  open command: oneblock admin open nowazelandia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Y2MDQ1NzllYjhlM2RjYzNiMmI5NDE2YjdlZGM2OGM5N2NkMTEyYTdkODVhNDk0YjhlYzllZmMzNWFiYzU3MyJ9fX0=
+
+pakistan:
+  name: Pakistan
+  buffs:
+    - +8% do ceny sprzedaży bawełny i wełny
+    - +6% szansy na dodatkowy drop z upraw
+    - +6% do XP z krawiectwa (farbowanie)
+  nerf: -5% do obrażeń zadawanych wielbłądom
+  open command: oneblock admin open pakistan %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzBjZmJmOTY2MDYyMzdmYTY3ZTJhYjg3ZWU0NDQyN2MyYTYzODM2ZDZmM2FkYmUzNGI1NDZiOGY3ZjQzZTI0MCJ9fX0=
+
+panama:
+  name: Panama
+  buffs:
+    - +8% do ceny sprzedaży itemów morskich
+    - +6% szansy na dodatkowy drop z rybołówstwa
+    - +6% do XP z żeglugi (podróże łodzią)
+  nerf: -6% do obrażeń zadawanych mobom morskim
+  open command: oneblock admin open panama %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRiOGRhODNhODVmMTFlYjc0ZTc2MDg0YTZkNjQwODRhM2RkNWRhY2FhM2E5NzIxZTNhZjJjYWQ4OGVlZjcifX19
+
+paragwaj:
+  name: Paragwaj
+  buffs:
+    - +8% do ceny sprzedaży drewna
+    - +6% szansy na dodatkowy drop z drzew
+    - +6% do XP z wycinki drzew
+  nerf: -6% do obrażeń zadawanych mobom lasu
+  open command: oneblock admin open paragwaj %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE3OGRlNjkxYjUwOGQ2MjQ5MTA5ZmM1NGFmNmZiYTQ5YmFhODM3N2FkMzcwNjEyZWQ2MTdkNzdkZDZhZDU4OCJ9fX0=
+
+peru:
+  name: Peru
+  buffs:
+    - +8% do ceny sprzedaży wełny lam i alpak
+    - +6% szansy na dodatkowy drop w górach
+    - +6% do XP z eksploracji ruin
+  nerf: -6% do obrażeń otrzymywanych od upadku w górach
+  open command: oneblock admin open peru %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRkMDNiZDQ0MTBiYWJkYzY4MjQ5M2IzYzJiYmEyNmU3MzBlNmJjNjU4ZDM4ODhlNzliZjcxMmY4NTMifX19
+
+polska:
+  name: Polska
+  buffs:
+    - +8% do ceny sprzedaży rud i kamieni
+    - +6% szansy na bonusowe żelazo lub węgiel przy kopaniu
+    - +6% do XP za wydobycie bloków kamiennych
+  nerf: -5% do prędkości poruszania się z pełnym ekwipunkiem
+  open command: oneblock admin open polska %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdmYTI2OWI4YTY2M2Y1MmQ2MzIzZGNkOTJlZGNjODNkNWY5MWQ1MDhhZmE4MTk4ODJkZWRhMTUzNzVmMDNkIn19fQ==
+
+portugalia:
+  name: Portugalia
+  buffs:
+    - +8% do ceny sprzedaży ryb i morskich itemów
+    - +6% szansy na podwójny drop z wędkowania
+    - +6% do ceny sprzedaży trójzębów i morskich skrzyń
+  nerf: -6% do obrażeń zadawanych Smokowi Endera
+  open command: oneblock admin open portugalia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWJkNTFmNDY5M2FmMTc0ZTZmZTE5NzkyMzNkMjNhNDBiYjk4NzM5OGUzODkxNjY1ZmFmZDJiYTU2N2I1YTUzYSJ9fX0=
+
+rosja:
+  name: Rosja
+  buffs:
+    - +8% do ceny sprzedaży lodu i śnieżnych bloków
+    - +6% szansy na dodatkowy drop packed ice
+    - +6% do obrażeń zadawanych mobom w śnieżnych biomach
+  nerf: -7% do ceny sprzedaży ciepłych roślin i kwiatów
+  open command: oneblock admin open rosja %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzE2ZWFmZWY5ODBkNjExN2RhYmU4OTgyYWM0YjQ1MDk4ODdlMmM0NjIxZjZhOGZlNWM5YjczNWE4M2Q3NzVhZCJ9fX0=
+
+rpa:
+  name: RPA
+  buffs:
+    - +8% do ceny sprzedaży diamentów
+    - +6% szansy na dodatkowy drop diamentów przy kopaniu deepslate
+    - +6% do XP za wydobycie rzadkich rud
+  nerf: -6% do obrażeń zadawanych mobom sawanny
+  open command: oneblock admin open rpa %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTYxYTFlYWNjMTA1MjRkMWY0NWYyM2IwZTQ4N2JiMmZjMzM5NDhkOTY3NmI0MThiMTlhM2RhMGIxMDlkMGUzYyJ9fX0=
+
+rumunia:
+  name: Rumunia
+  buffs:
+    - +8% do obrażeń zadawanych mobom nocnym (creeper, zombie)
+    - +6% szansy na rzadki drop po zabiciu moba w nocy
+    - +6% do XP z walki nocnej
+  nerf: -6% do naturalnej regeneracji HP w dzień
+  open command: oneblock admin open rumunia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNlYjE3MDhkNTQwNGVmMzI2MTAzZTdiNjA1NTljOTE3OGYzZGNlNzI5MDA3YWM5YTBiNDk4YmRlYmU0NjEwNyJ9fX0=
+
+serbia:
+  name: Serbia
+  buffs:
+    - +8% do ceny sprzedaży rud żelaza
+    - +6% szansy na dodatkowy drop żelaza przy kopaniu
+    - +6% do XP za wydobycie bloków
+  nerf: -6% do obrażeń zadawanych mobom jaskiniowym
+  open command: oneblock admin open serbia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWIwNDgzYTRmMGRkZjRmYmJjOTc3YjEyN2IzZDI5NGQ3YTg2OWY5OTUzNjZlM2Y1MGY2YjA1YTcwZjUyMjUxMCJ9fX0=
+
+singapur:
+  name: Singapur
+  buffs:
+    - +8% do ceny sprzedaży przedmiotów z redstone
+    - +6% szansy na dodatkowy drop redstone
+    - +6% do XP z mechanizmów redstonowych
+  nerf: -6% do prędkości kopania bloków miękkich
+  open command: oneblock admin open singapur %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI1ZWQxMWY3OTdmM2ZjNjFlYWY4ZGFmYjZiZjMyMzRkMzFiOTZhYjc1OTZiZDJkZjcyMmQyZWYzNDczYzI3In19fQ==
+
+szwajcaria:
+  name: Szwajcaria
+  buffs:
+    - +8% do ceny sprzedaży wszystkich itemów na serwerze
+    - +6% do ilości monet za ukończony poziom wyspy
+    - +6% do wartości szmaragdów i złota przy handlu
+  nerf: -6% do obrażeń zadawanych wszystkim mobom
+  open command: oneblock admin open szwajcaria %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU3MmZmYWJjNDBhM2E4MmE5ZGJiMDgxMDM4Zjk4MzQ3MDdiOGE3YTU5NWU0N2Q2M2U0YzdhN2UyNGE2Yzg4MjkifX19
+
+szwecja:
+  name: Szwecja
+  buffs:
+    - +8% do ceny sprzedaży drewna i mebli
+    - +6% do wydajności wszystkich narzędzi
+    - +6% szansy na dodatkowy drop z każdego drzewa
+  nerf: -5% do obrażeń w biomach pustynnych i ciepłych
+  open command: oneblock admin open szwecja %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2U5MTA5MDRiZmY5Yzg2ZjZlZDQ3Njg4ZTk0MjljMjZlOGQ5YzVkNTc0M2JkM2ViYjhlNmY1MDQwYmUxOTI5OTgifX19
+
+słowacja:
+  name: Słowacja
+  buffs:
+    - +8% do ceny sprzedaży kamienia i jego odmian
+    - +6% szansy na dodatkowy drop w górach
+    - +6% do XP za wydobycie bloków
+  nerf: -6% do obrażeń zadawanych mobom jaskiniowym
+  open command: oneblock admin open slowacja %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmM3MmE4YzExNWExZmI2NjlhMjU3MTVjNGQxNWYyMjEzNmFjNGMyNDUyNzg0ZTQ4OTRiM2Q1NmJjNWIwYjkifX19
+
+słowenia:
+  name: Słowenia
+  buffs:
+    - +8% do ceny sprzedaży kamienia jaskiniowego
+    - +6% szansy na dodatkowy drop w jaskiniach
+    - +6% do XP z eksploracji jaskiń
+  nerf: -6% do obrażeń otrzymywanych w jaskiniach
+  open command: oneblock admin open slowenia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGMwZTIwODhhNTZjZGMyYzVmYjcxZjc1MDBhM2FkNjFmMTA1MWJlN2Q0YTQzOGYzM2U2ZDA0YWU5NmEwODZhYSJ9fX0=
+
+tajlandia:
+  name: Tajlandia
+  buffs:
+    - +8% do ceny sprzedaży ryżu i przedmiotów kulinarnych
+    - +6% szansy na dodatkowy drop z upraw ryżu
+    - +6% do XP z gotowania
+  nerf: -6% do obrażeń zadawanych mobom wodnym
+  open command: oneblock admin open tajlandia %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE1YmUzY2RjMWFmMTRjYTE1MTU1NTE3MTEwYmEzMjZkOTk0NTAwN2E4ODllNjY4MTk5OWMzN2QwN2JkNjVmNSJ9fX0=
+
+turcja:
+  name: Turcja
+  buffs:
+    - +8% do ceny sprzedaży craftowalnych bloków
+    - +6% szybszego craftowania i przetwarzania w piecu
+    - +6% do XP za budowanie i stawianie bloków
+  nerf: -6% do obrażeń od zaklęć i eliksirów
+  open command: oneblock admin open turcja %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk4NTJiOWFiYTM0ODIzNDg1MTRjMTAzNGQwYWZmZTczNTQ1YzlkZTY3OWFlNDY0N2Y5OTU2MmI1ZTVmNDdkMDkifX19
+
+ukraina:
+  name: Ukraina
+  buffs:
+    - +8% do ceny sprzedaży pszenicy i słoneczników
+    - +6% szansy na dodatkowy drop z upraw zbożowych
+    - +6% do szybkości wzrostu upraw
+  nerf: -5% do obrażeń zadawanych endermanom
+  open command: oneblock admin open ukraina %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhiOWY1MmUzNmFhNWM3Y2FhYTFlN2YyNmVhOTdlMjhmNjM1ZThlYWM5YWVmNzRjZWM5N2Y0NjVmNWE2YjUxIn19fQ==
+
+urugwaj:
+  name: Urugwaj
+  buffs:
+    - +8% do ceny sprzedaży mięsa
+    - +6% szansy na dodatkowy drop z krów
+    - +6% do XP z hodowli bydła
+  nerf: -6% do obrażeń zadawanych mobom stepowym
+  open command: oneblock admin open urugwaj %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzMwOTY5MjhjMTUzMDdlYTRkMjlhNWM3MTM0MWFhMzVmZjdiODlmNTY1M2I5M2RiNDk2MDZmNWEyMGY0NzcifX19
+
+usa:
+  name: USA
+  buffs:
+    - +8% do ceny sprzedaży przedmiotów z Netheru
+    - +6% szansy na dodatkowy drop z potworów
+    - +6% do XP z eksploracji nowych biomów
+  nerf: -6% do obrażeń zadawanych smokowi Endera
+  open command: oneblock admin open usa %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNhYzk3NzRkYTEyMTcyNDg1MzJjZTE0N2Y3ODMxZjY3YTEyZmRjY2ExY2YwY2I0YjM4NDhkZTZiYzk0YjQifX19
+
+węgry:
+  name: Węgry
+  buffs:
+    - +8% do ceny sprzedaży papryki i przedmiotów kulinarnych
+    - +6% szansy na dodatkowy drop z upraw
+    - +6% do XP z farmowania
+  nerf: -5% do obrażeń zadawanych mobom ognistym
+  open command: oneblock admin open wegry %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGE5YzNjNGI2YzUwMzEzMzJkZDJiZmVjZTVlMzFlOTk5ZjhkZWZmNTU0NzQwNjVjYzg2OTkzZDdiZGNkYmQwIn19fQ==
+
+wenezuela:
+  name: Wenezuela
+  buffs:
+    - +8% do ceny sprzedaży złota
+    - +6% szansy na dodatkowy drop złota przy kopaniu
+    - +6% do XP za wydobycie złota
+  nerf: -6% do obrażeń otrzymywanych w dżungli
+  open command: oneblock admin open wenezuela %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTMwMzMwNDliYWFlMTE4Nzc0MDZkYTQwYmQwNTE3Y2JmYjJiMzdhMjM5OGJlM2JkYTQ5OTViNjFmZmVhYTI0MyJ9fX0=
+
+wielkabrytania:
+  name: Wielka Brytania
+  buffs:
+    - +8% do ceny sprzedaży wełny i barwników
+    - +6% szansy na dodatkowy drop z owiec
+    - +6% do XP z hodowli zwierząt
+  nerf: -5% do prędkości pływania
+  open command: oneblock admin open wielkabrytania %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc5ZDk5ZDljNDY0NzRlMjcxM2E3ZTg0YTk1ZTRjZTdlOGZmOGVhNGQxNjQ0MTNhNTkyZTQ0MzVkMmM2ZjlkYyJ9fX0=
+
+wietnam:
+  name: Wietnam
+  buffs:
+    - +8% do ceny sprzedaży bambusa
+    - +6% szansy na dodatkowy drop bambusa
+    - +6% do XP z hodowli pand
+  nerf: -5% do prędkości pływania
+  open command: oneblock admin open wietnam %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM4YjdjN2ZiMDhhYjg5NDc4MTJiYjlkMTRkYTA0OWVkMmQ1MWFkOGNiOTMyYjM5MmMyMjY2YjI1N2FkYzJhYyJ9fX0=
+
+włochy:
+  name: Włochy
+  buffs:
+    - +8% do ceny sprzedaży pomidorów i przedmiotów kulinarnych
+    - +6% szansy na dodatkowy drop z upraw
+    - +6% do szybkości pieczenia w piecyku
+  nerf: -6% do obrażeń od lawy
+  open command: oneblock admin open wlochy %player%
+  material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODVjZTg5MjIzZmE0MmZlMDZhZDY1ZDhkNDRjYTQxMmFlODk5YzgzMTMwOWQ2ODkyNGRmZTBkMTQyZmRiZWVhNCJ9fX0=

@@ -1,0 +1,4180 @@
+﻿---
+levels:
+  level_1:
+    name: "&aSpokojne Równiny"
+    blocks_required: 58
+    block_list:
+      - block: grass_block
+        chance: 53.9
+      - block: dirt
+        chance: 29.7
+      - block: oak_log
+        chance: 16.4
+    mob_list:
+      - type: cow
+        chance: 5
+      - type: pig
+        chance: 5
+      - type: chicken
+        chance: 5
+      - type: sheep
+        chance: 5
+    chest_list:
+      - chest_id: chest_plains_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 673"
+      items:
+        - material: STONE_AXE
+          amount: 1
+          reward_name: "&a1x Kamienna Siekiera"
+  level_2:
+    name: "&aPierwsze Kroki"
+    blocks_required: 74
+    block_list:
+      - block: grass_block
+        chance: 53.9
+      - block: dirt
+        chance: 29.7
+      - block: oak_log
+        chance: 16.4
+    mob_list:
+      - type: cow
+        chance: 7
+      - type: pig
+        chance: 7
+      - type: chicken
+        chance: 7
+      - type: sheep
+        chance: 7
+    chest_list:
+      - chest_id: chest_plains_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 814"
+      items:
+        - material: WOODEN_AXE
+          amount: 1
+          reward_name: "&a1x Drewniana Siekiera"
+  level_3:
+    name: "&aŁagodna Polana"
+    blocks_required: 90
+    block_list:
+      - block: grass_block
+        chance: 53.9
+      - block: dirt
+        chance: 29.7
+      - block: oak_log
+        chance: 16.4
+    mob_list:
+      - type: cow
+        chance: 9
+      - type: pig
+        chance: 9
+      - type: chicken
+        chance: 9
+      - type: sheep
+        chance: 9
+    chest_list:
+      - chest_id: chest_plains_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 956"
+      items:
+        - material: BREAD
+          amount: 1
+          reward_name: "&a1x Chleb"
+  level_4:
+    name: "&aZielony Zakątek"
+    blocks_required: 107
+    block_list:
+      - block: grass_block
+        chance: 49.5
+      - block: dirt
+        chance: 27.2
+      - block: oak_log
+        chance: 15.0
+      - block: oak_leaves
+        chance: 8.3
+    mob_list:
+      - type: cow
+        chance: 11
+      - type: pig
+        chance: 11
+      - type: chicken
+        chance: 11
+      - type: sheep
+        chance: 11
+      - type: zombie
+        chance: 14
+    chest_list:
+      - chest_id: chest_plains_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 1097"
+      items:
+        - material: TORCH
+          amount: 1
+          reward_name: "&a1x Pochodnia"
+  level_5:
+    name: "&aDolina Zbóż"
+    blocks_required: 123
+    block_list:
+      - block: grass_block
+        chance: 49.5
+      - block: dirt
+        chance: 27.2
+      - block: oak_log
+        chance: 15.0
+      - block: oak_leaves
+        chance: 8.3
+    mob_list:
+      - type: cow
+        chance: 13
+      - type: pig
+        chance: 13
+      - type: chicken
+        chance: 13
+      - type: sheep
+        chance: 13
+      - type: zombie
+        chance: 15
+    chest_list:
+      - chest_id: chest_plains_common
+        chance: 2.2
+      - chest_id: chest_plains_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 1475"
+      items:
+        - material: WOODEN_SWORD
+          amount: 1
+          reward_name: "&a1x Drewniany Miecz"
+        - material: WOODEN_PICKAXE
+          amount: 1
+          reward_name: "&a1x Drewniany Kilof"
+      broadcast: "&6&l[OneBlock] &eGracz {player} osiągnął poziom 5!"
+  level_6:
+    name: "&aSłoneczny Sad"
+    blocks_required: 139
+    block_list:
+      - block: grass_block
+        chance: 49.5
+      - block: dirt
+        chance: 27.2
+      - block: oak_log
+        chance: 15.0
+      - block: oak_leaves
+        chance: 8.3
+    mob_list:
+      - type: cow
+        chance: 15
+      - type: pig
+        chance: 15
+      - type: chicken
+        chance: 15
+      - type: sheep
+        chance: 15
+      - type: zombie
+        chance: 16
+      - type: skeleton
+        chance: 16
+    chest_list:
+      - chest_id: chest_plains_common
+        chance: 2.2
+      - chest_id: chest_plains_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 1381"
+      items:
+        - material: LEATHER_BOOTS
+          amount: 1
+          reward_name: "&a1x Skórzane Buty"
+  level_7:
+    name: "&aWiejska Ścieżka"
+    blocks_required: 155
+    block_list:
+      - block: grass_block
+        chance: 45.5
+      - block: dirt
+        chance: 25.1
+      - block: oak_log
+        chance: 13.8
+      - block: oak_leaves
+        chance: 7.6
+      - block: sand
+        chance: 4.2
+      - block: gravel
+        chance: 2.3
+      - block: oak_planks
+        chance: 1.5
+    mob_list:
+      - type: cow
+        chance: 17
+      - type: pig
+        chance: 17
+      - type: chicken
+        chance: 17
+      - type: sheep
+        chance: 17
+      - type: zombie
+        chance: 17
+      - type: skeleton
+        chance: 17
+    chest_list:
+      - chest_id: chest_plains_common
+        chance: 2.2
+      - chest_id: chest_plains_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 1522"
+      items:
+        - material: WOODEN_PICKAXE
+          amount: 1
+          reward_name: "&a1x Drewniany Kilof"
+  level_8:
+    name: "&aOtwarte Pola"
+    blocks_required: 172
+    block_list:
+      - block: grass_block
+        chance: 45.5
+      - block: dirt
+        chance: 25.1
+      - block: oak_log
+        chance: 13.8
+      - block: oak_leaves
+        chance: 7.6
+      - block: sand
+        chance: 4.2
+      - block: gravel
+        chance: 2.3
+      - block: oak_planks
+        chance: 1.5
+    mob_list:
+      - type: cow
+        chance: 19
+      - type: pig
+        chance: 19
+      - type: chicken
+        chance: 19
+      - type: sheep
+        chance: 19
+      - type: zombie
+        chance: 18
+      - type: skeleton
+        chance: 18
+      - type: spider
+        chance: 18
+    chest_list:
+      - chest_id: chest_plains_common
+        chance: 2.2
+      - chest_id: chest_plains_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 1664"
+      items:
+        - material: STONE_AXE
+          amount: 1
+          reward_name: "&a1x Kamienna Siekiera"
+  level_9:
+    name: "&6Brama Lasu"
+    blocks_required: 188
+    block_list:
+      - block: sand
+        chance: 45.5
+      - block: gravel
+        chance: 25.1
+      - block: oak_planks
+        chance: 13.8
+      - block: cobblestone
+        chance: 7.6
+      - block: dark_oak_log
+        chance: 4.2
+      - block: dark_oak_leaves
+        chance: 2.3
+      - block: podzol
+        chance: 1.5
+    mob_list:
+      - type: cow
+        chance: 21
+      - type: pig
+        chance: 21
+      - type: chicken
+        chance: 21
+      - type: sheep
+        chance: 21
+      - type: zombie
+        chance: 19
+      - type: skeleton
+        chance: 19
+      - type: spider
+        chance: 19
+      - type: creeper
+        chance: 19
+    chest_list:
+      - chest_id: chest_plains_common
+        chance: 2.2
+      - chest_id: chest_plains_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 1805"
+      items:
+        - material: ARROW
+          amount: 3
+          reward_name: "&a3x Strzała"
+        - material: WOODEN_SWORD
+          amount: 1
+          reward_name: "&a1x Drewniany Miecz"
+  level_10:
+    name: "&6&lSkraj Puszczy"
+    blocks_required: 204
+    block_list:
+      - block: sand
+        chance: 45.5
+      - block: gravel
+        chance: 25.1
+      - block: oak_planks
+        chance: 13.8
+      - block: cobblestone
+        chance: 7.6
+      - block: dark_oak_log
+        chance: 4.2
+      - block: dark_oak_leaves
+        chance: 2.3
+      - block: podzol
+        chance: 1.5
+    mob_list:
+      - type: cow
+        chance: 23
+      - type: pig
+        chance: 23
+      - type: chicken
+        chance: 23
+      - type: sheep
+        chance: 23
+      - type: zombie
+        chance: 20
+      - type: skeleton
+        chance: 20
+      - type: spider
+        chance: 20
+      - type: creeper
+        chance: 20
+    chest_list:
+      - chest_id: chest_plains_common
+        chance: 2.2
+      - chest_id: chest_plains_rare
+        chance: 1.3
+      - chest_id: chest_plains_epic
+        chance: 0.4
+    rewards:
+      commands:
+        - "currency money give %player% 3363"
+      items:
+        - material: STONE_SWORD
+          amount: 1
+          reward_name: "&a1x Kamienny Miecz"
+        - material: WOODEN_SWORD
+          amount: 1
+          reward_name: "&a1x Drewniany Miecz"
+      broadcast: "&6&l[OneBlock] &eGracz {player} dotarł do nowej krainy: Mrocznego Lasu!"
+  level_11:
+    name: "&2Mroczny Las"
+    blocks_required: 130
+    block_list:
+      - block: dark_oak_log
+        chance: 47.4
+      - block: dark_oak_leaves
+        chance: 26.0
+      - block: podzol
+        chance: 14.4
+      - block: mossy_cobblestone
+        chance: 7.9
+      - block: vine
+        chance: 4.3
+    mob_list:
+      - type: wolf
+        chance: 5
+      - type: rabbit
+        chance: 5
+      - type: zombie
+        chance: 21
+      - type: skeleton
+        chance: 21
+    chest_list:
+      - chest_id: chest_forest_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 2089"
+      items:
+        - material: IRON_PICKAXE
+          amount: 1
+          reward_name: "&a1x Żelazny Kilof"
+  level_12:
+    name: "&2Cienisty Gąszcz"
+    blocks_required: 166
+    block_list:
+      - block: dark_oak_log
+        chance: 47.4
+      - block: dark_oak_leaves
+        chance: 26.0
+      - block: podzol
+        chance: 14.4
+      - block: mossy_cobblestone
+        chance: 7.9
+      - block: vine
+        chance: 4.3
+    mob_list:
+      - type: wolf
+        chance: 7
+      - type: rabbit
+        chance: 7
+      - type: zombie
+        chance: 22
+      - type: skeleton
+        chance: 22
+      - type: spider
+        chance: 22
+    chest_list:
+      - chest_id: chest_forest_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 2230"
+      items:
+        - material: SHIELD
+          amount: 1
+          reward_name: "&a1x Tarcza"
+  level_13:
+    name: "&2Stara Puszcza"
+    blocks_required: 203
+    block_list:
+      - block: dark_oak_log
+        chance: 47.4
+      - block: dark_oak_leaves
+        chance: 26.0
+      - block: podzol
+        chance: 14.4
+      - block: mossy_cobblestone
+        chance: 7.9
+      - block: vine
+        chance: 4.3
+    mob_list:
+      - type: wolf
+        chance: 9
+      - type: rabbit
+        chance: 9
+      - type: zombie
+        chance: 23
+      - type: skeleton
+        chance: 23
+      - type: spider
+        chance: 23
+    chest_list:
+      - chest_id: chest_forest_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 2372"
+      items:
+        - material: SHIELD
+          amount: 1
+          reward_name: "&a1x Tarcza"
+  level_14:
+    name: "&2Płaczące Wierzby"
+    blocks_required: 239
+    block_list:
+      - block: dark_oak_log
+        chance: 46.4
+      - block: dark_oak_leaves
+        chance: 25.4
+      - block: podzol
+        chance: 14.0
+      - block: mossy_cobblestone
+        chance: 7.7
+      - block: vine
+        chance: 4.2
+      - block: brown_mushroom_block
+        chance: 2.3
+    mob_list:
+      - type: wolf
+        chance: 11
+      - type: rabbit
+        chance: 11
+      - type: zombie
+        chance: 24
+      - type: skeleton
+        chance: 24
+      - type: spider
+        chance: 24
+      - type: witch
+        chance: 24
+    chest_list:
+      - chest_id: chest_forest_common
+        chance: 2.2
+      - chest_id: chest_forest_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 2513"
+      items:
+        - material: IRON_PICKAXE
+          amount: 1
+          reward_name: "&a1x Żelazny Kilof"
+  level_15:
+    name: "&2Mchowe Ostępy"
+    blocks_required: 276
+    block_list:
+      - block: dark_oak_log
+        chance: 46.4
+      - block: dark_oak_leaves
+        chance: 25.4
+      - block: podzol
+        chance: 14.0
+      - block: mossy_cobblestone
+        chance: 7.7
+      - block: vine
+        chance: 4.2
+      - block: brown_mushroom_block
+        chance: 2.3
+    mob_list:
+      - type: wolf
+        chance: 13
+      - type: rabbit
+        chance: 13
+      - type: zombie
+        chance: 25
+      - type: skeleton
+        chance: 25
+      - type: spider
+        chance: 25
+      - type: witch
+        chance: 25
+    chest_list:
+      - chest_id: chest_forest_common
+        chance: 2.2
+      - chest_id: chest_forest_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 3363"
+      items:
+        - material: IRON_CHESTPLATE
+          amount: 1
+          reward_name: "&a1x Żelazna Zbroja"
+        - material: IRON_PICKAXE
+          amount: 1
+          reward_name: "&a1x Żelazny Kilof"
+      broadcast: "&6&l[OneBlock] &eGracz {player} osiągnął poziom 15!"
+  level_16:
+    name: "&2Legowisko Pająków"
+    blocks_required: 312
+    block_list:
+      - block: dark_oak_log
+        chance: 46.4
+      - block: dark_oak_leaves
+        chance: 25.4
+      - block: podzol
+        chance: 14.0
+      - block: mossy_cobblestone
+        chance: 7.7
+      - block: vine
+        chance: 4.2
+      - block: brown_mushroom_block
+        chance: 2.3
+    mob_list:
+      - type: wolf
+        chance: 15
+      - type: rabbit
+        chance: 15
+      - type: zombie
+        chance: 26
+      - type: skeleton
+        chance: 26
+      - type: spider
+        chance: 26
+      - type: witch
+        chance: 26
+      - type: enderman
+        chance: 26
+    chest_list:
+      - chest_id: chest_forest_common
+        chance: 2.2
+      - chest_id: chest_forest_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 2797"
+      items:
+        - material: COOKED_BEEF
+          amount: 1
+          reward_name: "&a1x Stek Wołowy"
+  level_17:
+    name: "&2Zapomniana Ścieżka"
+    blocks_required: 348
+    block_list:
+      - block: dark_oak_log
+        chance: 45.5
+      - block: dark_oak_leaves
+        chance: 25.1
+      - block: podzol
+        chance: 13.8
+      - block: mossy_cobblestone
+        chance: 7.6
+      - block: vine
+        chance: 4.2
+      - block: brown_mushroom_block
+        chance: 2.3
+      - block: red_mushroom_block
+        chance: 1.5
+    mob_list:
+      - type: wolf
+        chance: 17
+      - type: rabbit
+        chance: 17
+      - type: zombie
+        chance: 27
+      - type: skeleton
+        chance: 27
+      - type: spider
+        chance: 27
+      - type: witch
+        chance: 27
+      - type: enderman
+        chance: 27
+    chest_list:
+      - chest_id: chest_forest_common
+        chance: 2.2
+      - chest_id: chest_forest_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 2938"
+      items:
+        - material: SHIELD
+          amount: 1
+          reward_name: "&a1x Tarcza"
+  level_18:
+    name: "&2Serce Boru"
+    blocks_required: 385
+    block_list:
+      - block: dark_oak_log
+        chance: 45.5
+      - block: dark_oak_leaves
+        chance: 25.1
+      - block: podzol
+        chance: 13.8
+      - block: mossy_cobblestone
+        chance: 7.6
+      - block: vine
+        chance: 4.2
+      - block: brown_mushroom_block
+        chance: 2.3
+      - block: red_mushroom_block
+        chance: 1.5
+    mob_list:
+      - type: wolf
+        chance: 19
+      - type: rabbit
+        chance: 19
+      - type: zombie
+        chance: 28
+      - type: skeleton
+        chance: 28
+      - type: spider
+        chance: 28
+      - type: witch
+        chance: 28
+      - type: enderman
+        chance: 28
+    chest_list:
+      - chest_id: chest_forest_common
+        chance: 2.2
+      - chest_id: chest_forest_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 3080"
+      items:
+        - material: IRON_SWORD
+          amount: 1
+          reward_name: "&a1x Żelazny Miecz"
+  level_19:
+    name: "&6Wrota Pustyni"
+    blocks_required: 421
+    block_list:
+      - block: vine
+        chance: 45.5
+      - block: brown_mushroom_block
+        chance: 25.1
+      - block: red_mushroom_block
+        chance: 13.8
+      - block: fern
+        chance: 7.6
+      - block: sand
+        chance: 4.2
+      - block: sandstone
+        chance: 2.3
+      - block: red_sand
+        chance: 1.5
+    mob_list:
+      - type: wolf
+        chance: 21
+      - type: rabbit
+        chance: 21
+      - type: zombie
+        chance: 29
+      - type: skeleton
+        chance: 29
+      - type: spider
+        chance: 29
+      - type: witch
+        chance: 29
+      - type: enderman
+        chance: 29
+      - type: creeper
+        chance: 29
+    chest_list:
+      - chest_id: chest_forest_common
+        chance: 2.2
+      - chest_id: chest_forest_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 3221"
+      items:
+        - material: SADDLE
+          amount: 1
+          reward_name: "&a1x Siodło"
+        - material: IRON_PICKAXE
+          amount: 1
+          reward_name: "&a1x Żelazny Kilof"
+  level_20:
+    name: "&6&lSkraj Wydm"
+    blocks_required: 458
+    block_list:
+      - block: vine
+        chance: 45.5
+      - block: brown_mushroom_block
+        chance: 25.1
+      - block: red_mushroom_block
+        chance: 13.8
+      - block: fern
+        chance: 7.6
+      - block: sand
+        chance: 4.2
+      - block: sandstone
+        chance: 2.3
+      - block: red_sand
+        chance: 1.5
+    mob_list:
+      - type: wolf
+        chance: 23
+      - type: rabbit
+        chance: 23
+      - type: zombie
+        chance: 30
+      - type: skeleton
+        chance: 30
+      - type: spider
+        chance: 30
+      - type: witch
+        chance: 30
+      - type: enderman
+        chance: 30
+      - type: creeper
+        chance: 30
+    chest_list:
+      - chest_id: chest_forest_common
+        chance: 2.2
+      - chest_id: chest_forest_rare
+        chance: 1.3
+      - chest_id: chest_forest_epic
+        chance: 0.4
+    rewards:
+      commands:
+        - "currency money give %player% 6195"
+      items:
+        - material: IRON_CHESTPLATE
+          amount: 1
+          reward_name: "&a1x Żelazna Zbroja"
+        - material: FLINT_AND_STEEL
+          amount: 1
+          reward_name: "&a1x Krzesiwo"
+      broadcast: "&6&l[OneBlock] &eGracz {player} dotarł do nowej krainy: Złotej Pustyni!"
+  level_21:
+    name: "&eZłota Pustynia"
+    blocks_required: 202
+    block_list:
+      - block: sand
+        chance: 47.4
+      - block: sandstone
+        chance: 26.0
+      - block: red_sand
+        chance: 14.4
+      - block: red_sandstone
+        chance: 7.9
+      - block: cactus
+        chance: 4.3
+    mob_list:
+      - type: rabbit
+        chance: 5
+      - type: camel
+        chance: 5
+      - type: husk
+        chance: 31
+      - type: skeleton
+        chance: 31
+    chest_list:
+      - chest_id: chest_desert_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 3505"
+      items:
+        - material: WATER_BUCKET
+          amount: 1
+          reward_name: "&a1x Wiadro Wody"
+  level_22:
+    name: "&eMorze Piasku"
+    blocks_required: 259
+    block_list:
+      - block: sand
+        chance: 47.4
+      - block: sandstone
+        chance: 26.0
+      - block: red_sand
+        chance: 14.4
+      - block: red_sandstone
+        chance: 7.9
+      - block: cactus
+        chance: 4.3
+    mob_list:
+      - type: rabbit
+        chance: 7
+      - type: camel
+        chance: 7
+      - type: husk
+        chance: 32
+      - type: skeleton
+        chance: 32
+      - type: spider
+        chance: 32
+    chest_list:
+      - chest_id: chest_desert_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 3646"
+      items:
+        - material: CAMEL_SPAWN_EGG
+          amount: 1
+          reward_name: "&a1x Jajko Przywołujące Wielbłąda"
+  level_23:
+    name: "&eOaza Cienia"
+    blocks_required: 315
+    block_list:
+      - block: sand
+        chance: 47.4
+      - block: sandstone
+        chance: 26.0
+      - block: red_sand
+        chance: 14.4
+      - block: red_sandstone
+        chance: 7.9
+      - block: cactus
+        chance: 4.3
+    mob_list:
+      - type: rabbit
+        chance: 9
+      - type: camel
+        chance: 9
+      - type: husk
+        chance: 33
+      - type: skeleton
+        chance: 33
+      - type: spider
+        chance: 33
+      - type: zombie
+        chance: 33
+    chest_list:
+      - chest_id: chest_desert_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 3788"
+      items:
+        - material: GOLDEN_SWORD
+          amount: 1
+          reward_name: "&a1x Złoty Miecz"
+  level_24:
+    name: "&eDolina Kaktusów"
+    blocks_required: 372
+    block_list:
+      - block: sand
+        chance: 46.4
+      - block: sandstone
+        chance: 25.4
+      - block: red_sand
+        chance: 14.0
+      - block: red_sandstone
+        chance: 7.7
+      - block: cactus
+        chance: 4.2
+      - block: dead_bush
+        chance: 2.3
+    mob_list:
+      - type: rabbit
+        chance: 11
+      - type: camel
+        chance: 11
+      - type: husk
+        chance: 34
+      - type: skeleton
+        chance: 34
+      - type: spider
+        chance: 34
+      - type: zombie
+        chance: 34
+    chest_list:
+      - chest_id: chest_desert_common
+        chance: 2.2
+      - chest_id: chest_desert_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 3929"
+      items:
+        - material: CAMEL_SPAWN_EGG
+          amount: 1
+          reward_name: "&a1x Jajko Przywołujące Wielbłąda"
+  level_25:
+    name: "&eRuiny Pustyni"
+    blocks_required: 428
+    block_list:
+      - block: sand
+        chance: 46.4
+      - block: sandstone
+        chance: 25.4
+      - block: red_sand
+        chance: 14.0
+      - block: red_sandstone
+        chance: 7.7
+      - block: cactus
+        chance: 4.2
+      - block: dead_bush
+        chance: 2.3
+    mob_list:
+      - type: rabbit
+        chance: 13
+      - type: camel
+        chance: 13
+      - type: husk
+        chance: 35
+      - type: skeleton
+        chance: 35
+      - type: spider
+        chance: 35
+      - type: zombie
+        chance: 35
+      - type: creeper
+        chance: 35
+    chest_list:
+      - chest_id: chest_desert_common
+        chance: 2.2
+      - chest_id: chest_desert_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 5251"
+      items:
+        - material: CAMEL_SPAWN_EGG
+          amount: 1
+          reward_name: "&a1x Jajko Przywołujące Wielbłąda"
+        - material: EXPERIENCE_BOTTLE
+          amount: 1
+          reward_name: "&a1x Butelka Doświadczenia"
+      broadcast: "&6&l[OneBlock] &eGracz {player} osiągnął poziom 25!"
+  level_26:
+    name: "&eSzlak Karawan"
+    blocks_required: 485
+    block_list:
+      - block: sand
+        chance: 46.4
+      - block: sandstone
+        chance: 25.4
+      - block: red_sand
+        chance: 14.0
+      - block: red_sandstone
+        chance: 7.7
+      - block: cactus
+        chance: 4.2
+      - block: dead_bush
+        chance: 2.3
+    mob_list:
+      - type: rabbit
+        chance: 15
+      - type: camel
+        chance: 15
+      - type: husk
+        chance: 36
+      - type: skeleton
+        chance: 36
+      - type: spider
+        chance: 36
+      - type: zombie
+        chance: 36
+      - type: creeper
+        chance: 36
+    chest_list:
+      - chest_id: chest_desert_common
+        chance: 2.2
+      - chest_id: chest_desert_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 4213"
+      items:
+        - material: GOLDEN_SWORD
+          amount: 1
+          reward_name: "&a1x Złoty Miecz"
+  level_27:
+    name: "&eSpalona Ziemia"
+    blocks_required: 541
+    block_list:
+      - block: sand
+        chance: 45.5
+      - block: sandstone
+        chance: 25.1
+      - block: red_sand
+        chance: 13.8
+      - block: red_sandstone
+        chance: 7.6
+      - block: cactus
+        chance: 4.2
+      - block: dead_bush
+        chance: 2.3
+      - block: terracotta
+        chance: 1.5
+    mob_list:
+      - type: rabbit
+        chance: 17
+      - type: camel
+        chance: 17
+      - type: husk
+        chance: 37
+      - type: skeleton
+        chance: 37
+      - type: spider
+        chance: 37
+      - type: zombie
+        chance: 37
+      - type: creeper
+        chance: 37
+      - type: enderman
+        chance: 37
+    chest_list:
+      - chest_id: chest_desert_common
+        chance: 2.2
+      - chest_id: chest_desert_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 4354"
+      items:
+        - material: GOLDEN_APPLE
+          amount: 1
+          reward_name: "&a1x Złote Jabłko"
+  level_28:
+    name: "&eKrólestwo Słońca"
+    blocks_required: 598
+    block_list:
+      - block: sand
+        chance: 45.5
+      - block: sandstone
+        chance: 25.1
+      - block: red_sand
+        chance: 13.8
+      - block: red_sandstone
+        chance: 7.6
+      - block: cactus
+        chance: 4.2
+      - block: dead_bush
+        chance: 2.3
+      - block: terracotta
+        chance: 1.5
+    mob_list:
+      - type: rabbit
+        chance: 19
+      - type: camel
+        chance: 19
+      - type: husk
+        chance: 38
+      - type: skeleton
+        chance: 38
+      - type: spider
+        chance: 38
+      - type: zombie
+        chance: 38
+      - type: creeper
+        chance: 38
+      - type: enderman
+        chance: 38
+    chest_list:
+      - chest_id: chest_desert_common
+        chance: 2.2
+      - chest_id: chest_desert_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 4496"
+      items:
+        - material: GOLDEN_SWORD
+          amount: 1
+          reward_name: "&a1x Złoty Miecz"
+  level_29:
+    name: "&6Podnóże Gór"
+    blocks_required: 654
+    block_list:
+      - block: cactus
+        chance: 45.5
+      - block: dead_bush
+        chance: 25.1
+      - block: terracotta
+        chance: 13.8
+      - block: smooth_sandstone
+        chance: 7.6
+      - block: stone
+        chance: 4.2
+      - block: andesite
+        chance: 2.3
+      - block: granite
+        chance: 1.5
+    mob_list:
+      - type: rabbit
+        chance: 21
+      - type: camel
+        chance: 21
+      - type: husk
+        chance: 39
+      - type: skeleton
+        chance: 39
+      - type: spider
+        chance: 39
+      - type: zombie
+        chance: 39
+      - type: creeper
+        chance: 39
+      - type: enderman
+        chance: 39
+    chest_list:
+      - chest_id: chest_desert_common
+        chance: 2.2
+      - chest_id: chest_desert_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 4637"
+      items:
+        - material: TOTEM_OF_UNDYING
+          amount: 1
+          reward_name: "&a1x Totem Nieśmiertelności"
+        - material: GOLDEN_AXE
+          amount: 1
+          reward_name: "&a1x Złota Siekiera"
+  level_30:
+    name: "&6&lPrzełęcz Skalna"
+    blocks_required: 711
+    block_list:
+      - block: cactus
+        chance: 45.5
+      - block: dead_bush
+        chance: 25.1
+      - block: terracotta
+        chance: 13.8
+      - block: smooth_sandstone
+        chance: 7.6
+      - block: stone
+        chance: 4.2
+      - block: andesite
+        chance: 2.3
+      - block: granite
+        chance: 1.5
+    mob_list:
+      - type: rabbit
+        chance: 23
+      - type: camel
+        chance: 23
+      - type: husk
+        chance: 40
+      - type: skeleton
+        chance: 40
+      - type: spider
+        chance: 40
+      - type: zombie
+        chance: 40
+      - type: creeper
+        chance: 40
+      - type: enderman
+        chance: 40
+    chest_list:
+      - chest_id: chest_desert_common
+        chance: 2.2
+      - chest_id: chest_desert_rare
+        chance: 1.3
+      - chest_id: chest_desert_epic
+        chance: 0.4
+    rewards:
+      commands:
+        - "currency money give %player% 9027"
+      items:
+        - material: GOLDEN_HELMET
+          amount: 1
+          reward_name: "&a1x Złoty Helm"
+        - material: EXPERIENCE_BOTTLE
+          amount: 1
+          reward_name: "&a1x Butelka Doświadczenia"
+      broadcast: "&6&l[OneBlock] &eGracz {player} dotarł do nowej krainy: Kamiennych Szczytów!"
+  level_31:
+    name: "&7Kamienne Szczyty"
+    blocks_required: 274
+    block_list:
+      - block: stone
+        chance: 47.4
+      - block: andesite
+        chance: 26.0
+      - block: granite
+        chance: 14.4
+      - block: diorite
+        chance: 7.9
+      - block: iron_ore
+        chance: 4.3
+    mob_list:
+      - type: goat
+        chance: 5
+      - type: skeleton
+        chance: 41
+      - type: spider
+        chance: 41
+    chest_list:
+      - chest_id: chest_mountain_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 4921"
+      items:
+        - material: DIAMOND_AXE
+          amount: 1
+          reward_name: "&a1x Diamentowa Siekiera"
+  level_32:
+    name: "&7Skalna Grań"
+    blocks_required: 351
+    block_list:
+      - block: stone
+        chance: 47.4
+      - block: andesite
+        chance: 26.0
+      - block: granite
+        chance: 14.4
+      - block: diorite
+        chance: 7.9
+      - block: iron_ore
+        chance: 4.3
+    mob_list:
+      - type: goat
+        chance: 7
+      - type: skeleton
+        chance: 42
+      - type: spider
+        chance: 42
+      - type: zombie
+        chance: 42
+    chest_list:
+      - chest_id: chest_mountain_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 5062"
+      items:
+        - material: RAW_IRON
+          amount: 1
+          reward_name: "&a1x Surowe Żelazo"
+  level_33:
+    name: "&7Zimne Przełęcze"
+    blocks_required: 427
+    block_list:
+      - block: stone
+        chance: 47.4
+      - block: andesite
+        chance: 26.0
+      - block: granite
+        chance: 14.4
+      - block: diorite
+        chance: 7.9
+      - block: iron_ore
+        chance: 4.3
+    mob_list:
+      - type: goat
+        chance: 9
+      - type: skeleton
+        chance: 43
+      - type: spider
+        chance: 43
+      - type: zombie
+        chance: 43
+      - type: creeper
+        chance: 43
+    chest_list:
+      - chest_id: chest_mountain_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 5204"
+      items:
+        - material: DIAMOND_PICKAXE
+          amount: 1
+          reward_name: "&a1x Diamentowy Kilof"
+  level_34:
+    name: "&7Jaskinie Granitu"
+    blocks_required: 504
+    block_list:
+      - block: stone
+        chance: 46.4
+      - block: andesite
+        chance: 25.4
+      - block: granite
+        chance: 14.0
+      - block: diorite
+        chance: 7.7
+      - block: iron_ore
+        chance: 4.2
+      - block: coal_ore
+        chance: 2.3
+    mob_list:
+      - type: goat
+        chance: 11
+      - type: skeleton
+        chance: 44
+      - type: spider
+        chance: 44
+      - type: zombie
+        chance: 44
+      - type: creeper
+        chance: 44
+    chest_list:
+      - chest_id: chest_mountain_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 5345"
+      items:
+        - material: RAW_GOLD
+          amount: 1
+          reward_name: "&a1x Surowe Złoto"
+  level_35:
+    name: "&7Rudna Komora"
+    blocks_required: 581
+    block_list:
+      - block: stone
+        chance: 46.4
+      - block: andesite
+        chance: 25.4
+      - block: granite
+        chance: 14.0
+      - block: diorite
+        chance: 7.7
+      - block: iron_ore
+        chance: 4.2
+      - block: coal_ore
+        chance: 2.3
+    mob_list:
+      - type: goat
+        chance: 13
+      - type: skeleton
+        chance: 45
+      - type: spider
+        chance: 45
+      - type: zombie
+        chance: 45
+      - type: creeper
+        chance: 45
+    chest_list:
+      - chest_id: chest_mountain_common
+        chance: 2.2
+      - chest_id: chest_mountain_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 7139"
+      items:
+        - material: DIAMOND_BOOTS
+          amount: 1
+          reward_name: "&a1x Diamentowe Buty"
+        - material: RAW_IRON
+          amount: 1
+          reward_name: "&a1x Surowe Żelazo"
+      broadcast: "&6&l[OneBlock] &eGracz {player} osiągnął poziom 35!"
+  level_36:
+    name: "&7Szczyt Mgieł"
+    blocks_required: 658
+    block_list:
+      - block: stone
+        chance: 46.4
+      - block: andesite
+        chance: 25.4
+      - block: granite
+        chance: 14.0
+      - block: diorite
+        chance: 7.7
+      - block: iron_ore
+        chance: 4.2
+      - block: coal_ore
+        chance: 2.3
+    mob_list:
+      - type: goat
+        chance: 15
+      - type: skeleton
+        chance: 46
+      - type: spider
+        chance: 46
+      - type: zombie
+        chance: 46
+      - type: creeper
+        chance: 46
+      - type: enderman
+        chance: 46
+    chest_list:
+      - chest_id: chest_mountain_common
+        chance: 2.2
+      - chest_id: chest_mountain_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 5629"
+      items:
+        - material: EMERALD
+          amount: 1
+          reward_name: "&a1x Szmaragd"
+  level_37:
+    name: "&7Górska Twierdza"
+    blocks_required: 734
+    block_list:
+      - block: stone
+        chance: 45.5
+      - block: andesite
+        chance: 25.1
+      - block: granite
+        chance: 13.8
+      - block: diorite
+        chance: 7.6
+      - block: iron_ore
+        chance: 4.2
+      - block: coal_ore
+        chance: 2.3
+      - block: gravel
+        chance: 1.5
+    mob_list:
+      - type: goat
+        chance: 17
+      - type: skeleton
+        chance: 47
+      - type: spider
+        chance: 47
+      - type: zombie
+        chance: 47
+      - type: creeper
+        chance: 47
+      - type: enderman
+        chance: 47
+    chest_list:
+      - chest_id: chest_mountain_common
+        chance: 2.2
+      - chest_id: chest_mountain_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 5770"
+      items:
+        - material: DIAMOND_AXE
+          amount: 1
+          reward_name: "&a1x Diamentowa Siekiera"
+  level_38:
+    name: "&7Korona Gór"
+    blocks_required: 811
+    block_list:
+      - block: stone
+        chance: 45.5
+      - block: andesite
+        chance: 25.1
+      - block: granite
+        chance: 13.8
+      - block: diorite
+        chance: 7.6
+      - block: iron_ore
+        chance: 4.2
+      - block: coal_ore
+        chance: 2.3
+      - block: gravel
+        chance: 1.5
+    mob_list:
+      - type: goat
+        chance: 19
+      - type: skeleton
+        chance: 48
+      - type: spider
+        chance: 48
+      - type: zombie
+        chance: 48
+      - type: creeper
+        chance: 48
+      - type: enderman
+        chance: 48
+    chest_list:
+      - chest_id: chest_mountain_common
+        chance: 2.2
+      - chest_id: chest_mountain_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 5912"
+      items:
+        - material: DIAMOND_PICKAXE
+          amount: 1
+          reward_name: "&a1x Diamentowy Kilof"
+  level_39:
+    name: "&6Zamarznięty Wierzchołek"
+    blocks_required: 888
+    block_list:
+      - block: iron_ore
+        chance: 45.5
+      - block: coal_ore
+        chance: 25.1
+      - block: gravel
+        chance: 13.8
+      - block: deepslate
+        chance: 7.6
+      - block: snow_block
+        chance: 4.2
+      - block: ice
+        chance: 2.3
+      - block: packed_ice
+        chance: 1.5
+    mob_list:
+      - type: goat
+        chance: 21
+      - type: skeleton
+        chance: 49
+      - type: spider
+        chance: 49
+      - type: zombie
+        chance: 49
+      - type: creeper
+        chance: 49
+      - type: enderman
+        chance: 49
+      - type: witch
+        chance: 49
+    chest_list:
+      - chest_id: chest_mountain_common
+        chance: 2.2
+      - chest_id: chest_mountain_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 6053"
+      items:
+        - material: RAW_GOLD
+          amount: 1
+          reward_name: "&a1x Surowe Złoto"
+        - material: COOKED_PORKCHOP
+          amount: 1
+          reward_name: "&a1x Pieczona Wieprzowina"
+  level_40:
+    name: "&6&lBrama Tundry"
+    blocks_required: 964
+    block_list:
+      - block: iron_ore
+        chance: 45.5
+      - block: coal_ore
+        chance: 25.1
+      - block: gravel
+        chance: 13.8
+      - block: deepslate
+        chance: 7.6
+      - block: snow_block
+        chance: 4.2
+      - block: ice
+        chance: 2.3
+      - block: packed_ice
+        chance: 1.5
+    mob_list:
+      - type: goat
+        chance: 23
+      - type: skeleton
+        chance: 50
+      - type: spider
+        chance: 50
+      - type: zombie
+        chance: 50
+      - type: creeper
+        chance: 50
+      - type: enderman
+        chance: 50
+      - type: witch
+        chance: 50
+    chest_list:
+      - chest_id: chest_mountain_common
+        chance: 2.2
+      - chest_id: chest_mountain_rare
+        chance: 1.3
+      - chest_id: chest_mountain_epic
+        chance: 0.4
+    rewards:
+      commands:
+        - "currency money give %player% 11859"
+      items:
+        - material: EMERALD
+          amount: 1
+          reward_name: "&a1x Szmaragd"
+        - material: DIAMOND_CHESTPLATE
+          amount: 1
+          reward_name: "&a1x Diamentowa Zbroja"
+      broadcast: "&6&l[OneBlock] &eGracz {player} dotarł do nowej krainy: Ośnieżonej Tundry!"
+  level_41:
+    name: "&bOśnieżona Tundra"
+    blocks_required: 346
+    block_list:
+      - block: snow_block
+        chance: 47.4
+      - block: ice
+        chance: 26.0
+      - block: packed_ice
+        chance: 14.4
+      - block: spruce_log
+        chance: 7.9
+      - block: spruce_leaves
+        chance: 4.3
+    mob_list:
+      - type: polar_bear
+        chance: 5
+      - type: rabbit
+        chance: 5
+      - type: stray
+        chance: 51
+      - type: skeleton
+        chance: 51
+    chest_list:
+      - chest_id: chest_tundra_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 6337"
+      items:
+        - material: SPYGLASS
+          amount: 1
+          reward_name: "&a1x Luneta"
+  level_42:
+    name: "&bLodowa Równina"
+    blocks_required: 443
+    block_list:
+      - block: snow_block
+        chance: 47.4
+      - block: ice
+        chance: 26.0
+      - block: packed_ice
+        chance: 14.4
+      - block: spruce_log
+        chance: 7.9
+      - block: spruce_leaves
+        chance: 4.3
+    mob_list:
+      - type: polar_bear
+        chance: 7
+      - type: rabbit
+        chance: 7
+      - type: stray
+        chance: 52
+      - type: skeleton
+        chance: 52
+      - type: spider
+        chance: 52
+    chest_list:
+      - chest_id: chest_tundra_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 6478"
+      items:
+        - material: NETHERITE_SCRAP
+          amount: 1
+          reward_name: "&a1x Netherytowy Złom"
+  level_43:
+    name: "&bKraina Śniegu"
+    blocks_required: 540
+    block_list:
+      - block: snow_block
+        chance: 47.4
+      - block: ice
+        chance: 26.0
+      - block: packed_ice
+        chance: 14.4
+      - block: spruce_log
+        chance: 7.9
+      - block: spruce_leaves
+        chance: 4.3
+    mob_list:
+      - type: polar_bear
+        chance: 9
+      - type: rabbit
+        chance: 9
+      - type: stray
+        chance: 53
+      - type: skeleton
+        chance: 53
+      - type: spider
+        chance: 53
+      - type: zombie
+        chance: 53
+    chest_list:
+      - chest_id: chest_tundra_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 6620"
+      items:
+        - material: BUNDLE
+          amount: 1
+          reward_name: "&a1x Tobół"
+  level_44:
+    name: "&bZamarznięte Jezioro"
+    blocks_required: 637
+    block_list:
+      - block: snow_block
+        chance: 46.4
+      - block: ice
+        chance: 25.4
+      - block: packed_ice
+        chance: 14.0
+      - block: spruce_log
+        chance: 7.7
+      - block: spruce_leaves
+        chance: 4.2
+      - block: snow
+        chance: 2.3
+    mob_list:
+      - type: polar_bear
+        chance: 11
+      - type: rabbit
+        chance: 11
+      - type: stray
+        chance: 54
+      - type: skeleton
+        chance: 54
+      - type: spider
+        chance: 54
+      - type: zombie
+        chance: 54
+    chest_list:
+      - chest_id: chest_tundra_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 6761"
+      items:
+        - material: SHIELD
+          amount: 1
+          reward_name: "&a1x Tarcza"
+  level_45:
+    name: "&bŚwierkowy Bór"
+    blocks_required: 734
+    block_list:
+      - block: snow_block
+        chance: 46.4
+      - block: ice
+        chance: 25.4
+      - block: packed_ice
+        chance: 14.0
+      - block: spruce_log
+        chance: 7.7
+      - block: spruce_leaves
+        chance: 4.2
+      - block: snow
+        chance: 2.3
+    mob_list:
+      - type: polar_bear
+        chance: 13
+      - type: rabbit
+        chance: 13
+      - type: stray
+        chance: 55
+      - type: skeleton
+        chance: 55
+      - type: spider
+        chance: 55
+      - type: zombie
+        chance: 55
+      - type: wolf
+        chance: 55
+    chest_list:
+      - chest_id: chest_tundra_common
+        chance: 2.2
+      - chest_id: chest_tundra_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 9027"
+      items:
+        - material: NETHERITE_SCRAP
+          amount: 1
+          reward_name: "&a1x Netherytowy Złom"
+        - material: LEAD
+          amount: 1
+          reward_name: "&a1x Smycz"
+      broadcast: "&6&l[OneBlock] &eGracz {player} osiągnął poziom 45!"
+  level_46:
+    name: "&bPółnocna Wioska"
+    blocks_required: 830
+    block_list:
+      - block: snow_block
+        chance: 46.4
+      - block: ice
+        chance: 25.4
+      - block: packed_ice
+        chance: 14.0
+      - block: spruce_log
+        chance: 7.7
+      - block: spruce_leaves
+        chance: 4.2
+      - block: snow
+        chance: 2.3
+    mob_list:
+      - type: polar_bear
+        chance: 15
+      - type: rabbit
+        chance: 15
+      - type: stray
+        chance: 56
+      - type: skeleton
+        chance: 56
+      - type: spider
+        chance: 56
+      - type: zombie
+        chance: 56
+      - type: wolf
+        chance: 56
+    chest_list:
+      - chest_id: chest_tundra_common
+        chance: 2.2
+      - chest_id: chest_tundra_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 7045"
+      items:
+        - material: DIAMOND_LEGGINGS
+          amount: 1
+          reward_name: "&a1x Diamentowe Spodnie"
+  level_47:
+    name: "&bLodowy Wiatr"
+    blocks_required: 927
+    block_list:
+      - block: snow_block
+        chance: 45.5
+      - block: ice
+        chance: 25.1
+      - block: packed_ice
+        chance: 13.8
+      - block: spruce_log
+        chance: 7.6
+      - block: spruce_leaves
+        chance: 4.2
+      - block: snow
+        chance: 2.3
+      - block: blue_ice
+        chance: 1.5
+    mob_list:
+      - type: polar_bear
+        chance: 17
+      - type: rabbit
+        chance: 17
+      - type: stray
+        chance: 57
+      - type: skeleton
+        chance: 57
+      - type: spider
+        chance: 57
+      - type: zombie
+        chance: 57
+      - type: wolf
+        chance: 57
+      - type: enderman
+        chance: 57
+    chest_list:
+      - chest_id: chest_tundra_common
+        chance: 2.2
+      - chest_id: chest_tundra_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 7186"
+      items:
+        - material: LEAD
+          amount: 1
+          reward_name: "&a1x Smycz"
+  level_48:
+    name: "&bBiałe Pustkowia"
+    blocks_required: 1024
+    block_list:
+      - block: snow_block
+        chance: 45.5
+      - block: ice
+        chance: 25.1
+      - block: packed_ice
+        chance: 13.8
+      - block: spruce_log
+        chance: 7.6
+      - block: spruce_leaves
+        chance: 4.2
+      - block: snow
+        chance: 2.3
+      - block: blue_ice
+        chance: 1.5
+    mob_list:
+      - type: polar_bear
+        chance: 19
+      - type: rabbit
+        chance: 19
+      - type: stray
+        chance: 58
+      - type: skeleton
+        chance: 58
+      - type: spider
+        chance: 58
+      - type: zombie
+        chance: 58
+      - type: wolf
+        chance: 58
+      - type: enderman
+        chance: 58
+    chest_list:
+      - chest_id: chest_tundra_common
+        chance: 2.2
+      - chest_id: chest_tundra_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 7328"
+      items:
+        - material: FIRE_CHARGE
+          amount: 1
+          reward_name: "&a1x Ładunek Ognia"
+  level_49:
+    name: "&5Mokradła Mgły"
+    blocks_required: 1121
+    block_list:
+      - block: spruce_leaves
+        chance: 45.5
+      - block: snow
+        chance: 25.1
+      - block: blue_ice
+        chance: 13.8
+      - block: powder_snow
+        chance: 7.6
+      - block: mud
+        chance: 4.2
+      - block: mangrove_log
+        chance: 2.3
+      - block: mangrove_leaves
+        chance: 1.5
+    mob_list:
+      - type: polar_bear
+        chance: 21
+      - type: rabbit
+        chance: 21
+      - type: stray
+        chance: 59
+      - type: skeleton
+        chance: 59
+      - type: spider
+        chance: 59
+      - type: zombie
+        chance: 59
+      - type: wolf
+        chance: 59
+      - type: enderman
+        chance: 59
+      - type: witch
+        chance: 59
+    chest_list:
+      - chest_id: chest_tundra_common
+        chance: 2.2
+      - chest_id: chest_tundra_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 7469"
+      items:
+        - material: FROST_WALKER_BOOK
+          amount: 1
+          reward_name: "&a1x Księga Lodowych Kroków"
+        - material: EMERALD_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Szmaragdu"
+  level_50:
+    name: "&5&lBrama Bagien"
+    blocks_required: 1218
+    block_list:
+      - block: spruce_leaves
+        chance: 45.5
+      - block: snow
+        chance: 25.1
+      - block: blue_ice
+        chance: 13.8
+      - block: powder_snow
+        chance: 7.6
+      - block: mud
+        chance: 4.2
+      - block: mangrove_log
+        chance: 2.3
+      - block: mangrove_leaves
+        chance: 1.5
+    mob_list:
+      - type: polar_bear
+        chance: 23
+      - type: rabbit
+        chance: 23
+      - type: stray
+        chance: 60
+      - type: skeleton
+        chance: 60
+      - type: spider
+        chance: 60
+      - type: zombie
+        chance: 60
+      - type: wolf
+        chance: 60
+      - type: enderman
+        chance: 60
+      - type: witch
+        chance: 60
+    chest_list:
+      - chest_id: chest_tundra_common
+        chance: 2.2
+      - chest_id: chest_tundra_rare
+        chance: 1.3
+      - chest_id: chest_tundra_epic
+        chance: 0.4
+    rewards:
+      commands:
+        - "currency money give %player% 14691"
+      items:
+        - material: BUNDLE
+          amount: 1
+          reward_name: "&a1x Tobół"
+        - material: TIPPED_ARROW
+          amount: 1
+          reward_name: "&a1x Zatruta Strzała"
+      broadcast: "&6&l[OneBlock] &eGracz {player} dotarł do nowej krainy: Zatopionych Bagien!"
+  level_51:
+    name: "&5Zatopione Bagna"
+    blocks_required: 418
+    block_list:
+      - block: mud
+        chance: 47.4
+      - block: mangrove_log
+        chance: 26.0
+      - block: mangrove_leaves
+        chance: 14.4
+      - block: lily_pad
+        chance: 7.9
+      - block: clay
+        chance: 4.3
+    mob_list:
+      - type: frog
+        chance: 5
+      - type: slime
+        chance: 61
+      - type: witch
+        chance: 61
+    chest_list:
+      - chest_id: chest_swamp_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 7753"
+      items:
+        - material: SPLASH_POTION
+          amount: 1
+          reward_name: "&a1x Mikstura Rzucana"
+  level_52:
+    name: "&5Mgliste Mokradła"
+    blocks_required: 535
+    block_list:
+      - block: mud
+        chance: 47.4
+      - block: mangrove_log
+        chance: 26.0
+      - block: mangrove_leaves
+        chance: 14.4
+      - block: lily_pad
+        chance: 7.9
+      - block: clay
+        chance: 4.3
+    mob_list:
+      - type: frog
+        chance: 7
+      - type: slime
+        chance: 62
+      - type: witch
+        chance: 62
+      - type: zombie
+        chance: 62
+    chest_list:
+      - chest_id: chest_swamp_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 7894"
+      items:
+        - material: MANGROVE_BOAT
+          amount: 1
+          reward_name: "&a1x Łódź z Namorzyna"
+  level_53:
+    name: "&5Trzęsawisko"
+    blocks_required: 652
+    block_list:
+      - block: mud
+        chance: 47.4
+      - block: mangrove_log
+        chance: 26.0
+      - block: mangrove_leaves
+        chance: 14.4
+      - block: lily_pad
+        chance: 7.9
+      - block: clay
+        chance: 4.3
+    mob_list:
+      - type: frog
+        chance: 9
+      - type: slime
+        chance: 63
+      - type: witch
+        chance: 63
+      - type: zombie
+        chance: 63
+      - type: drowned
+        chance: 63
+    chest_list:
+      - chest_id: chest_swamp_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 8036"
+      items:
+        - material: SPLASH_POTION
+          amount: 1
+          reward_name: "&a1x Mikstura Rzucana"
+  level_54:
+    name: "&5Las Namorzynowy"
+    blocks_required: 769
+    block_list:
+      - block: mud
+        chance: 46.4
+      - block: mangrove_log
+        chance: 25.4
+      - block: mangrove_leaves
+        chance: 14.0
+      - block: lily_pad
+        chance: 7.7
+      - block: clay
+        chance: 4.2
+      - block: slime_block
+        chance: 2.3
+    mob_list:
+      - type: frog
+        chance: 11
+      - type: slime
+        chance: 64
+      - type: witch
+        chance: 64
+      - type: zombie
+        chance: 64
+      - type: drowned
+        chance: 64
+      - type: spider
+        chance: 64
+    chest_list:
+      - chest_id: chest_swamp_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 8177"
+      items:
+        - material: GOLDEN_CARROT
+          amount: 1
+          reward_name: "&a1x Złota Marchewka"
+  level_55:
+    name: "&5Słumowa Toń"
+    blocks_required: 886
+    block_list:
+      - block: mud
+        chance: 46.4
+      - block: mangrove_log
+        chance: 25.4
+      - block: mangrove_leaves
+        chance: 14.0
+      - block: lily_pad
+        chance: 7.7
+      - block: clay
+        chance: 4.2
+      - block: slime_block
+        chance: 2.3
+    mob_list:
+      - type: frog
+        chance: 13
+      - type: slime
+        chance: 65
+      - type: witch
+        chance: 65
+      - type: zombie
+        chance: 65
+      - type: drowned
+        chance: 65
+      - type: spider
+        chance: 65
+    chest_list:
+      - chest_id: chest_swamp_common
+        chance: 2.2
+      - chest_id: chest_swamp_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 10915"
+      items:
+        - material: NAUTILUS_SHELL
+          amount: 1
+          reward_name: "&a1x Muszla Nautilusa"
+        - material: HEART_OF_THE_SEA
+          amount: 1
+          reward_name: "&a1x Serce Morza"
+      broadcast: "&6&l[OneBlock] &eGracz {player} osiągnął poziom 55!"
+  level_56:
+    name: "&5Wyspa Żaby"
+    blocks_required: 1003
+    block_list:
+      - block: mud
+        chance: 46.4
+      - block: mangrove_log
+        chance: 25.4
+      - block: mangrove_leaves
+        chance: 14.0
+      - block: lily_pad
+        chance: 7.7
+      - block: clay
+        chance: 4.2
+      - block: slime_block
+        chance: 2.3
+    mob_list:
+      - type: frog
+        chance: 15
+      - type: slime
+        chance: 66
+      - type: witch
+        chance: 66
+      - type: zombie
+        chance: 66
+      - type: drowned
+        chance: 66
+      - type: spider
+        chance: 66
+      - type: enderman
+        chance: 66
+    chest_list:
+      - chest_id: chest_swamp_common
+        chance: 2.2
+      - chest_id: chest_swamp_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 8461"
+      items:
+        - material: ENCHANTED_BOOK
+          amount: 1
+          reward_name: "&a1x Zaczarowana Księga"
+  level_57:
+    name: "&5Gnijące Korzenie"
+    blocks_required: 1120
+    block_list:
+      - block: mud
+        chance: 45.5
+      - block: mangrove_log
+        chance: 25.1
+      - block: mangrove_leaves
+        chance: 13.8
+      - block: lily_pad
+        chance: 7.6
+      - block: clay
+        chance: 4.2
+      - block: slime_block
+        chance: 2.3
+      - block: mangrove_roots
+        chance: 1.5
+    mob_list:
+      - type: frog
+        chance: 17
+      - type: slime
+        chance: 67
+      - type: witch
+        chance: 67
+      - type: zombie
+        chance: 67
+      - type: drowned
+        chance: 67
+      - type: spider
+        chance: 67
+      - type: enderman
+        chance: 67
+    chest_list:
+      - chest_id: chest_swamp_common
+        chance: 2.2
+      - chest_id: chest_swamp_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 8602"
+      items:
+        - material: EMERALD
+          amount: 1
+          reward_name: "&a1x Szmaragd"
+  level_58:
+    name: "&5Królestwo Żylin"
+    blocks_required: 1237
+    block_list:
+      - block: mud
+        chance: 45.5
+      - block: mangrove_log
+        chance: 25.1
+      - block: mangrove_leaves
+        chance: 13.8
+      - block: lily_pad
+        chance: 7.6
+      - block: clay
+        chance: 4.2
+      - block: slime_block
+        chance: 2.3
+      - block: mangrove_roots
+        chance: 1.5
+    mob_list:
+      - type: frog
+        chance: 19
+      - type: slime
+        chance: 68
+      - type: witch
+        chance: 68
+      - type: zombie
+        chance: 68
+      - type: drowned
+        chance: 68
+      - type: spider
+        chance: 68
+      - type: enderman
+        chance: 68
+      - type: creeper
+        chance: 68
+    chest_list:
+      - chest_id: chest_swamp_common
+        chance: 2.2
+      - chest_id: chest_swamp_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 8744"
+      items:
+        - material: HEART_OF_THE_SEA
+          amount: 1
+          reward_name: "&a1x Serce Morza"
+  level_59:
+    name: "&cPiekielna Szczelina"
+    blocks_required: 1354
+    block_list:
+      - block: clay
+        chance: 45.5
+      - block: slime_block
+        chance: 25.1
+      - block: mangrove_roots
+        chance: 13.8
+      - block: moss_block
+        chance: 7.6
+      - block: netherrack
+        chance: 4.2
+      - block: soul_sand
+        chance: 2.3
+      - block: basalt
+        chance: 1.5
+    mob_list:
+      - type: frog
+        chance: 21
+      - type: slime
+        chance: 69
+      - type: witch
+        chance: 69
+      - type: zombie
+        chance: 69
+      - type: drowned
+        chance: 69
+      - type: spider
+        chance: 69
+      - type: enderman
+        chance: 69
+      - type: creeper
+        chance: 69
+    chest_list:
+      - chest_id: chest_swamp_common
+        chance: 2.2
+      - chest_id: chest_swamp_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 8885"
+      items:
+        - material: NETHERITE_INGOT
+          amount: 1
+          reward_name: "&a1x Netherytowy Sztab"
+        - material: MANGROVE_BOAT
+          amount: 1
+          reward_name: "&a1x Łódź z Namorzyna"
+  level_60:
+    name: "&c&lPortal do Netheru"
+    blocks_required: 1471
+    block_list:
+      - block: clay
+        chance: 45.5
+      - block: slime_block
+        chance: 25.1
+      - block: mangrove_roots
+        chance: 13.8
+      - block: moss_block
+        chance: 7.6
+      - block: netherrack
+        chance: 4.2
+      - block: soul_sand
+        chance: 2.3
+      - block: basalt
+        chance: 1.5
+    mob_list:
+      - type: frog
+        chance: 23
+      - type: slime
+        chance: 70
+      - type: witch
+        chance: 70
+      - type: zombie
+        chance: 70
+      - type: drowned
+        chance: 70
+      - type: spider
+        chance: 70
+      - type: enderman
+        chance: 70
+      - type: creeper
+        chance: 70
+    chest_list:
+      - chest_id: chest_swamp_common
+        chance: 2.2
+      - chest_id: chest_swamp_rare
+        chance: 1.3
+      - chest_id: chest_swamp_epic
+        chance: 0.4
+    rewards:
+      commands:
+        - "currency money give %player% 17523"
+      items:
+        - material: NAUTILUS_SHELL
+          amount: 1
+          reward_name: "&a1x Muszla Nautilusa"
+        - material: SLIME_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Śluzu"
+      broadcast: "&6&l[OneBlock] &eGracz {player} dotarł do nowej krainy: Piekielnych Pustkowi!"
+  level_61:
+    name: "&cPiekielne Pustkowia"
+    blocks_required: 490
+    block_list:
+      - block: netherrack
+        chance: 47.4
+      - block: soul_sand
+        chance: 26.0
+      - block: basalt
+        chance: 14.4
+      - block: blackstone
+        chance: 7.9
+      - block: magma_block
+        chance: 4.3
+    mob_list:
+      - type: strider
+        chance: 5
+      - type: zombified_piglin
+        chance: 71
+      - type: skeleton
+        chance: 71
+    chest_list:
+      - chest_id: chest_nether_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 9169"
+      items:
+        - material: FIRE_RESISTANCE
+          amount: 1
+          reward_name: "&a1x Mikstura Odporności na Ogień"
+  level_62:
+    name: "&cDolina Lawy"
+    blocks_required: 627
+    block_list:
+      - block: netherrack
+        chance: 47.4
+      - block: soul_sand
+        chance: 26.0
+      - block: basalt
+        chance: 14.4
+      - block: blackstone
+        chance: 7.9
+      - block: magma_block
+        chance: 4.3
+    mob_list:
+      - type: strider
+        chance: 7
+      - type: zombified_piglin
+        chance: 72
+      - type: skeleton
+        chance: 72
+      - type: magma_cube
+        chance: 72
+    chest_list:
+      - chest_id: chest_nether_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 9310"
+      items:
+        - material: BLAZE_ROD
+          amount: 1
+          reward_name: "&a1x Pręt Blaze'a"
+  level_63:
+    name: "&cKraina Magmy"
+    blocks_required: 764
+    block_list:
+      - block: netherrack
+        chance: 47.4
+      - block: soul_sand
+        chance: 26.0
+      - block: basalt
+        chance: 14.4
+      - block: blackstone
+        chance: 7.9
+      - block: magma_block
+        chance: 4.3
+    mob_list:
+      - type: strider
+        chance: 9
+      - type: zombified_piglin
+        chance: 73
+      - type: skeleton
+        chance: 73
+      - type: magma_cube
+        chance: 73
+      - type: piglin
+        chance: 73
+    chest_list:
+      - chest_id: chest_nether_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 9452"
+      items:
+        - material: RESPAWN_ANCHOR
+          amount: 1
+          reward_name: "&a1x Kotwica Odradzania"
+  level_64:
+    name: "&cTwierdza Piglinów"
+    blocks_required: 902
+    block_list:
+      - block: netherrack
+        chance: 46.4
+      - block: soul_sand
+        chance: 25.4
+      - block: basalt
+        chance: 14.0
+      - block: blackstone
+        chance: 7.7
+      - block: magma_block
+        chance: 4.2
+      - block: nether_quartz_ore
+        chance: 2.3
+    mob_list:
+      - type: strider
+        chance: 11
+      - type: zombified_piglin
+        chance: 74
+      - type: skeleton
+        chance: 74
+      - type: magma_cube
+        chance: 74
+      - type: piglin
+        chance: 74
+      - type: blaze
+        chance: 74
+    chest_list:
+      - chest_id: chest_nether_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 9593"
+      items:
+        - material: FIRE_RESISTANCE
+          amount: 1
+          reward_name: "&a1x Mikstura Odporności na Ogień"
+  level_65:
+    name: "&cSzlak Dusz"
+    blocks_required: 1039
+    block_list:
+      - block: netherrack
+        chance: 46.4
+      - block: soul_sand
+        chance: 25.4
+      - block: basalt
+        chance: 14.0
+      - block: blackstone
+        chance: 7.7
+      - block: magma_block
+        chance: 4.2
+      - block: nether_quartz_ore
+        chance: 2.3
+    mob_list:
+      - type: strider
+        chance: 13
+      - type: zombified_piglin
+        chance: 75
+      - type: skeleton
+        chance: 75
+      - type: magma_cube
+        chance: 75
+      - type: piglin
+        chance: 75
+      - type: blaze
+        chance: 75
+    chest_list:
+      - chest_id: chest_nether_common
+        chance: 2.2
+      - chest_id: chest_nether_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 12803"
+      items:
+        - material: NETHER_STAR
+          amount: 1
+          reward_name: "&a1x Gwiazda Netheru"
+        - material: OBSIDIAN
+          amount: 1
+          reward_name: "&a1x Obsydian"
+      broadcast: "&6&l[OneBlock] &eGracz {player} osiągnął poziom 65!"
+  level_66:
+    name: "&cKomnaty Błazów"
+    blocks_required: 1176
+    block_list:
+      - block: netherrack
+        chance: 46.4
+      - block: soul_sand
+        chance: 25.4
+      - block: basalt
+        chance: 14.0
+      - block: blackstone
+        chance: 7.7
+      - block: magma_block
+        chance: 4.2
+      - block: nether_quartz_ore
+        chance: 2.3
+    mob_list:
+      - type: strider
+        chance: 15
+      - type: zombified_piglin
+        chance: 76
+      - type: skeleton
+        chance: 76
+      - type: magma_cube
+        chance: 76
+      - type: piglin
+        chance: 76
+      - type: blaze
+        chance: 76
+      - type: wither_skeleton
+        chance: 76
+    chest_list:
+      - chest_id: chest_nether_common
+        chance: 2.2
+      - chest_id: chest_nether_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 9877"
+      items:
+        - material: NETHERITE_PICKAXE
+          amount: 1
+          reward_name: "&a1x Netherytowy Kilof"
+  level_67:
+    name: "&cPustkowie Bazaltu"
+    blocks_required: 1313
+    block_list:
+      - block: netherrack
+        chance: 45.5
+      - block: soul_sand
+        chance: 25.1
+      - block: basalt
+        chance: 13.8
+      - block: blackstone
+        chance: 7.6
+      - block: magma_block
+        chance: 4.2
+      - block: nether_quartz_ore
+        chance: 2.3
+      - block: soul_soil
+        chance: 1.5
+    mob_list:
+      - type: strider
+        chance: 17
+      - type: zombified_piglin
+        chance: 77
+      - type: skeleton
+        chance: 77
+      - type: magma_cube
+        chance: 77
+      - type: piglin
+        chance: 77
+      - type: blaze
+        chance: 77
+      - type: wither_skeleton
+        chance: 77
+    chest_list:
+      - chest_id: chest_nether_common
+        chance: 2.2
+      - chest_id: chest_nether_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 10018"
+      items:
+        - material: NETHERITE_PICKAXE
+          amount: 1
+          reward_name: "&a1x Netherytowy Kilof"
+  level_68:
+    name: "&cSerce Netheru"
+    blocks_required: 1450
+    block_list:
+      - block: netherrack
+        chance: 45.5
+      - block: soul_sand
+        chance: 25.1
+      - block: basalt
+        chance: 13.8
+      - block: blackstone
+        chance: 7.6
+      - block: magma_block
+        chance: 4.2
+      - block: nether_quartz_ore
+        chance: 2.3
+      - block: soul_soil
+        chance: 1.5
+    mob_list:
+      - type: strider
+        chance: 19
+      - type: zombified_piglin
+        chance: 78
+      - type: skeleton
+        chance: 78
+      - type: magma_cube
+        chance: 78
+      - type: piglin
+        chance: 78
+      - type: blaze
+        chance: 78
+      - type: wither_skeleton
+        chance: 78
+      - type: ghast
+        chance: 78
+    chest_list:
+      - chest_id: chest_nether_common
+        chance: 2.2
+      - chest_id: chest_nether_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 10160"
+      items:
+        - material: GOLDEN_AXE
+          amount: 1
+          reward_name: "&a1x Złota Siekiera"
+  level_69:
+    name: "&3Wybrzeże Lodowca"
+    blocks_required: 1588
+    block_list:
+      - block: magma_block
+        chance: 45.5
+      - block: nether_quartz_ore
+        chance: 25.1
+      - block: soul_soil
+        chance: 13.8
+      - block: nether_gold_ore
+        chance: 7.6
+      - block: blue_ice
+        chance: 4.2
+      - block: packed_ice
+        chance: 2.3
+      - block: prismarine
+        chance: 1.5
+    mob_list:
+      - type: strider
+        chance: 21
+      - type: zombified_piglin
+        chance: 79
+      - type: skeleton
+        chance: 79
+      - type: magma_cube
+        chance: 79
+      - type: piglin
+        chance: 79
+      - type: blaze
+        chance: 79
+      - type: wither_skeleton
+        chance: 79
+      - type: ghast
+        chance: 79
+      - type: hoglin
+        chance: 79
+    chest_list:
+      - chest_id: chest_nether_common
+        chance: 2.2
+      - chest_id: chest_nether_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 10301"
+      items:
+        - material: WITHER_SKELETON_SKULL
+          amount: 1
+          reward_name: "&a1x Czaszka Wither Szkieleta"
+        - material: NETHERITE_CHESTPLATE
+          amount: 1
+          reward_name: "&a1x Netherytowa Zbroja"
+  level_70:
+    name: "&3&lOcean Lodów"
+    blocks_required: 1725
+    block_list:
+      - block: magma_block
+        chance: 45.5
+      - block: nether_quartz_ore
+        chance: 25.1
+      - block: soul_soil
+        chance: 13.8
+      - block: nether_gold_ore
+        chance: 7.6
+      - block: blue_ice
+        chance: 4.2
+      - block: packed_ice
+        chance: 2.3
+      - block: prismarine
+        chance: 1.5
+    mob_list:
+      - type: strider
+        chance: 23
+      - type: zombified_piglin
+        chance: 80
+      - type: skeleton
+        chance: 80
+      - type: magma_cube
+        chance: 80
+      - type: piglin
+        chance: 80
+      - type: blaze
+        chance: 80
+      - type: wither_skeleton
+        chance: 80
+      - type: ghast
+        chance: 80
+      - type: hoglin
+        chance: 80
+    chest_list:
+      - chest_id: chest_nether_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 20355"
+      items:
+        - material: BLAZE_ROD
+          amount: 1
+          reward_name: "&a1x Pręt Blaze'a"
+        - material: NETHERITE_CHESTPLATE
+          amount: 1
+          reward_name: "&a1x Netherytowa Zbroja"
+      broadcast: "&6&l[OneBlock] &eGracz {player} dotarł do nowej krainy: Lodowego Archipelagu!"
+  level_71:
+    name: "&3Lodowy Archipelag"
+    blocks_required: 562
+    block_list:
+      - block: blue_ice
+        chance: 47.4
+      - block: packed_ice
+        chance: 26.0
+      - block: prismarine
+        chance: 14.4
+      - block: prismarine_bricks
+        chance: 7.9
+      - block: dark_prismarine
+        chance: 4.3
+    mob_list:
+      - type: dolphin
+        chance: 5
+      - type: turtle
+        chance: 5
+      - type: drowned
+        chance: 81
+      - type: stray
+        chance: 81
+    chest_list:
+      - chest_id: chest_ocean_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 10585"
+      items:
+        - material: TOTEM_OF_UNDYING
+          amount: 1
+          reward_name: "&a1x Totem Nieśmiertelności"
+  level_72:
+    name: "&3Głębia Oceanu"
+    blocks_required: 719
+    block_list:
+      - block: blue_ice
+        chance: 47.4
+      - block: packed_ice
+        chance: 26.0
+      - block: prismarine
+        chance: 14.4
+      - block: prismarine_bricks
+        chance: 7.9
+      - block: dark_prismarine
+        chance: 4.3
+    mob_list:
+      - type: dolphin
+        chance: 7
+      - type: turtle
+        chance: 7
+      - type: drowned
+        chance: 82
+      - type: stray
+        chance: 82
+      - type: guardian
+        chance: 82
+    chest_list:
+      - chest_id: chest_ocean_common
+        chance: 2.2
+      - chest_id: chest_ocean_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 10726"
+      items:
+        - material: ELYTRA
+          amount: 1
+          reward_name: "&a1x Elytra"
+  level_73:
+    name: "&3Rafa Prismarynu"
+    blocks_required: 877
+    block_list:
+      - block: blue_ice
+        chance: 47.4
+      - block: packed_ice
+        chance: 26.0
+      - block: prismarine
+        chance: 14.4
+      - block: prismarine_bricks
+        chance: 7.9
+      - block: dark_prismarine
+        chance: 4.3
+    mob_list:
+      - type: dolphin
+        chance: 9
+      - type: turtle
+        chance: 9
+      - type: drowned
+        chance: 83
+      - type: stray
+        chance: 83
+      - type: guardian
+        chance: 83
+      - type: skeleton
+        chance: 83
+    chest_list:
+      - chest_id: chest_ocean_common
+        chance: 2.2
+      - chest_id: chest_ocean_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 10868"
+      items:
+        - material: TRIDENT
+          amount: 1
+          reward_name: "&a1x Trójząb"
+  level_74:
+    name: "&3Zatopione Ruiny"
+    blocks_required: 1034
+    block_list:
+      - block: blue_ice
+        chance: 46.4
+      - block: packed_ice
+        chance: 25.4
+      - block: prismarine
+        chance: 14.0
+      - block: prismarine_bricks
+        chance: 7.7
+      - block: dark_prismarine
+        chance: 4.2
+      - block: sea_lantern
+        chance: 2.3
+    mob_list:
+      - type: dolphin
+        chance: 11
+      - type: turtle
+        chance: 11
+      - type: drowned
+        chance: 84
+      - type: stray
+        chance: 84
+      - type: guardian
+        chance: 84
+      - type: skeleton
+        chance: 84
+    chest_list:
+      - chest_id: chest_ocean_common
+        chance: 2.2
+      - chest_id: chest_ocean_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 11009"
+      items:
+        - material: HEART_OF_THE_SEA
+          amount: 1
+          reward_name: "&a1x Serce Morza"
+  level_75:
+    name: "&3Kryształowe Wody"
+    blocks_required: 1191
+    block_list:
+      - block: blue_ice
+        chance: 46.4
+      - block: packed_ice
+        chance: 25.4
+      - block: prismarine
+        chance: 14.0
+      - block: prismarine_bricks
+        chance: 7.7
+      - block: dark_prismarine
+        chance: 4.2
+      - block: sea_lantern
+        chance: 2.3
+    mob_list:
+      - type: dolphin
+        chance: 13
+      - type: turtle
+        chance: 13
+      - type: drowned
+        chance: 85
+      - type: stray
+        chance: 85
+      - type: guardian
+        chance: 85
+      - type: skeleton
+        chance: 85
+      - type: elder_guardian
+        chance: 85
+    chest_list:
+      - chest_id: chest_ocean_common
+        chance: 2.2
+      - chest_id: chest_ocean_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 14691"
+      items:
+        - material: NETHERITE_HELMET
+          amount: 1
+          reward_name: "&a1x Netherytowy Helm"
+        - material: NETHERITE_INGOT
+          amount: 1
+          reward_name: "&a1x Netherytowy Sztab"
+      broadcast: "&6&l[OneBlock] &eGracz {player} osiągnął poziom 75!"
+  level_76:
+    name: "&3Legowisko Straży"
+    blocks_required: 1349
+    block_list:
+      - block: blue_ice
+        chance: 46.4
+      - block: packed_ice
+        chance: 25.4
+      - block: prismarine
+        chance: 14.0
+      - block: prismarine_bricks
+        chance: 7.7
+      - block: dark_prismarine
+        chance: 4.2
+      - block: sea_lantern
+        chance: 2.3
+    mob_list:
+      - type: dolphin
+        chance: 15
+      - type: turtle
+        chance: 15
+      - type: drowned
+        chance: 86
+      - type: stray
+        chance: 86
+      - type: guardian
+        chance: 86
+      - type: skeleton
+        chance: 86
+      - type: elder_guardian
+        chance: 86
+    chest_list:
+      - chest_id: chest_ocean_common
+        chance: 2.2
+      - chest_id: chest_ocean_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 11293"
+      items:
+        - material: DIAMOND_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Diamentu"
+  level_77:
+    name: "&3Otchłań Morska"
+    blocks_required: 1506
+    block_list:
+      - block: blue_ice
+        chance: 45.5
+      - block: packed_ice
+        chance: 25.1
+      - block: prismarine
+        chance: 13.8
+      - block: prismarine_bricks
+        chance: 7.6
+      - block: dark_prismarine
+        chance: 4.2
+      - block: sea_lantern
+        chance: 2.3
+      - block: kelp
+        chance: 1.5
+    mob_list:
+      - type: dolphin
+        chance: 17
+      - type: turtle
+        chance: 17
+      - type: drowned
+        chance: 87
+      - type: stray
+        chance: 87
+      - type: guardian
+        chance: 87
+      - type: skeleton
+        chance: 87
+      - type: elder_guardian
+        chance: 87
+      - type: enderman
+        chance: 87
+    chest_list:
+      - chest_id: chest_ocean_common
+        chance: 2.2
+      - chest_id: chest_ocean_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 11434"
+      items:
+        - material: SPONGE
+          amount: 1
+          reward_name: "&a1x Gąbka"
+  level_78:
+    name: "&3Królestwo Fal"
+    blocks_required: 1664
+    block_list:
+      - block: blue_ice
+        chance: 45.5
+      - block: packed_ice
+        chance: 25.1
+      - block: prismarine
+        chance: 13.8
+      - block: prismarine_bricks
+        chance: 7.6
+      - block: dark_prismarine
+        chance: 4.2
+      - block: sea_lantern
+        chance: 2.3
+      - block: kelp
+        chance: 1.5
+    mob_list:
+      - type: dolphin
+        chance: 19
+      - type: turtle
+        chance: 19
+      - type: drowned
+        chance: 88
+      - type: stray
+        chance: 88
+      - type: guardian
+        chance: 88
+      - type: skeleton
+        chance: 88
+      - type: elder_guardian
+        chance: 88
+      - type: enderman
+        chance: 88
+    chest_list:
+      - chest_id: chest_ocean_common
+        chance: 2.2
+      - chest_id: chest_ocean_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 11576"
+      items:
+        - material: SPONGE
+          amount: 1
+          reward_name: "&a1x Gąbka"
+  level_79:
+    name: "&dFiolet Endu"
+    blocks_required: 1821
+    block_list:
+      - block: dark_prismarine
+        chance: 45.5
+      - block: sea_lantern
+        chance: 25.1
+      - block: kelp
+        chance: 13.8
+      - block: tube_coral_block
+        chance: 7.6
+      - block: end_stone
+        chance: 4.2
+      - block: purpur_block
+        chance: 2.3
+      - block: end_stone_bricks
+        chance: 1.5
+    mob_list:
+      - type: dolphin
+        chance: 21
+      - type: turtle
+        chance: 21
+      - type: drowned
+        chance: 89
+      - type: stray
+        chance: 89
+      - type: guardian
+        chance: 89
+      - type: skeleton
+        chance: 89
+      - type: elder_guardian
+        chance: 89
+      - type: enderman
+        chance: 89
+      - type: wither_skeleton
+        chance: 89
+    chest_list:
+      - chest_id: chest_ocean_common
+        chance: 2.2
+      - chest_id: chest_ocean_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 11717"
+      items:
+        - material: EMERALD_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Szmaragdu"
+        - material: SPONGE
+          amount: 1
+          reward_name: "&a1x Gąbka"
+  level_80:
+    name: "&d&lPortal do Endu"
+    blocks_required: 1978
+    block_list:
+      - block: dark_prismarine
+        chance: 45.5
+      - block: sea_lantern
+        chance: 25.1
+      - block: kelp
+        chance: 13.8
+      - block: tube_coral_block
+        chance: 7.6
+      - block: end_stone
+        chance: 4.2
+      - block: purpur_block
+        chance: 2.3
+      - block: end_stone_bricks
+        chance: 1.5
+    mob_list:
+      - type: dolphin
+        chance: 23
+      - type: turtle
+        chance: 23
+      - type: drowned
+        chance: 90
+      - type: stray
+        chance: 90
+      - type: guardian
+        chance: 90
+      - type: skeleton
+        chance: 90
+      - type: elder_guardian
+        chance: 90
+      - type: enderman
+        chance: 90
+      - type: wither_skeleton
+        chance: 90
+    chest_list:
+      - chest_id: chest_ocean_common
+        chance: 2.2
+      - chest_id: chest_ocean_rare
+        chance: 1.3
+      - chest_id: chest_ocean_epic
+        chance: 0.4
+    rewards:
+      commands:
+        - "currency money give %player% 23187"
+      items:
+        - material: DIAMOND_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Diamentu"
+        - material: TOTEM_OF_UNDYING
+          amount: 1
+          reward_name: "&a1x Totem Nieśmiertelności"
+      broadcast: "&6&l[OneBlock] &eGracz {player} dotarł do nowej krainy: Krainy Endu!"
+  level_81:
+    name: "&dKraina Endu"
+    blocks_required: 634
+    block_list:
+      - block: end_stone
+        chance: 47.4
+      - block: purpur_block
+        chance: 26.0
+      - block: end_stone_bricks
+        chance: 14.4
+      - block: chorus_plant
+        chance: 7.9
+      - block: obsidian
+        chance: 4.3
+    mob_list:
+      - type: enderman
+        chance: 91
+      - type: endermite
+        chance: 91
+    chest_list:
+      - chest_id: chest_end_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 12001"
+      items:
+        - material: NETHERITE_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Netherytu"
+  level_82:
+    name: "&dPustkowie Żółtaków"
+    blocks_required: 812
+    block_list:
+      - block: end_stone
+        chance: 47.4
+      - block: purpur_block
+        chance: 26.0
+      - block: end_stone_bricks
+        chance: 14.4
+      - block: chorus_plant
+        chance: 7.9
+      - block: obsidian
+        chance: 4.3
+    mob_list:
+      - type: enderman
+        chance: 92
+      - type: endermite
+        chance: 92
+      - type: shulker
+        chance: 92
+    chest_list:
+      - chest_id: chest_end_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 12142"
+      items:
+        - material: TOTEM_OF_UNDYING
+          amount: 1
+          reward_name: "&a1x Totem Nieśmiertelności"
+  level_83:
+    name: "&dWyspy Purpury"
+    blocks_required: 989
+    block_list:
+      - block: end_stone
+        chance: 47.4
+      - block: purpur_block
+        chance: 26.0
+      - block: end_stone_bricks
+        chance: 14.4
+      - block: chorus_plant
+        chance: 7.9
+      - block: obsidian
+        chance: 4.3
+    mob_list:
+      - type: enderman
+        chance: 93
+      - type: endermite
+        chance: 93
+      - type: shulker
+        chance: 93
+      - type: wither_skeleton
+        chance: 93
+    chest_list:
+      - chest_id: chest_end_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 12284"
+      items:
+        - material: SHULKER_BOX
+          amount: 1
+          reward_name: "&a1x Skrzynia Shulkera"
+  level_84:
+    name: "&dDolina Chorusów"
+    blocks_required: 1167
+    block_list:
+      - block: end_stone
+        chance: 46.4
+      - block: purpur_block
+        chance: 25.4
+      - block: end_stone_bricks
+        chance: 14.0
+      - block: chorus_plant
+        chance: 7.7
+      - block: obsidian
+        chance: 4.2
+      - block: purpur_pillar
+        chance: 2.3
+    mob_list:
+      - type: enderman
+        chance: 94
+      - type: endermite
+        chance: 94
+      - type: shulker
+        chance: 94
+      - type: wither_skeleton
+        chance: 94
+    chest_list:
+      - chest_id: chest_end_common
+        chance: 2.2
+      - chest_id: chest_end_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 12425"
+      items:
+        - material: SHULKER_BOX
+          amount: 1
+          reward_name: "&a1x Skrzynia Shulkera"
+  level_85:
+    name: "&dKomnaty Shulkerów"
+    blocks_required: 1344
+    block_list:
+      - block: end_stone
+        chance: 46.4
+      - block: purpur_block
+        chance: 25.4
+      - block: end_stone_bricks
+        chance: 14.0
+      - block: chorus_plant
+        chance: 7.7
+      - block: obsidian
+        chance: 4.2
+      - block: purpur_pillar
+        chance: 2.3
+    mob_list:
+      - type: enderman
+        chance: 95
+      - type: endermite
+        chance: 95
+      - type: shulker
+        chance: 95
+      - type: wither_skeleton
+        chance: 95
+      - type: blaze
+        chance: 95
+    chest_list:
+      - chest_id: chest_end_common
+        chance: 2.2
+      - chest_id: chest_end_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 16579"
+      items:
+        - material: DRAGON_BREATH
+          amount: 1
+          reward_name: "&a1x Smoczy Oddech"
+        - material: TOTEM_OF_UNDYING
+          amount: 1
+          reward_name: "&a1x Totem Nieśmiertelności"
+      broadcast: "&6&l[OneBlock] &eGracz {player} osiągnął poziom 85!"
+  level_86:
+    name: "&dWieże Endu"
+    blocks_required: 1522
+    block_list:
+      - block: end_stone
+        chance: 46.4
+      - block: purpur_block
+        chance: 25.4
+      - block: end_stone_bricks
+        chance: 14.0
+      - block: chorus_plant
+        chance: 7.7
+      - block: obsidian
+        chance: 4.2
+      - block: purpur_pillar
+        chance: 2.3
+    mob_list:
+      - type: enderman
+        chance: 96
+      - type: endermite
+        chance: 96
+      - type: shulker
+        chance: 96
+      - type: wither_skeleton
+        chance: 96
+      - type: blaze
+        chance: 96
+    chest_list:
+      - chest_id: chest_end_common
+        chance: 2.2
+      - chest_id: chest_end_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 12709"
+      items:
+        - material: DIAMOND_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Diamentu"
+  level_87:
+    name: "&dSzlak Endermanów"
+    blocks_required: 1699
+    block_list:
+      - block: end_stone
+        chance: 45.5
+      - block: purpur_block
+        chance: 25.1
+      - block: end_stone_bricks
+        chance: 13.8
+      - block: chorus_plant
+        chance: 7.6
+      - block: obsidian
+        chance: 4.2
+      - block: purpur_pillar
+        chance: 2.3
+      - block: end_rod
+        chance: 1.5
+    mob_list:
+      - type: enderman
+        chance: 97
+      - type: endermite
+        chance: 97
+      - type: shulker
+        chance: 97
+      - type: wither_skeleton
+        chance: 97
+      - type: blaze
+        chance: 97
+      - type: ghast
+        chance: 97
+    chest_list:
+      - chest_id: chest_end_common
+        chance: 2.2
+      - chest_id: chest_end_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 12850"
+      items:
+        - material: EMERALD_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Szmaragdu"
+  level_88:
+    name: "&dSerce Wymiaru"
+    blocks_required: 1877
+    block_list:
+      - block: end_stone
+        chance: 45.5
+      - block: purpur_block
+        chance: 25.1
+      - block: end_stone_bricks
+        chance: 13.8
+      - block: chorus_plant
+        chance: 7.6
+      - block: obsidian
+        chance: 4.2
+      - block: purpur_pillar
+        chance: 2.3
+      - block: end_rod
+        chance: 1.5
+    mob_list:
+      - type: enderman
+        chance: 98
+      - type: endermite
+        chance: 98
+      - type: shulker
+        chance: 98
+      - type: wither_skeleton
+        chance: 98
+      - type: blaze
+        chance: 98
+      - type: ghast
+        chance: 98
+      - type: piglin_brute
+        chance: 98
+    chest_list:
+      - chest_id: chest_end_common
+        chance: 2.2
+      - chest_id: chest_end_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 12992"
+      items:
+        - material: SHULKER_BOX
+          amount: 1
+          reward_name: "&a1x Skrzynia Shulkera"
+  level_89:
+    name: "&4Krawędź Otchłani"
+    blocks_required: 2054
+    block_list:
+      - block: obsidian
+        chance: 46.4
+      - block: purpur_pillar
+        chance: 25.4
+      - block: end_rod
+        chance: 14.0
+      - block: chorus_flower
+        chance: 7.7
+      - block: crying_obsidian
+        chance: 4.2
+      - block: ancient_debris
+        chance: 2.3
+    mob_list:
+      - type: enderman
+        chance: 99
+      - type: endermite
+        chance: 99
+      - type: shulker
+        chance: 99
+      - type: wither_skeleton
+        chance: 99
+      - type: blaze
+        chance: 99
+      - type: ghast
+        chance: 99
+      - type: piglin_brute
+        chance: 99
+      - type: vex
+        chance: 99
+    chest_list:
+      - chest_id: chest_end_common
+        chance: 2.2
+      - chest_id: chest_end_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 13133"
+      items:
+        - material: NETHERITE_INGOT
+          amount: 1
+          reward_name: "&a1x Netherytowy Sztab"
+        - material: DRAGON_BREATH
+          amount: 1
+          reward_name: "&a1x Smoczy Oddech"
+  level_90:
+    name: "&4&lOstatnia Brama"
+    blocks_required: 2232
+    block_list:
+      - block: obsidian
+        chance: 46.4
+      - block: purpur_pillar
+        chance: 25.4
+      - block: end_rod
+        chance: 14.0
+      - block: chorus_flower
+        chance: 7.7
+      - block: crying_obsidian
+        chance: 4.2
+      - block: ancient_debris
+        chance: 2.3
+    mob_list:
+      - type: enderman
+        chance: 100
+      - type: endermite
+        chance: 100
+      - type: shulker
+        chance: 100
+      - type: wither_skeleton
+        chance: 100
+      - type: blaze
+        chance: 100
+      - type: ghast
+        chance: 100
+      - type: piglin_brute
+        chance: 100
+      - type: vex
+        chance: 100
+    chest_list:
+      - chest_id: chest_end_common
+        chance: 2.2
+      - chest_id: chest_end_rare
+        chance: 1.3
+      - chest_id: chest_end_epic
+        chance: 0.4
+    rewards:
+      commands:
+        - "currency money give %player% 26019"
+      items:
+        - material: EMERALD_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Szmaragdu"
+        - material: NETHERITE_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Netherytu"
+      broadcast: "&6&l[OneBlock] &eGracz {player} dotarł do nowej krainy: Otchłani Próżni!"
+  level_91:
+    name: "&4Otchłań Próżni"
+    blocks_required: 706
+    block_list:
+      - block: obsidian
+        chance: 47.4
+      - block: crying_obsidian
+        chance: 26.0
+      - block: ancient_debris
+        chance: 14.4
+      - block: netherite_block
+        chance: 7.9
+      - block: respawn_anchor
+        chance: 4.3
+    mob_list:
+      - type: wither_skeleton
+        chance: 100
+      - type: blaze
+        chance: 100
+    chest_list:
+      - chest_id: chest_void_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 13417"
+      items:
+        - material: EMERALD_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Szmaragdu"
+  level_92:
+    name: "&4Czarna Czeluść"
+    blocks_required: 904
+    block_list:
+      - block: obsidian
+        chance: 47.4
+      - block: crying_obsidian
+        chance: 26.0
+      - block: ancient_debris
+        chance: 14.4
+      - block: netherite_block
+        chance: 7.9
+      - block: respawn_anchor
+        chance: 4.3
+    mob_list:
+      - type: wither_skeleton
+        chance: 100
+      - type: blaze
+        chance: 100
+      - type: piglin_brute
+        chance: 100
+    chest_list:
+      - chest_id: chest_void_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 13558"
+      items:
+        - material: NETHERITE_UPGRADE_TEMPLATE
+          amount: 1
+          reward_name: "&a1x Szablon Ulepszenia Netherytowego"
+  level_93:
+    name: "&4Kuźnia Netherytu"
+    blocks_required: 1101
+    block_list:
+      - block: obsidian
+        chance: 47.4
+      - block: crying_obsidian
+        chance: 26.0
+      - block: ancient_debris
+        chance: 14.4
+      - block: netherite_block
+        chance: 7.9
+      - block: respawn_anchor
+        chance: 4.3
+    mob_list:
+      - type: wither_skeleton
+        chance: 100
+      - type: blaze
+        chance: 100
+      - type: piglin_brute
+        chance: 100
+      - type: vex
+        chance: 100
+    chest_list:
+      - chest_id: chest_void_common
+        chance: 2.2
+    rewards:
+      commands:
+        - "currency money give %player% 13700"
+      items:
+        - material: ELYTRA
+          amount: 1
+          reward_name: "&a1x Elytra"
+  level_94:
+    name: "&4Kraina Wither Szkieletów"
+    blocks_required: 1299
+    block_list:
+      - block: obsidian
+        chance: 46.4
+      - block: crying_obsidian
+        chance: 25.4
+      - block: ancient_debris
+        chance: 14.0
+      - block: netherite_block
+        chance: 7.7
+      - block: respawn_anchor
+        chance: 4.2
+      - block: blackstone
+        chance: 2.3
+    mob_list:
+      - type: wither_skeleton
+        chance: 100
+      - type: blaze
+        chance: 100
+      - type: piglin_brute
+        chance: 100
+      - type: vex
+        chance: 100
+      - type: ravager
+        chance: 100
+    chest_list:
+      - chest_id: chest_void_common
+        chance: 2.2
+      - chest_id: chest_void_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 13841"
+      items:
+        - material: SHULKER_BOX
+          amount: 1
+          reward_name: "&a1x Skrzynia Shulkera"
+  level_95:
+    name: "&4Pustkowie Ravagerów"
+    blocks_required: 1497
+    block_list:
+      - block: obsidian
+        chance: 46.4
+      - block: crying_obsidian
+        chance: 25.4
+      - block: ancient_debris
+        chance: 14.0
+      - block: netherite_block
+        chance: 7.7
+      - block: respawn_anchor
+        chance: 4.2
+      - block: blackstone
+        chance: 2.3
+    mob_list:
+      - type: wither_skeleton
+        chance: 100
+      - type: blaze
+        chance: 100
+      - type: piglin_brute
+        chance: 100
+      - type: vex
+        chance: 100
+      - type: ravager
+        chance: 100
+      - type: evoker
+        chance: 100
+    chest_list:
+      - chest_id: chest_void_common
+        chance: 2.2
+      - chest_id: chest_void_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 18467"
+      items:
+        - material: TOTEM_OF_UNDYING
+          amount: 1
+          reward_name: "&a1x Totem Nieśmiertelności"
+        - material: EMERALD_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Szmaragdu"
+      broadcast: "&6&l[OneBlock] &eGracz {player} osiągnął poziom 95!"
+  level_96:
+    name: "&4Sanktuarium Evokerów"
+    blocks_required: 1694
+    block_list:
+      - block: obsidian
+        chance: 46.4
+      - block: crying_obsidian
+        chance: 25.4
+      - block: ancient_debris
+        chance: 14.0
+      - block: netherite_block
+        chance: 7.7
+      - block: respawn_anchor
+        chance: 4.2
+      - block: blackstone
+        chance: 2.3
+    mob_list:
+      - type: wither_skeleton
+        chance: 100
+      - type: blaze
+        chance: 100
+      - type: piglin_brute
+        chance: 100
+      - type: vex
+        chance: 100
+      - type: ravager
+        chance: 100
+      - type: evoker
+        chance: 100
+    chest_list:
+      - chest_id: chest_void_common
+        chance: 2.2
+      - chest_id: chest_void_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 14125"
+      items:
+        - material: BEACON
+          amount: 1
+          reward_name: "&a1x Latarnia"
+  level_97:
+    name: "&4Tron Withera"
+    blocks_required: 1892
+    block_list:
+      - block: obsidian
+        chance: 45.5
+      - block: crying_obsidian
+        chance: 25.1
+      - block: ancient_debris
+        chance: 13.8
+      - block: netherite_block
+        chance: 7.6
+      - block: respawn_anchor
+        chance: 4.2
+      - block: blackstone
+        chance: 2.3
+      - block: soul_sand
+        chance: 1.5
+    mob_list:
+      - type: wither_skeleton
+        chance: 100
+      - type: blaze
+        chance: 100
+      - type: piglin_brute
+        chance: 100
+      - type: vex
+        chance: 100
+      - type: ravager
+        chance: 100
+      - type: evoker
+        chance: 100
+      - type: wither
+        chance: 100
+    chest_list:
+      - chest_id: chest_void_common
+        chance: 2.2
+      - chest_id: chest_void_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 14266"
+      items:
+        - material: NETHERITE_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Netherytu"
+  level_98:
+    name: "&4Przedsionek Smoka"
+    blocks_required: 2090
+    block_list:
+      - block: obsidian
+        chance: 45.5
+      - block: crying_obsidian
+        chance: 25.1
+      - block: ancient_debris
+        chance: 13.8
+      - block: netherite_block
+        chance: 7.6
+      - block: respawn_anchor
+        chance: 4.2
+      - block: blackstone
+        chance: 2.3
+      - block: soul_sand
+        chance: 1.5
+    mob_list:
+      - type: wither_skeleton
+        chance: 100
+      - type: blaze
+        chance: 100
+      - type: piglin_brute
+        chance: 100
+      - type: vex
+        chance: 100
+      - type: ravager
+        chance: 100
+      - type: evoker
+        chance: 100
+      - type: wither
+        chance: 100
+    chest_list:
+      - chest_id: chest_void_common
+        chance: 2.2
+      - chest_id: chest_void_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 14408"
+      items:
+        - material: NETHERITE_UPGRADE_TEMPLATE
+          amount: 1
+          reward_name: "&a1x Szablon Ulepszenia Netherytowego"
+  level_99:
+    name: "&4Legowisko Smoka"
+    blocks_required: 2287
+    block_list:
+      - block: respawn_anchor
+        chance: 45.5
+      - block: blackstone
+        chance: 25.1
+      - block: soul_sand
+        chance: 13.8
+      - block: magma_block
+        chance: 7.6
+      - block: grass_block
+        chance: 4.2
+      - block: dirt
+        chance: 2.3
+      - block: oak_log
+        chance: 1.5
+    mob_list:
+      - type: wither_skeleton
+        chance: 100
+      - type: blaze
+        chance: 100
+      - type: piglin_brute
+        chance: 100
+      - type: vex
+        chance: 100
+      - type: ravager
+        chance: 100
+      - type: evoker
+        chance: 100
+      - type: wither
+        chance: 100
+      - type: ender_dragon
+        chance: 100
+    chest_list:
+      - chest_id: chest_void_common
+        chance: 2.2
+      - chest_id: chest_void_rare
+        chance: 1.3
+    rewards:
+      commands:
+        - "currency money give %player% 14549"
+      items:
+        - material: BEACON
+          amount: 1
+          reward_name: "&a1x Latarnia"
+        - material: ENCHANTED_GOLDEN_APPLE
+          amount: 1
+          reward_name: "&a1x Zaczarowane Złote Jabłko"
+  level_100:
+    name: "&4&l&kKoronacja Smoka"
+    blocks_required: 2485
+    block_list:
+      - block: respawn_anchor
+        chance: 45.5
+      - block: blackstone
+        chance: 25.1
+      - block: soul_sand
+        chance: 13.8
+      - block: magma_block
+        chance: 7.6
+      - block: grass_block
+        chance: 4.2
+      - block: dirt
+        chance: 2.3
+      - block: oak_log
+        chance: 1.5
+    mob_list:
+      - type: wither_skeleton
+        chance: 100
+      - type: blaze
+        chance: 100
+      - type: piglin_brute
+        chance: 100
+      - type: vex
+        chance: 100
+      - type: ravager
+        chance: 100
+      - type: evoker
+        chance: 100
+      - type: wither
+        chance: 100
+      - type: ender_dragon
+        chance: 100
+    chest_list:
+      - chest_id: chest_void_common
+        chance: 2.2
+      - chest_id: chest_void_rare
+        chance: 1.3
+      - chest_id: chest_void_epic
+        chance: 0.4
+    rewards:
+      commands:
+        - "currency money give %player% 28851"
+      items:
+        - material: DIAMOND_BLOCK
+          amount: 1
+          reward_name: "&a1x Blok Diamentu"
+        - material: NETHER_STAR
+          amount: 1
+          reward_name: "&a1x Gwiazda Netheru"
+      broadcast: "&6&l[OneBlock] &eGracz {player} dotarł do nowej krainy: Spokojnych Równin!"

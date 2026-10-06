@@ -1,0 +1,20 @@
+settings:
+  enabled: true
+  timezone: "Europe/Warsaw"
+  reset:
+    hour: 0
+    minute: 0
+  selected:
+    easy: 3
+    medium: 3
+    hard: 3
+  reroll:
+    enabled: true
+    free-per-day: 1
+
+completion-bonus:
+  required: 9
+  rewards:
+    commands:
+      - "shop currency give %player% money 7500"
+      - "shop currency give %player% upgrade_points 3"

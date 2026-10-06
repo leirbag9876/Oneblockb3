@@ -1,0 +1,30 @@
+id: sellwand
+type: SELLWAND
+material: BLAZE_ROD
+name: "&6&lSellwand"
+lore:
+  - "&7Kliknij PPM w skrzynkę,"
+  - "&7aby sprzedać wszystkie możliwe"
+  - "&7do sprzedania przedmioty."
+  - ""
+  - "&7Użycia: &e%uses%"
+  - ""
+  - "&eUżywa cen ze sklepu i boosterów."
+glow: true
+unbreakable: true
+custom-model-data: 0
+enchantments: []
+item-flags:
+  - HIDE_ENCHANTS
+  - HIDE_ATTRIBUTES
+settings:
+  default-uses: 25
+  allowed-containers:
+    - CHEST
+    - TRAPPED_CHEST
+messages:
+  sold: "&aSprzedano &e%amount% &aprzedmiotów ze skrzynki za &7(x%booster_multiplier%) &e$%income%&a. &7Pozostało użyć: &e%uses%"
+  empty: "&cW tej skrzynce nie ma przedmiotów do sprzedania."
+  invalid-container: "&cSellwanda możesz użyć tylko na skrzynce."
+  no-uses: "&cTen sellwand nie ma już użyć."
+  used-up: "&cSellwand się zużył."

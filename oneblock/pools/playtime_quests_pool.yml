@@ -1,0 +1,258 @@
+easy:
+  playtime_1h:
+    name: "Graj 1h"
+    description:
+      - "Spędź 1h na serwerze."
+    type: PLAYTIME
+    amount: 60
+    weight: 10
+    rewards:
+      commands: []
+  playtime_3h:
+    name: "Graj 3h"
+    description:
+      - "Spędź 3h na serwerze."
+    type: PLAYTIME
+    amount: 180
+    weight: 10
+    rewards:
+      commands: []
+  playtime_6h:
+    name: "Graj 6h"
+    description:
+      - "Spędź 6h na serwerze."
+    type: PLAYTIME
+    amount: 360
+    weight: 10
+    rewards:
+      commands: []
+  playtime_12h:
+    name: "Graj 12h"
+    description:
+      - "Spędź 12h na serwerze."
+    type: PLAYTIME
+    amount: 720
+    weight: 10
+    rewards:
+      commands: []
+  playtime_24h:
+    name: "Graj 24h"
+    description:
+      - "Spędź 24h na serwerze."
+    type: PLAYTIME
+    amount: 1440
+    weight: 10
+    rewards:
+      commands: []
+  playtime_36h:
+    name: "Graj 36h"
+    description:
+      - "Spędź 36h na serwerze."
+    type: PLAYTIME
+    amount: 2160
+    weight: 10
+    rewards:
+      commands: []
+  playtime_48h:
+    name: "Graj 48h"
+    description:
+      - "Spędź 48h na serwerze."
+    type: PLAYTIME
+    amount: 2880
+    weight: 10
+    rewards:
+      commands: []
+  playtime_60h:
+    name: "Graj 60h"
+    description:
+      - "Spędź 60h na serwerze."
+    type: PLAYTIME
+    amount: 3600
+    weight: 10
+    rewards:
+      commands: []
+  playtime_72h:
+    name: "Graj 72h"
+    description:
+      - "Spędź 72h na serwerze."
+    type: PLAYTIME
+    amount: 4320
+    weight: 10
+    rewards:
+      commands: []
+  playtime_84h:
+    name: "Graj 84h"
+    description:
+      - "Spędź 84h na serwerze."
+    type: PLAYTIME
+    amount: 5040
+    weight: 10
+    rewards:
+      commands: []
+
+medium:
+  playtime_96h:
+    name: "Graj 96h"
+    description:
+      - "Spędź 96h na serwerze."
+    type: PLAYTIME
+    amount: 5760
+    weight: 10
+    rewards:
+      commands: []
+  playtime_108h:
+    name: "Graj 108h"
+    description:
+      - "Spędź 108h na serwerze."
+    type: PLAYTIME
+    amount: 6480
+    weight: 10
+    rewards:
+      commands: []
+  playtime_120h:
+    name: "Graj 120h"
+    description:
+      - "Spędź 120h na serwerze."
+    type: PLAYTIME
+    amount: 7200
+    weight: 10
+    rewards:
+      commands: []
+  playtime_132h:
+    name: "Graj 132h"
+    description:
+      - "Spędź 132h na serwerze."
+    type: PLAYTIME
+    amount: 7920
+    weight: 10
+    rewards:
+      commands: []
+  playtime_144h:
+    name: "Graj 144h"
+    description:
+      - "Spędź 144h na serwerze."
+    type: PLAYTIME
+    amount: 8640
+    weight: 10
+    rewards:
+      commands: []
+  playtime_156h:
+    name: "Graj 156h"
+    description:
+      - "Spędź 156h na serwerze."
+    type: PLAYTIME
+    amount: 9360
+    weight: 10
+    rewards:
+      commands: []
+  playtime_168h:
+    name: "Graj 168h"
+    description:
+      - "Spędź 168h na serwerze."
+    type: PLAYTIME
+    amount: 10080
+    weight: 10
+    rewards:
+      commands: []
+  playtime_180h:
+    name: "Graj 180h"
+    description:
+      - "Spędź 180h na serwerze."
+    type: PLAYTIME
+    amount: 10800
+    weight: 10
+    rewards:
+      commands: []
+  playtime_192h:
+    name: "Graj 192h"
+    description:
+      - "Spędź 192h na serwerze."
+    type: PLAYTIME
+    amount: 11520
+    weight: 10
+    rewards:
+      commands: []
+  playtime_204h:
+    name: "Graj 204h"
+    description:
+      - "Spędź 204h na serwerze."
+    type: PLAYTIME
+    amount: 12240
+    weight: 10
+    rewards:
+      commands: []
+
+hard:
+  playtime_216h:
+    name: "Graj 216h"
+    description:
+      - "Spędź 216h na serwerze."
+    type: PLAYTIME
+    amount: 12960
+    weight: 10
+    rewards:
+      commands: []
+  playtime_228h:
+    name: "Graj 228h"
+    description:
+      - "Spędź 228h na serwerze."
+    type: PLAYTIME
+    amount: 13680
+    weight: 10
+    rewards:
+      commands: []
+  playtime_240h:
+    name: "Graj 240h"
+    description:
+      - "Spędź 240h na serwerze."
+    type: PLAYTIME
+    amount: 14400
+    weight: 10
+    rewards:
+      commands: []
+  playtime_252h:
+    name: "Graj 252h"
+    description:
+      - "Spędź 252h na serwerze."
+    type: PLAYTIME
+    amount: 15120
+    weight: 10
+    rewards:
+      commands: []
+  playtime_264h:
+    name: "Graj 264h"
+    description:
+      - "Spędź 264h na serwerze."
+    type: PLAYTIME
+    amount: 15840
+    weight: 10
+    rewards:
+      commands: []
+  playtime_276h:
+    name: "Graj 276h"
+    description:
+      - "Spędź 276h na serwerze."
+    type: PLAYTIME
+    amount: 16560
+    weight: 10
+    rewards:
+      commands: []
+  playtime_288h:
+    name: "Graj 288h"
+    description:
+      - "Spędź 288h na serwerze."
+    type: PLAYTIME
+    amount: 17280
+    weight: 10
+    rewards:
+      commands: []
+  playtime_300h:
+    name: "Graj 300h"
+    description:
+      - "Spędź 300h na serwerze."
+    type: PLAYTIME
+    amount: 18000
+    weight: 10
+    rewards:
+      commands: []
+

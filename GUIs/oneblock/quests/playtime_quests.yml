@@ -1,0 +1,55 @@
+menu_title: "&b&lQuesty playtime"
+size: 54
+update_interval: 20
+
+playtime-quests:
+  enabled: true
+  slots:
+    - "10-16"
+    - "19-25"
+    - "28-34"
+    - "37-43"
+  groups:
+    - "easy:1-10"
+    - "medium:1-10"
+    - "hard:1-8"
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - "0-8"
+      - "9,17,18,26,27,35"
+      - "36,44"
+      - "45-53"
+    priority: 90
+    name: ""
+
+  quests_menu:
+    material: BARRIER
+    slot: 45
+    priority: 1
+    name: "&c&lWróć"
+    lore:
+      - "&7Kliknij, aby wrócić do menu misji."
+    file: "GUIs/oneblock/quests/quests_menu.yml"
+
+  info:
+    material: BOOK
+    slot: 49
+    priority: 1
+    name: "&b&lPostęp playtime"
+    lore:
+      - "&7Ukończone zadania: &f%oneblock_playtime_progress%"
+      - "&7Łącznie: &f%oneblock_playtime_total%"
+      - ""
+      - "&7Nagrody są puste w konfiguracji"
+      - "&7i można dopisac je później."
+
+  playtime_status:
+    material: CLOCK
+    slot: 53
+    priority: 1
+    name: "&e&lStatus playtime"
+    lore:
+      - "&7Status: &b%oneblock_playtime_reset_time%"

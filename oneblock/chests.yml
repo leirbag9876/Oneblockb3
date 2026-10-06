@@ -1,0 +1,3186 @@
+---
+chests:
+  chest_plains_common:
+    name: "&aSkrzynka Wędrowca"
+    total-items:
+      min: 6
+      max: 10
+    pity:
+      enabled: false
+    pool:
+      oak_planks:
+        material: OAK_PLANKS
+        weight: 45
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Deski dębowe"
+      bread:
+        material: BREAD
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Chleb"
+      apple:
+        material: APPLE
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Jabłko"
+      torch:
+        material: TORCH
+        weight: 45
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Pochodnia"
+      wooden_pickaxe:
+        material: WOODEN_PICKAXE
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Drewniany Kilof"
+      wheat_seeds:
+        material: WHEAT_SEEDS
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Nasiona Pszenicy"
+      carrot:
+        material: CARROT
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Marchewka"
+      potato:
+        material: POTATO
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Ziemniak"
+      leather:
+        material: LEATHER
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 6
+        reward_name: "&a%amount%x Skóra"
+      hay_block:
+        material: HAY_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Balot Siana"
+      string:
+        material: STRING
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Sznurek"
+      feather:
+        material: FEATHER
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 6
+        reward_name: "&a%amount%x Pióro"
+      egg:
+        material: EGG
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Jajko"
+      milk_bucket:
+        material: MILK_BUCKET
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Mleko w Wiadrze"
+  chest_plains_rare:
+    name: "&6Skrzynka Leśnika"
+    total-items:
+      min: 5
+      max: 9
+    pity:
+      enabled: false
+    pool:
+      stone_sword:
+        material: STONE_SWORD
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Kamienny Miecz"
+      leather_chestplate:
+        material: LEATHER_CHESTPLATE
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Skórzana Zbroja"
+      cooked_chicken:
+        material: COOKED_CHICKEN
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Pieczony Kurczak"
+      water_bucket:
+        material: WATER_BUCKET
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Wiadro Wody"
+      bone:
+        material: BONE
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Kość"
+      iron_axe:
+        material: IRON_AXE
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazna Siekiera"
+      shears:
+        material: SHEARS
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Nożyce"
+      saddle:
+        material: SADDLE
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Siodło"
+      lead:
+        material: LEAD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Smycz"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      arrow:
+        material: ARROW
+        weight: 40
+        rare: false
+        amount:
+          min: 8
+          max: 16
+        reward_name: "&a%amount%x Strzała"
+      bow:
+        material: BOW
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Łuk"
+      wheat:
+        material: WHEAT
+        weight: 40
+        rare: false
+        amount:
+          min: 5
+          max: 10
+        reward_name: "&a%amount%x Pszenica"
+  chest_forest_common:
+    name: "&2Skrzynka Puszczy"
+    total-items:
+      min: 5
+      max: 9
+    pity:
+      enabled: false
+    pool:
+      dark_oak_planks:
+        material: DARK_OAK_PLANKS
+        weight: 45
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Deski z ciemnego dębu"
+      mushroom_stew:
+        material: MUSHROOM_STEW
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Zupa Grzybowa"
+      bow:
+        material: BOW
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Łuk"
+      arrow:
+        material: ARROW
+        weight: 45
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Strzała"
+      vine:
+        material: VINE
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Winobluszcz"
+      sweet_berries:
+        material: SWEET_BERRIES
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Słodkie jagody"
+      apple:
+        material: APPLE
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 6
+        reward_name: "&a%amount%x Jabłko"
+      stick:
+        material: STICK
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Patyk"
+      dark_oak_log:
+        material: DARK_OAK_LOG
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Kłoda ciemnego dębu"
+      brown_mushroom:
+        material: BROWN_MUSHROOM
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Brązowy grzyb"
+      red_mushroom:
+        material: RED_MUSHROOM
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Czerwony Grzyb"
+      leather_boots:
+        material: LEATHER_BOOTS
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Skórzane Buty"
+      charcoal:
+        material: CHARCOAL
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Węgiel drzewny"
+  chest_forest_rare:
+    name: "&6Skrzynka Myśliwego"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: false
+    pool:
+      iron_sword:
+        material: IRON_SWORD
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazny Miecz"
+      iron_helmet:
+        material: IRON_HELMET
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazny Helm"
+      saddle:
+        material: SADDLE
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Siodło"
+      cooked_beef:
+        material: COOKED_BEEF
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Stek wołowy"
+      name_tag:
+        material: NAME_TAG
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Tabliczka z nazwą"
+      iron_boots:
+        material: IRON_BOOTS
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazne Buty"
+      spyglass:
+        material: SPYGLASS
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Luneta"
+      compass:
+        material: COMPASS
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Kompas"
+      honey_bottle:
+        material: HONEY_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Butelka Miodu"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      arrow:
+        material: ARROW
+        weight: 40
+        rare: false
+        amount:
+          min: 8
+          max: 16
+        reward_name: "&a%amount%x Strzała"
+      string:
+        material: STRING
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Sznurek"
+  chest_desert_common:
+    name: "&eSkrzynka Pustyniaka"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: false
+    pool:
+      sandstone:
+        material: SANDSTONE
+        weight: 45
+        rare: false
+        amount:
+          min: 5
+          max: 12
+        reward_name: "&a%amount%x Piaskowiec"
+      cactus:
+        material: CACTUS
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Kaktus"
+      water_bucket:
+        material: WATER_BUCKET
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Wiadro Wody"
+      golden_carrot:
+        material: GOLDEN_CARROT
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Złota Marchewka"
+      dead_bush:
+        material: DEAD_BUSH
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Suchy Krzak"
+      sand:
+        material: SAND
+        weight: 40
+        rare: false
+        amount:
+          min: 8
+          max: 16
+        reward_name: "&a%amount%x Piasek"
+      bone:
+        material: BONE
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 6
+        reward_name: "&a%amount%x Kość"
+      string:
+        material: STRING
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Sznurek"
+      leather:
+        material: LEATHER
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 6
+        reward_name: "&a%amount%x Skóra"
+      rabbit_foot:
+        material: RABBIT_FOOT
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Królicza łapka"
+      gunpowder:
+        material: GUNPOWDER
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Proch Strzelniczy"
+      rotten_flesh:
+        material: ROTTEN_FLESH
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Zgniłe mięso"
+  chest_desert_rare:
+    name: "&6Skrzynka Karawany"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: false
+    pool:
+      golden_sword:
+        material: GOLDEN_SWORD
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Złoty Miecz"
+      golden_chestplate:
+        material: GOLDEN_CHESTPLATE
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Złota Zbroja"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      ender_pearl:
+        material: ENDER_PEARL
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Perła Endera"
+      golden_apple:
+        material: GOLDEN_APPLE
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Złote Jabłko"
+      gold_ingot:
+        material: GOLD_INGOT
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Złoty Sztab"
+      golden_helmet:
+        material: GOLDEN_HELMET
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Złoty Helm"
+      golden_boots:
+        material: GOLDEN_BOOTS
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Złote Buty"
+      bow:
+        material: BOW
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Łuk"
+      arrow:
+        material: ARROW
+        weight: 40
+        rare: false
+        amount:
+          min: 8
+          max: 16
+        reward_name: "&a%amount%x Strzała"
+      spyglass:
+        material: SPYGLASS
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Luneta"
+      milk_bucket:
+        material: MILK_BUCKET
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Mleko w Wiadrze"
+  chest_mountain_common:
+    name: "&7Skrzynka Górnika"
+    total-items:
+      min: 6
+      max: 10
+    pity:
+      enabled: false
+    pool:
+      cobblestone:
+        material: COBBLESTONE
+        weight: 45
+        rare: false
+        amount:
+          min: 7
+          max: 16
+        reward_name: "&a%amount%x Bruk"
+      iron_ingot:
+        material: IRON_INGOT
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Żelazny Sztab"
+      coal:
+        material: COAL
+        weight: 45
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Węgiel"
+      cooked_porkchop:
+        material: COOKED_PORKCHOP
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Pieczona Wieprzowina"
+      lantern:
+        material: LANTERN
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Lampion"
+      stone:
+        material: STONE
+        weight: 40
+        rare: false
+        amount:
+          min: 10
+          max: 20
+        reward_name: "&a%amount%x Kamień"
+      andesite:
+        material: ANDESITE
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Andezyt"
+      granite:
+        material: GRANITE
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Granit"
+      diorite:
+        material: DIORITE
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Dioryt"
+      flint:
+        material: FLINT
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Krzemień"
+      torch:
+        material: TORCH
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Pochodnia"
+      stick:
+        material: STICK
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Patyk"
+      bread:
+        material: BREAD
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 6
+        reward_name: "&a%amount%x Chleb"
+      raw_iron:
+        material: RAW_IRON
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Surowe żelazo"
+  chest_mountain_rare:
+    name: "&6Skrzynka Kruszconośna"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: true
+    pool:
+      diamond_pickaxe:
+        material: DIAMOND_PICKAXE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Diamentowy Kilof"
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Diament"
+      raw_iron:
+        material: RAW_IRON
+        weight: 45
+        rare: false
+        amount:
+          min: 3
+          max: 6
+        reward_name: "&a%amount%x Surowe żelazo"
+      gold_ingot:
+        material: GOLD_INGOT
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Złoty Sztab"
+      enchanted_book:
+        material: ENCHANTED_BOOK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Zaczarowana księga"
+      iron_pickaxe:
+        material: IRON_PICKAXE
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazny Kilof"
+      iron_sword:
+        material: IRON_SWORD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazny Miecz"
+      coal:
+        material: COAL
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Węgiel"
+      torch:
+        material: TORCH
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Pochodnia"
+      raw_gold:
+        material: RAW_GOLD
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Surowe złoto"
+      lantern:
+        material: LANTERN
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Lampion"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+  chest_tundra_common:
+    name: "&bSkrzynka Polarnika"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: false
+    pool:
+      packed_ice:
+        material: PACKED_ICE
+        weight: 45
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Zbity lód"
+      spruce_planks:
+        material: SPRUCE_PLANKS
+        weight: 45
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Deski świerkowe"
+      cooked_salmon:
+        material: COOKED_SALMON
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Pieczone łososie"
+      powder_snow_bucket:
+        material: POWDER_SNOW_BUCKET
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Wiadro proszkowego śniegu"
+      leather_boots:
+        material: LEATHER_BOOTS
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Skórzane Buty"
+      snow_block:
+        material: SNOW_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Blok śniegu"
+      ice:
+        material: ICE
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Lód"
+      spruce_log:
+        material: SPRUCE_LOG
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Kłoda świerku"
+      stick:
+        material: STICK
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Patyk"
+      white_wool:
+        material: WHITE_WOOL
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 6
+        reward_name: "&a%amount%x Biała wełna"
+      coal:
+        material: COAL
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Węgiel"
+      arrow:
+        material: ARROW
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Strzała"
+  chest_tundra_rare:
+    name: "&6Skrzynka Wiecznej Zmarzliny"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: true
+    pool:
+      diamond_sword:
+        material: DIAMOND_SWORD
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Diamentowy Miecz"
+      netherite_scrap:
+        material: NETHERITE_SCRAP
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowy złom"
+      enchanted_golden_apple:
+        material: ENCHANTED_GOLDEN_APPLE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Zaczarowane Złote Jabłko"
+      blue_ice:
+        material: BLUE_ICE
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Niebieski lód"
+      diamond_leggings:
+        material: DIAMOND_LEGGINGS
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Diamentowe Spodnie"
+      iron_sword:
+        material: IRON_SWORD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazny Miecz"
+      snowball:
+        material: SNOWBALL
+        weight: 40
+        rare: false
+        amount:
+          min: 8
+          max: 16
+        reward_name: "&a%amount%x Śnieżka"
+      lead:
+        material: LEAD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Smycz"
+      spyglass:
+        material: SPYGLASS
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Luneta"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      white_dye:
+        material: WHITE_DYE
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Biały barwnik"
+      arrow:
+        material: ARROW
+        weight: 40
+        rare: false
+        amount:
+          min: 8
+          max: 16
+        reward_name: "&a%amount%x Strzała"
+  chest_swamp_common:
+    name: "&5Skrzynka Bagiennika"
+    total-items:
+      min: 5
+      max: 9
+    pity:
+      enabled: false
+    pool:
+      mud_bricks:
+        material: MUD_BRICKS
+        weight: 45
+        rare: false
+        amount:
+          min: 5
+          max: 12
+        reward_name: "&a%amount%x Muliste cegły"
+      lily_pad:
+        material: LILY_PAD
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Liść lotosu"
+      slimeball:
+        material: SLIMEBALL
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Kulka śluzu"
+      cooked_rabbit:
+        material: COOKED_RABBIT
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Pieczone królicze mięso"
+      fishing_rod:
+        material: FISHING_ROD
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Wędka"
+      mud:
+        material: MUD
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Muł"
+      mangrove_log:
+        material: MANGROVE_LOG
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Kłoda namorzynowa"
+      clay_ball:
+        material: CLAY_BALL
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Kulka Gliny"
+      string:
+        material: STRING
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Sznurek"
+      bone:
+        material: BONE
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 6
+        reward_name: "&a%amount%x Kość"
+      rotten_flesh:
+        material: ROTTEN_FLESH
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Zgniłe mięso"
+      chicken:
+        material: CHICKEN
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 6
+        reward_name: "&a%amount%x Surowy Kurczak"
+      glow_berries:
+        material: GLOW_BERRIES
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Świecące jagody"
+  chest_swamp_rare:
+    name: "&6Skrzynka Mokradłowa"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: true
+    pool:
+      trident:
+        material: TRIDENT
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Trójząb"
+      nautilus_shell:
+        material: NAUTILUS_SHELL
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Muszla Nautilusa"
+      heart_of_the_sea:
+        material: HEART_OF_THE_SEA
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Serce Morza"
+      enchanted_book:
+        material: ENCHANTED_BOOK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Zaczarowana księga"
+      netherite_ingot:
+        material: NETHERITE_INGOT
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowy Sztab"
+      fishing_rod:
+        material: FISHING_ROD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Wędka"
+      cooked_cod:
+        material: COOKED_COD
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Pieczony dorsz"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      slime_block:
+        material: SLIME_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Blok śluzu"
+      arrow:
+        material: ARROW
+        weight: 40
+        rare: false
+        amount:
+          min: 8
+          max: 16
+        reward_name: "&a%amount%x Strzała"
+      leather_chestplate:
+        material: LEATHER_CHESTPLATE
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Skórzana Zbroja"
+      iron_sword:
+        material: IRON_SWORD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazny Miecz"
+  chest_nether_common:
+    name: "&cSkrzynka Piekłownika"
+    total-items:
+      min: 5
+      max: 9
+    pity:
+      enabled: false
+    pool:
+      netherrack:
+        material: NETHERRACK
+        weight: 45
+        rare: false
+        amount:
+          min: 7
+          max: 16
+        reward_name: "&a%amount%x Netherrak"
+      blaze_rod:
+        material: BLAZE_ROD
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Pręt Blaze'a"
+      gold_ingot:
+        material: GOLD_INGOT
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Złoty Sztab"
+      fire_resistance:
+        material: FIRE_RESISTANCE
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Mikstura odporności na ogień"
+      soul_sand:
+        material: SOUL_SAND
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Piaski Duszy"
+      magma_block:
+        material: MAGMA_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Blok Magmy"
+      blackstone:
+        material: BLACKSTONE
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Czarny Kamień"
+      glowstone_dust:
+        material: GLOWSTONE_DUST
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Pył światłokamienia"
+      nether_wart:
+        material: NETHER_WART
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Nether Wart"
+      string:
+        material: STRING
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Sznurek"
+      gunpowder:
+        material: GUNPOWDER
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Proch Strzelniczy"
+      leather:
+        material: LEATHER
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 6
+        reward_name: "&a%amount%x Skóra"
+      arrow:
+        material: ARROW
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Strzała"
+  chest_nether_rare:
+    name: "&6Skrzynka Kowala Netherytu"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: true
+    pool:
+      netherite_ingot:
+        material: NETHERITE_INGOT
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowy Sztab"
+      ancient_debris:
+        material: ANCIENT_DEBRIS
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Pradawne szczątki"
+      wither_skeleton_skull:
+        material: WITHER_SKELETON_SKULL
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Czaszka Wither Szkieleta"
+      nether_star:
+        material: NETHER_STAR
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Gwiazda Netheru"
+      enchanted_golden_apple:
+        material: ENCHANTED_GOLDEN_APPLE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Zaczarowane Złote Jabłko"
+      gold_ingot:
+        material: GOLD_INGOT
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 6
+        reward_name: "&a%amount%x Złoty Sztab"
+      blaze_powder:
+        material: BLAZE_POWDER
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Proch Blaze'a"
+      magma_cream:
+        material: MAGMA_CREAM
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Krem Magmy"
+      iron_sword:
+        material: IRON_SWORD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazny Miecz"
+      fire_charge:
+        material: FIRE_CHARGE
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Ładunek ognia"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      golden_apple:
+        material: GOLDEN_APPLE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Złote Jabłko"
+  chest_ocean_common:
+    name: "&3Skrzynka Nurka"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: false
+    pool:
+      prismarine:
+        material: PRISMARINE
+        weight: 45
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Pryzmaryn"
+      sea_lantern:
+        material: SEA_LANTERN
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Morska Latarnia"
+      dried_kelp:
+        material: DRIED_KELP
+        weight: 45
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Suszone Wodorosty"
+      cooked_cod:
+        material: COOKED_COD
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Pieczony dorsz"
+      heart_of_the_sea:
+        material: HEART_OF_THE_SEA
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Serce Morza"
+      kelp:
+        material: KELP
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Wodorosty"
+      tropical_fish:
+        material: TROPICAL_FISH
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Tropikalna Ryba"
+      ink_sac:
+        material: INK_SAC
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Worek z Tuszem"
+      string:
+        material: STRING
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Sznurek"
+      cod:
+        material: COD
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Surowy dorsz"
+      sponge:
+        material: SPONGE
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Gąbka"
+      leather_boots:
+        material: LEATHER_BOOTS
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Skórzane Buty"
+  chest_ocean_rare:
+    name: "&6Skrzynka Strażnika Oceanu"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: true
+    pool:
+      trident:
+        material: TRIDENT
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Trójząb"
+      netherite_helmet:
+        material: NETHERITE_HELMET
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowy Helm"
+      conduit:
+        material: CONDUIT
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Przewodnik"
+      totem_of_undying:
+        material: TOTEM_OF_UNDYING
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Totem nieśmiertelności"
+      elytra:
+        material: ELYTRA
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Elytra"
+      prismarine_crystals:
+        material: PRISMARINE_CRYSTALS
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Kryształy pryzmarynu"
+      nautilus_shell:
+        material: NAUTILUS_SHELL
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Muszla Nautilusa"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      iron_sword:
+        material: IRON_SWORD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazny Miecz"
+      arrow:
+        material: ARROW
+        weight: 40
+        rare: false
+        amount:
+          min: 8
+          max: 16
+        reward_name: "&a%amount%x Strzała"
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Diament"
+      cooked_cod:
+        material: COOKED_COD
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Pieczony dorsz"
+  chest_end_common:
+    name: "&dSkrzynka Endermana"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: false
+    pool:
+      end_stone_bricks:
+        material: END_STONE_BRICKS
+        weight: 45
+        rare: false
+        amount:
+          min: 5
+          max: 12
+        reward_name: "&a%amount%x Cegły z kamienia Endu"
+      chorus_fruit:
+        material: CHORUS_FRUIT
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Owoc Chorusu"
+      ender_pearl:
+        material: ENDER_PEARL
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Perła Endera"
+      shulker_box:
+        material: SHULKER_BOX
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Skrzynia Shulkera"
+      dragon_breath:
+        material: DRAGON_BREATH
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Smoczy Oddech"
+      end_stone:
+        material: END_STONE
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Kamień Endu"
+      popped_chorus_fruit:
+        material: POPPED_CHORUS_FRUIT
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Wysmażony owoc Chorusu"
+      string:
+        material: STRING
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Sznurek"
+      arrow:
+        material: ARROW
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Strzała"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      iron_ingot:
+        material: IRON_INGOT
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Żelazny Sztab"
+      torch:
+        material: TORCH
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Pochodnia"
+  chest_end_rare:
+    name: "&6Skrzynka Smoka"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: true
+    pool:
+      netherite_sword:
+        material: NETHERITE_SWORD
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowy Miecz"
+      elytra:
+        material: ELYTRA
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Elytra"
+      end_crystal:
+        material: END_CRYSTAL
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Kryształ Endu"
+      netherite_block:
+        material: NETHERITE_BLOCK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Blok Netherytu"
+      enchanted_golden_apple:
+        material: ENCHANTED_GOLDEN_APPLE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Zaczarowane Złote Jabłko"
+      ender_pearl:
+        material: ENDER_PEARL
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 6
+        reward_name: "&a%amount%x Perła Endera"
+      purpur_block:
+        material: PURPUR_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Blok Purpuru"
+      chorus_fruit:
+        material: CHORUS_FRUIT
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 8
+        reward_name: "&a%amount%x Owoc Chorusu"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Diament"
+      iron_sword:
+        material: IRON_SWORD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazny Miecz"
+      arrow:
+        material: ARROW
+        weight: 40
+        rare: false
+        amount:
+          min: 8
+          max: 16
+        reward_name: "&a%amount%x Strzała"
+  chest_void_common:
+    name: "&4Skrzynka Otchłani"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: false
+    pool:
+      ancient_debris:
+        material: ANCIENT_DEBRIS
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Pradawne szczątki"
+      crying_obsidian:
+        material: CRYING_OBSIDIAN
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Płaczący obsydian"
+      netherite_ingot:
+        material: NETHERITE_INGOT
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowy Sztab"
+      totem_of_undying:
+        material: TOTEM_OF_UNDYING
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Totem nieśmiertelności"
+      golden_apple:
+        material: GOLDEN_APPLE
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Złote Jabłko"
+      obsidian:
+        material: OBSIDIAN
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Obsydian"
+      blackstone:
+        material: BLACKSTONE
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Czarny Kamień"
+      coal:
+        material: COAL
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Węgiel"
+      iron_ingot:
+        material: IRON_INGOT
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 6
+        reward_name: "&a%amount%x Żelazny Sztab"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      arrow:
+        material: ARROW
+        weight: 40
+        rare: false
+        amount:
+          min: 8
+          max: 16
+        reward_name: "&a%amount%x Strzała"
+      torch:
+        material: TORCH
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 10
+        reward_name: "&a%amount%x Pochodnia"
+  chest_void_rare:
+    name: "&6&lSkrzynka Władcy Próżni"
+    total-items:
+      min: 4
+      max: 8
+    pity:
+      enabled: true
+    pool:
+      beacon:
+        material: BEACON
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Latarnia"
+      dragon_egg:
+        material: DRAGON_EGG
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Smocze Jajo"
+      netherite_block:
+        material: NETHERITE_BLOCK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Netherytu"
+      nether_star:
+        material: NETHER_STAR
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Gwiazda Netheru"
+      netherite_upgrade_template:
+        material: NETHERITE_UPGRADE_TEMPLATE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Szablon Ulepszenia Netherytowego"
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Diament"
+      emerald:
+        material: EMERALD
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Szmaragd"
+      gold_block:
+        material: GOLD_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Złota"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 12
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      iron_block:
+        material: IRON_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Żelaza"
+      ancient_debris:
+        material: ANCIENT_DEBRIS
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Pradawne szczątki"
+      ender_pearl:
+        material: ENDER_PEARL
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 6
+        reward_name: "&a%amount%x Perła Endera"
+  chest_plains_epic:
+    name: "&5&lSkrzynka Władcy Równin"
+    total-items:
+      min: 3
+      max: 6
+    pity:
+      enabled: true
+    pool:
+      iron_ingot:
+        material: IRON_INGOT
+        weight: 45
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Żelazne Sztabki"
+      gold_ingot:
+        material: GOLD_INGOT
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Złote Sztabki"
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Diamenty"
+      enchanted_book:
+        material: ENCHANTED_BOOK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Zaczarowane księgi"
+      iron_pickaxe:
+        material: IRON_PICKAXE
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazny Kilof"
+      gold_nugget:
+        material: GOLD_NUGGET
+        weight: 40
+        rare: false
+        amount:
+          min: 5
+          max: 10
+        reward_name: "&a%amount%x Złota bryłka"
+      iron_chestplate:
+        material: IRON_CHESTPLATE
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazna Zbroja"
+      emerald:
+        material: EMERALD
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Szmaragd"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 5
+          max: 10
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      golden_apple:
+        material: GOLDEN_APPLE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Złote Jabłko"
+      iron_sword:
+        material: IRON_SWORD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Żelazny Miecz"
+      ender_pearl:
+        material: ENDER_PEARL
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Perła Endera"
+  chest_forest_epic:
+    name: "&5&lSkrzynka Strażnika Puszczy"
+    total-items:
+      min: 3
+      max: 6
+    pity:
+      enabled: true
+    pool:
+      enchanted_book:
+        material: ENCHANTED_BOOK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Zaczarowane księgi"
+      diamond_sword:
+        material: DIAMOND_SWORD
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Diamentowy Miecz"
+      diamond_chestplate:
+        material: DIAMOND_CHESTPLATE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Diamentowa Zbroja"
+      golden_apple:
+        material: GOLDEN_APPLE
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Złote Jabłka"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 45
+        rare: false
+        amount:
+          min: 3
+          max: 6
+        reward_name: "&a%amount%x Butelki Doświadczenia"
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Diament"
+      iron_ingot:
+        material: IRON_INGOT
+        weight: 40
+        rare: false
+        amount:
+          min: 3
+          max: 6
+        reward_name: "&a%amount%x Żelazny Sztab"
+      gold_ingot:
+        material: GOLD_INGOT
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Złoty Sztab"
+      ender_pearl:
+        material: ENDER_PEARL
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Perła Endera"
+      shield:
+        material: SHIELD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Tarcza"
+      emerald:
+        material: EMERALD
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Szmaragd"
+      arrow:
+        material: ARROW
+        weight: 40
+        rare: false
+        amount:
+          min: 10
+          max: 20
+        reward_name: "&a%amount%x Strzała"
+  chest_desert_epic:
+    name: "&5&lSkrzynka Faraona"
+    total-items:
+      min: 3
+      max: 6
+    pity:
+      enabled: true
+    pool:
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Diamenty"
+      enchanted_golden_apple:
+        material: ENCHANTED_GOLDEN_APPLE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Zaczarowane Złote Jabłko"
+      netherite_ingot:
+        material: NETHERITE_INGOT
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowe Sztabki"
+      ender_pearl:
+        material: ENDER_PEARL
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Perły Endera"
+      blaze_rod:
+        material: BLAZE_ROD
+        weight: 45
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Rózgi Blaze"
+      gold_block:
+        material: GOLD_BLOCK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Złota"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 12
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      gold_ingot:
+        material: GOLD_INGOT
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Złoty Sztab"
+      iron_ingot:
+        material: IRON_INGOT
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Żelazny Sztab"
+      golden_sword:
+        material: GOLDEN_SWORD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Złoty Miecz"
+      sand:
+        material: SAND
+        weight: 40
+        rare: false
+        amount:
+          min: 10
+          max: 20
+        reward_name: "&a%amount%x Piasek"
+      emerald:
+        material: EMERALD
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Szmaragd"
+  chest_mountain_epic:
+    name: "&5&lSkrzynka Górskiego Króla"
+    total-items:
+      min: 3
+      max: 6
+    pity:
+      enabled: true
+    pool:
+      netherite_ingot:
+        material: NETHERITE_INGOT
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Netherytowe Sztabki"
+      diamond_pickaxe:
+        material: DIAMOND_PICKAXE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Diamentowy Kilof"
+      enchanted_book:
+        material: ENCHANTED_BOOK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Zaczarowane księgi"
+      diamond_block:
+        material: DIAMOND_BLOCK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Bloki Diamentu"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 45
+        rare: false
+        amount:
+          min: 7
+          max: 15
+        reward_name: "&a%amount%x Butelki Doświadczenia"
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Diament"
+      emerald:
+        material: EMERALD
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Szmaragd"
+      iron_block:
+        material: IRON_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Żelaza"
+      gold_block:
+        material: GOLD_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Blok Złota"
+      diamond_sword:
+        material: DIAMOND_SWORD
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Diamentowy Miecz"
+      diamond_helmet:
+        material: DIAMOND_HELMET
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Diamentowy Helm"
+      raw_iron:
+        material: RAW_IRON
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Surowe żelazo"
+  chest_tundra_epic:
+    name: "&5&lSkrzynka Lódowego Giganta"
+    total-items:
+      min: 3
+      max: 6
+    pity:
+      enabled: true
+    pool:
+      netherite_sword:
+        material: NETHERITE_SWORD
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowy Miecz"
+      netherite_chestplate:
+        material: NETHERITE_CHESTPLATE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowa Zbroja"
+      enchanted_golden_apple:
+        material: ENCHANTED_GOLDEN_APPLE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Zaczarowane Złote Jabłka"
+      totem_of_undying:
+        material: TOTEM_OF_UNDYING
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Totem nieśmiertelności"
+      netherite_ingot:
+        material: NETHERITE_INGOT
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Netherytowe Sztabki"
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Diament"
+      iron_block:
+        material: IRON_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Żelaza"
+      blue_ice:
+        material: BLUE_ICE
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Niebieski lód"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 12
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      ender_pearl:
+        material: ENDER_PEARL
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Perła Endera"
+      gold_block:
+        material: GOLD_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Blok Złota"
+      diamond_boots:
+        material: DIAMOND_BOOTS
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Diamentowe Buty"
+  chest_swamp_epic:
+    name: "&5&lSkrzynka Władca Bagien"
+    total-items:
+      min: 3
+      max: 6
+    pity:
+      enabled: true
+    pool:
+      netherite_ingot:
+        material: NETHERITE_INGOT
+        weight: 10
+        rare: true
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Netherytowe Sztabki"
+      enchanted_golden_apple:
+        material: ENCHANTED_GOLDEN_APPLE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Zaczarowane Złote Jabłka"
+      totem_of_undying:
+        material: TOTEM_OF_UNDYING
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Totemy nieśmiertelności"
+      elytra:
+        material: ELYTRA
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Elytra"
+      netherite_block:
+        material: NETHERITE_BLOCK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Blok Netherytu"
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Diament"
+      emerald_block:
+        material: EMERALD_BLOCK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Blok Szmaragdu"
+      gold_block:
+        material: GOLD_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Złota"
+      trident:
+        material: TRIDENT
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Trójząb"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 12
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      iron_block:
+        material: IRON_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Żelaza"
+      nautilus_shell:
+        material: NAUTILUS_SHELL
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Muszla Nautilusa"
+  chest_nether_epic:
+    name: "&5&lSkrzynka Pana Piekła"
+    total-items:
+      min: 3
+      max: 6
+    pity:
+      enabled: true
+    pool:
+      netherite_block:
+        material: NETHERITE_BLOCK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Bloki Netherytu"
+      netherite_sword:
+        material: NETHERITE_SWORD
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowy Miecz"
+      netherite_pickaxe:
+        material: NETHERITE_PICKAXE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowy Kilof"
+      enchanted_golden_apple:
+        material: ENCHANTED_GOLDEN_APPLE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Zaczarowane Złote Jabłka"
+      nether_star:
+        material: NETHER_STAR
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Gwiazdy Netheru"
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Diament"
+      gold_block:
+        material: GOLD_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Złota"
+      netherite_scrap:
+        material: NETHERITE_SCRAP
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Netherytowy złom"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 8
+          max: 16
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      obsidian:
+        material: OBSIDIAN
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 5
+        reward_name: "&a%amount%x Obsydian"
+      crying_obsidian:
+        material: CRYING_OBSIDIAN
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Płaczący obsydian"
+      gold_ingot:
+        material: GOLD_INGOT
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Złoty Sztab"
+  chest_ocean_epic:
+    name: "&5&lSkrzynka Władca Oceanów"
+    total-items:
+      min: 3
+      max: 6
+    pity:
+      enabled: true
+    pool:
+      netherite_helmet:
+        material: NETHERITE_HELMET
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowy Helm"
+      netherite_chestplate:
+        material: NETHERITE_CHESTPLATE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowa Zbroja"
+      netherite_leggings:
+        material: NETHERITE_LEGGINGS
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowe Spodnie"
+      netherite_boots:
+        material: NETHERITE_BOOTS
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Netherytowe Buty"
+      heart_of_the_sea:
+        material: HEART_OF_THE_SEA
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Serce Morza"
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Diament"
+      emerald:
+        material: EMERALD
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Szmaragd"
+      trident:
+        material: TRIDENT
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Trójząb"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 8
+          max: 16
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      gold_block:
+        material: GOLD_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Złota"
+      prismarine_crystals:
+        material: PRISMARINE_CRYSTALS
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 12
+        reward_name: "&a%amount%x Kryształy pryzmarynu"
+      sponge:
+        material: SPONGE
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Gąbka"
+  chest_end_epic:
+    name: "&5&lSkrzynka Smoka Enderu"
+    total-items:
+      min: 3
+      max: 6
+    pity:
+      enabled: true
+    pool:
+      dragon_egg:
+        material: DRAGON_EGG
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Smocze Jajo"
+      elytra:
+        material: ELYTRA
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Elytra"
+      netherite_block:
+        material: NETHERITE_BLOCK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Bloki Netherytu"
+      enchanted_golden_apple:
+        material: ENCHANTED_GOLDEN_APPLE
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 3
+        reward_name: "&a%amount%x Zaczarowane Złote Jabłka"
+      nether_star:
+        material: NETHER_STAR
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Gwiazdy Netheru"
+      diamond:
+        material: DIAMOND
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Diament"
+      emerald_block:
+        material: EMERALD_BLOCK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Blok Szmaragdu"
+      end_crystal:
+        material: END_CRYSTAL
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Kryształ Endu"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 10
+          max: 20
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      purpur_block:
+        material: PURPUR_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Blok Purpuru"
+      chorus_fruit:
+        material: CHORUS_FRUIT
+        weight: 40
+        rare: false
+        amount:
+          min: 6
+          max: 14
+        reward_name: "&a%amount%x Owoc Chorusu"
+      gold_block:
+        material: GOLD_BLOCK
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Złota"
+  chest_void_epic:
+    name: "&5&lSkrzynka Władcy Wszechświata"
+    total-items:
+      min: 3
+      max: 6
+    pity:
+      enabled: true
+    pool:
+      netherite_block:
+        material: NETHERITE_BLOCK
+        weight: 10
+        rare: true
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Bloki Netherytu"
+      beacon:
+        material: BEACON
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Latarnie"
+      dragon_egg:
+        material: DRAGON_EGG
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Smocze Jaja"
+      nether_star:
+        material: NETHER_STAR
+        weight: 10
+        rare: true
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Gwiazdy Netheru"
+      enchanted_golden_apple:
+        material: ENCHANTED_GOLDEN_APPLE
+        weight: 10
+        rare: true
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Zaczarowane Złote Jabłka"
+      diamond_block:
+        material: DIAMOND_BLOCK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Diamentu"
+      emerald_block:
+        material: EMERALD_BLOCK
+        weight: 10
+        rare: true
+        amount:
+          min: 1
+          max: 2
+        reward_name: "&a%amount%x Blok Szmaragdu"
+      netherite_ingot:
+        material: NETHERITE_INGOT
+        weight: 40
+        rare: false
+        amount:
+          min: 4
+          max: 8
+        reward_name: "&a%amount%x Netherytowy Sztab"
+      experience_bottle:
+        material: EXPERIENCE_BOTTLE
+        weight: 40
+        rare: false
+        amount:
+          min: 15
+          max: 30
+        reward_name: "&a%amount%x Butelka Doświadczenia"
+      elytra:
+        material: ELYTRA
+        weight: 40
+        rare: false
+        amount:
+          min: 1
+          max: 1
+        reward_name: "&a%amount%x Elytra"
+      ancient_debris:
+        material: ANCIENT_DEBRIS
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Pradawne szczątki"
+      diamond:
+        material: DIAMOND
+        weight: 40
+        rare: false
+        amount:
+          min: 2
+          max: 4
+        reward_name: "&a%amount%x Diament"
